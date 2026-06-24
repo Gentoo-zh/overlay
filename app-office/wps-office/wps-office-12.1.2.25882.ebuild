@@ -90,6 +90,8 @@ src_install() {
 	fi
 	rm "${S}"/opt/kingsoft/wps-office/office6/libstdc++.so* || die
 	rm -f "${S}"/opt/kingsoft/wps-office/office6/libFontWatermark.so || die
+	rm -f "${S}"/opt/kingsoft/wps-office/office6/libbz2.so* || die
+	rm -f "${S}"/opt/kingsoft/wps-office/office6/KPacketInstall || die
 	rm -f "${S}"/opt/kingsoft/wps-office/office6/libpeony-wpsprint-menu-plugin.so || die
 	rm -f "${S}"/opt/kingsoft/wps-office/office6/lib{et,wpp,wps}uofrw.so || die
 	doins -r "${S}"/opt/kingsoft/wps-office/{office6,templates}
