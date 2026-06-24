@@ -44,6 +44,7 @@ RDEPEND="
 	sys-apps/util-linux
 	sys-libs/glibc
 	systemd? ( || ( sys-apps/systemd sys-apps/systemd-utils ) )
+	virtual/libusb:1
 	virtual/zlib:0
 	x11-libs/cairo
 	x11-libs/gdk-pixbuf:2
