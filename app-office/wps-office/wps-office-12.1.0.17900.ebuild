@@ -115,7 +115,7 @@ src_install() {
 		done
 		[[ ${new_rpath} == "${rpath}" ]] && continue
 		patchelf --force-rpath --set-rpath "${new_rpath:-\$ORIGIN}" "${file}" || die
-	done < <(find "${S}"/opt/kingsoft/wps-office/office6 -type f -print0)
+	done < <(find "${S}"/opt/kingsoft/wps-office/office6 -type f \( -executable -o -name '*.so*' \) -print0)
 	doins -r "${S}"/opt/kingsoft/wps-office/{office6,templates}
 
 	fperms 0755 /opt/kingsoft/wps-office/office6/{wps,wpp,et,wpspdf,wpsoffice,promecefpluginhost,transerr,ksolaunch,wpscloudsvr}
