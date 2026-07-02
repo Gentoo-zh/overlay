@@ -84,8 +84,8 @@ QA_PREBUILT="*"
 
 ANTIGRAVITY_HOME="usr/share/antigravity"
 
-src_configure() {
-	default
+pkg_setup() {
+	[[ -e /usr/src/linux ]] || return
 	chromium_suid_sandbox_check_kernel_config
 }
 
