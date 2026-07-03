@@ -41,9 +41,11 @@ BLOB_RDEPEND="
 	media-libs/fontconfig
 	media-libs/freetype
 	media-libs/libglvnd
+	media-libs/libpulse
 	media-libs/mesa
 	media-libs/tiff-compat:4
 	sys-apps/dbus
+	virtual/jack
 	virtual/zlib
 	x11-libs/cairo
 	x11-libs/libdrm
@@ -162,6 +164,8 @@ src_install() {
 }
 
 pkg_postinst() {
+	xdg_pkg_postinst
+
 	if [[ "$LANG" == "zh_CN.UTF-8" ]]; then
 		elog '>> 注意！升级至4.0版本后，环境变量已统一至WECHAT_ 前缀'
 		elog '>> 执行 `wechat-universal --help` 来查看相关帮助信息'
@@ -169,4 +173,8 @@ pkg_postinst() {
 		elog '>> Warning! After updating to v4.0, all environment variables are unified to be prefixed with WECHAT_'
 		elog '>> Run `wechat-universal --help` to check for the help message'
 	fi
+}
+
+pkg_postrm() {
+	xdg_pkg_postrm
 }

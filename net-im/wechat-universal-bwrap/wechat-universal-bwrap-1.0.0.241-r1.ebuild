@@ -39,9 +39,11 @@ BLOB_RDEPEND="
 	media-libs/fontconfig
 	media-libs/freetype
 	media-libs/libglvnd
+	media-libs/libpulse
 	media-libs/mesa
 	media-libs/tiff-compat:4
 	sys-apps/dbus
+	virtual/jack
 	virtual/zlib
 	x11-libs/cairo
 	x11-libs/libdrm
@@ -153,10 +155,16 @@ src_install() {
 }
 
 pkg_postinst() {
+	xdg_pkg_postinst
+
 	elog "This WeChat will run in a sys-apps/bubblewrap sandbox, and will only"
 	elog "be able to access \$XDG_DOCUMENTS_DIR/WeChat_Data by default."
 	elog
 	elog "You can bind additional directories into the sandbox by creating a"
 	elog "~/.config/wechat-universal/binds.list file, with every line an"
 	elog "absolute or relative-to-HOME path."
+}
+
+pkg_postrm() {
+	xdg_pkg_postrm
 }
