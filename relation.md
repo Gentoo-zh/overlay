@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-04 03:59:36 CST)
+(The last generation time: 2026-07-04 04:00:28 CST)
 
 ### Packages
 
@@ -696,7 +696,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-misc/aliyunpan                                    | 0.3.7              |            | https://github.com/tickstep/aliyunpan                                                   | aliyunpan cli client, support Webdav service, JavaScript plugin
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-misc/ananta                                       | 1.4.1              |            | https://sr.ht/~cwt/ananta/                                                              | a powerful command-line tool
+ net-misc/ananta                                       | 1.4.3              |            | https://sr.ht/~cwt/ananta/                                                              | a powerful command-line tool
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-misc/another-redis-desktop-manager-bin            | 1.7.1              |            | https://github.com/qishibo/AnotherRedisDesktopManager                                   | A faster, better and more stable Redis desktop manager [GUI client]
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
