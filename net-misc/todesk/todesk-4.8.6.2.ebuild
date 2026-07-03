@@ -33,7 +33,8 @@ src_prepare() {
 }
 
 src_install() {
-	use systemd || patchelf --replace-needed libsystemd.so.0 libelogind.so.0 opt/todesk/bin/{ToDesk,ToDesk_Service,ToDesk_Session} \
+	use systemd || patchelf --replace-needed libsystemd.so.0 libelogind.so.0 \
+		opt/todesk/bin/{ToDesk,ToDesk_Service,ToDesk_Session} \
 		|| die "failed to patch systemd library dependency"
 
 	insinto /opt/todesk
