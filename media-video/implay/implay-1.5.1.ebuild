@@ -7,8 +7,10 @@ CMAKE_MAKEFILE_GENERATOR="emake"
 inherit cmake desktop xdg-utils
 
 DESCRIPTION="A Cross-Platform Desktop Media Player"
-HOMEPAGE="https://tsl0922.github.io/ImPlay"
+HOMEPAGE="https://tsl0922.github.io/ImPlay/"
 SRC_URI="https://github.com/tsl0922/ImPlay/archive/refs/tags/${PV}.tar.gz ->  ImPlay-continuous.tar.gz"
+S="${WORKDIR}/ImPlay-${PV}"
+
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
@@ -19,9 +21,6 @@ DEPEND="
 	media-video/mpv
 	x11-libs/gtk+
 "
-
-S="${WORKDIR}/ImPlay-${PV}"
-
 src_configure() {
 	CMAKE_BUILD_TYPE="Release"
 	cmake_src_configure
