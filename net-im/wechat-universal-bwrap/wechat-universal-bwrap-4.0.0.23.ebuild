@@ -16,7 +16,8 @@ SRC_URI="
 	amd64? ( ${URL_ROOT}/${DEB_STEM}_amd64.deb )
 	arm64? ( ${URL_ROOT}/${DEB_STEM}_arm64.deb )
 	loong? ( ${URL_ROOT}/${DEB_STEM}_loongarch64.deb )
-	https://github.com/7Ji-PKGBUILDs/wechat-universal-bwrap/archive/${AUR_REPO_REF}.tar.gz -> wechat-universal-bwrap-${AUR_REPO_REF}.tar.gz
+	https://github.com/7Ji-PKGBUILDs/wechat-universal-bwrap/archive/${AUR_REPO_REF}.tar.gz
+		-> wechat-universal-bwrap-${AUR_REPO_REF}.tar.gz
 "
 
 S="${WORKDIR}"
@@ -101,9 +102,11 @@ src_compile() {
 	call_patchelf --set-rpath '$ORIGIN' RadiumWMPF/runtime/WeChatAppEx
 	# orginally /data/devops-xwechat/workspace/translib_linux_test/linux/3rd_x86_64/lib
 	call_patchelf --set-rpath '$ORIGIN' libwxtrans.so
-	# originally $ORIGIN:/home/ubuntu/.wconan2/ilink/fcafc08e_1712581517/libs/Release/clang-llvm-12.0.0/libs
+	# originally $ORIGIN:/home/ubuntu/.wconan2/ilink/fcafc08e_1712581517/libs/Release/
+	# clang-llvm-12.0.0/libs
 	call_patchelf --set-rpath '$ORIGIN' RadiumWMPF/runtime/libilink2.so
-	# originally /home/ubuntu/.wconan2/ilink_network/7fd99102_1712579641/ilink-network/libs/Release/clang-llvm-12.0.0/libs:
+	# originally /home/ubuntu/.wconan2/ilink_network/7fd99102_1712579641/ilink-network/libs/Release/
+	# clang-llvm-12.0.0/libs:
 	call_patchelf --set-rpath '$ORIGIN' RadiumWMPF/runtime/libilink_network.so
 	# originally ./ (!!!)
 	call_patchelf --remove-rpath libvoipChannel.so
