@@ -74,7 +74,8 @@ src_prepare() {
 	# FIXME: tempfile or moreutils?
 	#jq ... "${S}/package.json" > tmp.json && mv tmp.json "${S}/package.json" || die
 	pushd "${T}" >/dev/null || die
-	jq '.bundle.createUpdaterArtifacts = false' "${S}/src-tauri/tauri.conf.json" | sponge "${S}/src-tauri/tauri.conf.json" || die
+	jq '.bundle.createUpdaterArtifacts = false' "${S}/src-tauri/tauri.conf.json" \
+		| sponge "${S}/src-tauri/tauri.conf.json" || die
 	popd >/dev/null || die
 
 	mv -v "${WORKDIR}/dist" "${S}/" || die
