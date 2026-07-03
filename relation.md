@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-03 16:24:32 CST)
+(The last generation time: 2026-07-03 20:28:19 CST)
 
 ### Packages
 
@@ -682,8 +682,7 @@
                                                        | 4.0.0.21           |            |                                                                                         |
                                                        | 4.0.0.23           |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-im/wemeet                                         | 3.19.1.400         |            | https://wemeet.qq.com                                                                   | Wemeet - Tencent Video Conferencing
-                                                       | 3.19.1.401         |            |                                                                                         |
+ net-im/wemeet                                         | 3.19.1.400         |            | https://meeting.tencent.com/                                                            | Wemeet - Tencent Video Conferencing
                                                        | 3.19.2.400         |            |                                                                                         |
                                                        | 3.26.10.400        |            |                                                                                         |
                                                        | 3.26.10.401        |            |                                                                                         |
