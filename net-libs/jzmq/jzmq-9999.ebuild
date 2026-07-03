@@ -4,13 +4,14 @@
 EAPI=7
 
 inherit git-r3 autotools
-DESCRIPTION="jzmq"
-HOMEPAGE="http://www.zeromq.org/bindings:java"
+DESCRIPTION="Java bindings for ZeroMQ"
+HOMEPAGE="https://zeromq.org/languages/java/"
 
 if [[ ${PV} == "9999" ]] ; then
 	EGIT_REPO_URI="https://github.com/zeromq/jzmq.git"
 	vcs=git-r3
 fi
+S="${WORKDIR}/${P}/${PN}-jni"
 
 LICENSE="LGPL-3"
 SLOT="0"
@@ -18,9 +19,6 @@ SLOT="0"
 DEPEND="net-libs/zeromq
 	>=virtual/jre-1.7:*"
 RDEPEND="${DEPEND}"
-
-S="${WORKDIR}/${P}/${PN}-jni"
-
 src_prepare() {
 	default
 	eautoreconf
