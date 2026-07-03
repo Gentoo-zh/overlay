@@ -78,6 +78,8 @@ QA_PREBUILT="*"
 src_prepare() {
 	pushd "${S}/wechat-universal-bwrap-${AUR_REPO_REF}" > /dev/null
 	eapply "${FILESDIR}/adjust-launcher-fs-layout.patch"
+	sed -i "s|^Exec=bash -c '/usr/bin/killall wechat'$|Exec=/usr/bin/killall wechat|" \
+		wechat-universal.desktop || die
 	popd > /dev/null
 
 	default
@@ -114,6 +116,8 @@ src_compile() {
 	# originally ./ (!!!)
 	call_patchelf --remove-rpath libvoipChannel.so
 	call_patchelf --remove-rpath libvoipCodec.so
+	call_patchelf --remove-needed libbz2.so.1.0 wechat
+	call_patchelf --add-needed libbz2.so.1 wechat
 	popd > /dev/null
 
 	einfo "Building stub libuosdevicea.so"

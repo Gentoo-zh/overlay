@@ -3,6 +3,8 @@
 
 EAPI=8
 
+RPM_COMPRESS_TYPE="none"
+
 inherit desktop toolchain-funcs rpm xdg
 
 DESCRIPTION="WeChat (Universal) from UOS, inside bwrap sandbox"
@@ -70,7 +72,10 @@ RDEPEND="
 	x11-misc/xdg-user-dirs
 	loong? ( virtual/loong-ow-compat )
 "
-BDEPEND="dev-util/patchelf"
+BDEPEND="
+	${BDEPEND}
+	dev-util/patchelf
+"
 
 QA_PREBUILT="*"
 
