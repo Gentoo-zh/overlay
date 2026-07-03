@@ -19,7 +19,7 @@ follow rule no.1 and no.2
 
 # the dependencies table
 
-https://github.com/microcai/gentoo-zh/blob/deps-table/relation.md
+https://github.com/Gentoo-zh/gentoo-zh/blob/deps-table/relation.md
 
 # commit message
 
@@ -61,7 +61,7 @@ We provide a distfiles mirror that caches the distfiles in gentoo-zh.
 
 Our server, hosted on USA:
 ```
-GENTOO_MIRRORS="${GENTOO_MIRRORS} https://distfiles.gentoocn.org"
+GENTOO_MIRRORS="${GENTOO_MIRRORS} https://distfiles.gentoozh.org"
 ```
 
 Chongqing University mirror:
