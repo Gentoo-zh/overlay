@@ -8,9 +8,9 @@ inherit cmake
 DESCRIPTION="Library manager for C/C++ (tool only)."
 HOMEPAGE="https://github.com/microsoft/vcpkg-tool https://vcpkg.io/en/index.html"
 format-date() {
-  local input="$1"
-  IFS='.' read -r year month day <<< "$input"
-  printf '%04d-%02d-%02d' "$year" "$month" "$day"
+	local input="$1"
+	IFS='.' read -r year month day <<< "$input"
+	printf '%04d-%02d-%02d' "$year" "$month" "$day"
 }
 MY_PV="$(format-date "${PV}")"
 SRC_URI="https://github.com/microsoft/${PN}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
