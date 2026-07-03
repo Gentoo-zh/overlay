@@ -29,6 +29,8 @@ DEPEND="
 	dev-libs/nss
 	media-libs/alsa-lib
 	media-libs/mesa
+	net-libs/libsoup:3.0
+	net-libs/webkit-gtk:4.1
 	net-print/cups
 	sys-apps/dbus
 	sys-apps/util-linux
@@ -45,6 +47,7 @@ DEPEND="
 	x11-libs/libXfixes
 	x11-libs/libXi
 	x11-libs/libxkbcommon
+	x11-libs/libxkbfile
 	x11-libs/libXrandr
 	x11-libs/libXrender
 	x11-libs/libXScrnSaver
@@ -57,27 +60,23 @@ BDEPEND="app-arch/unzip"
 
 RESTRICT="mirror"
 
-QA_PREBUILT="
-	/usr/share/trae-cn/chrome-sandbox
-	/usr/share/trae-cn/chrome_crashpad_handler
-	/usr/share/trae-cn/libEGL.so
-	/usr/share/trae-cn/libffmpeg.so
-	/usr/share/trae-cn/trae-cn
-	/usr/share/trae-cn/libvk_swiftshader.so
-	/usr/share/trae-cn/libGLESv2.so
-	/usr/share/trae-cn/libvulkan.so.1
-	/usr/share/trae-cn/resources/app/extensions/byted-icube.integrations-extended/dist/skia.linux-x64-musl.node
-	/usr/share/trae-cn/resources/app/extensions/microsoft-authentication/dist/libmsalruntime.so
-	/usr/share/trae-cn/resources/app/node_modules/@aha-kit/ipc-linux-x64/dist/zeromq/prebuild/linux/x64/node/musl-127-Release/addon.node
-"
+QA_PREBUILT="/usr/share/trae-cn/*"
 
-src_unpack(){
+src_unpack() {
 	export LANG=C.UTF-8
 	unpack ${A}
 }
 
-src_install(){
+src_install() {
 	tar -xvf data.tar.xz -C "${D}"
+	rm -f \
+		"${ED}"/usr/share/trae-cn/resources/app/extensions/byted-icube.integrations-extended/dist/skia.linux-x64-musl.node \
+		"${ED}"/usr/share/trae-cn/resources/app/node_modules/@aha-kit/ipc-linux-x64/dist/zeromq/prebuild/linux/x64/node/musl-127-Release/addon.node \
+		|| die
+	if [[ -d ${ED}/usr/share/appdata ]]; then
+		mv "${ED}"/usr/share/{appdata,metainfo} || die
+	fi
+	find "${ED}"/usr/share/trae-cn -perm /022 -exec chmod go-w {} + || die
 	fperms 0755 /usr/share/trae-cn/trae-cn
 	fperms 0755 /usr/share/trae-cn/chrome_crashpad_handler
 }
