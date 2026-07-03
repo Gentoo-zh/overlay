@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-04 03:44:19 CST)
+(The last generation time: 2026-07-04 03:59:36 CST)
 
 ### Packages
 
@@ -800,7 +800,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/juicity                                     | 0.5.0              |            | https://github.com/juicity/juicity                                                      | juicity is a quic-based proxy protocol.
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-proxy/naiveproxy-bin                              | 149.0.7827.114_p1  |            | https://github.com/klzgrad/naiveproxy                                                   | A proxy using Chromium's network stack to camouflage traffic
+ net-proxy/naiveproxy-bin                              | 150.0.7871.63_p1   |            | https://github.com/klzgrad/naiveproxy                                                   | A proxy using Chromium's network stack to camouflage traffic
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/proxy-server                                | 11.0.1             |            | https://github.com/jackarain/proxy                                                      | Implementation of all proxy protocols using modern c++
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
