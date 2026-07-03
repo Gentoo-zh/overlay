@@ -795,7 +795,7 @@ github_account = "gouwazi"
 source = "github"
 github = "openSUSE/osc"
 use_latest_tag = true
-github_account = "douglarek"
+github_account = ["douglarek", "gouwazi"]
 
 ["dev-util/pacstrap"]
 source = "gitlab"
