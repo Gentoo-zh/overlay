@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-03 22:57:39 CST)
+(The last generation time: 2026-07-03 22:58:13 CST)
 
 ### Packages
 
@@ -746,7 +746,7 @@
    acct-group/reframe                                  | 0                  |  D, RD     |                                                                                         | group for reframe
    acct-user/reframe                                   | 0                  |  D, RD     |                                                                                         | user for reframe
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-misc/remmina-plugin-rustdesk                      | 1.0.0.0-r1         |            | http://www.muflone.com/remmina-plugin-rustdesk/                                         | A protocol plugin for Remmina to launch a Rustdesk connection.
+ net-misc/remmina-plugin-rustdesk                      | 1.0.0.0-r1         |            | https://www.muflone.com/remmina-plugin-rustdesk/                                        | A protocol plugin for Remmina to launch a Rustdesk connection.
    net-misc/rustdesk                                   | 1.4.8              |  D, RD     | https://rustdesk.com/                                                                   | An open-source remote desktop, and alternative to TeamViewer
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-misc/reqable                                      | 3.2.4              |            | https://reqable.com/en-US/                                                              | Reqable = Fiddler + Charles + Postman, 让API调试更快 🚀 更简单 👌
