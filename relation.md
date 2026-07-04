@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-05 00:57:57 CST)
+(The last generation time: 2026-07-05 00:59:04 CST)
 
 ### Packages
 
@@ -144,6 +144,8 @@
                                                        | 1.0.17             |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-i18n/lunar                                        | 2.2_p10            |            | https://packages.debian.org/unstable/utils/lunar                                        | Chinese Lunar Calendar conversion utility
+-------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
+ app-i18n/rime-ice                                     | 9999               |            | https://github.com/iDvel/rime-ice                                                       | Rime ICE - A long-term maintained simplified Chinese Rime schema
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-i18n/vocotype                                     | 2.1.3-r1           |            | https://github.com/LeonardNJU/VocoType-linux                                            | Linux offline voice input method based on FunASR Paraformer
    app-i18n/fcitx                                      | 9999               |  D, RD     | https://fcitx-im.org/                                                                   | Fcitx 5 is a generic input method framework
