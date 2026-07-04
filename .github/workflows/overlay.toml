@@ -102,14 +102,6 @@ github = "AppFlowy-IO/AppFlowy"
 use_latest_release = true
 github_account = ["Linerre", "gouwazi"]
 
-# Neomacs is alpha-stage, so gentoo-zh carries only a live ebuild for now.
-["app-editors/neomacs"]
-source = "github"
-github = "eval-exec/neomacs"
-use_latest_release = true
-prefix = "v"
-github_account = "xz-dev"
-
 ["dev-lang/dart"]
 source = "apt"
 pkg = "dart"
