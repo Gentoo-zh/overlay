@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>locez@locez.com</email>
+		<name>Locez</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">iDvel/rime-ice</remote-id>
+	</upstream>
+	<use>
+		<flag name="base">Install base character sets (8105/41448). Recommended.</flag>
+		<flag name="english">Install English dictionaries and enable mixed input support.</flag>
+		<flag name="tencent">Install the Tencent large dictionary (popular vocabulary vectors).</flag>
+		<flag name="opencc">Install OpenCC configurations (for Emoji, Traditional Chinese, etc.).</flag>
+		<flag name="theme">Install suggested color schemes.</flag>
+		<flag name="lua">Add lua support.</flag>
+	</use>
+</pkgmetadata>
