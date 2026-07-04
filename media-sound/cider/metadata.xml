@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>locez@locez.com</email>
+		<name>Locez</name>
+	</maintainer>
+	<longdescription lang="en">
+		Cider is a new cross-platform Apple Music experience built on Vue.js 
+		and Electron, written from the ground up with performance in mind. 🚀 
+		This package installs the proprietary version (Cider 3).
+	</longdescription>
+	<use>
+		<flag name="trash-cli">
+			Pull in app-misc/trash-cli to support file deletion features
+			if your Desktop Environment (DE) does not provide a native trash mechanism.
+		</flag>
+	</use>
+	<upstream>
+		<remote-id type="github">ciderapp/Cider2</remote-id>
+		<bugs-to>https://github.com/ciderapp/Cider/issues</bugs-to>
+	</upstream>
+</pkgmetadata>
