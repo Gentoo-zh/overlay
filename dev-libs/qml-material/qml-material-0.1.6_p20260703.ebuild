@@ -5,14 +5,14 @@ EAPI=8
 
 inherit cmake
 
-MY_PV="b1c3a0582e53ef0ed0b18d82b2c866d91f836390"
+MY_PV="0e6372a9a68066e584b0dec5fa3f947c37b7da39"
 
 DESCRIPTION="A library of Qml implementing Google's Material Design"
 HOMEPAGE="https://github.com/hypengw/QmlMaterial"
 SRC_URI="
 	https://github.com/hypengw/QmlMaterial/archive/${MY_PV}.tar.gz -> ${P}.tar.gz
-	https://github.com/hypengw/QmlMaterial/raw/${MY_PV}/assets/MaterialSymbolsRounded.wght_400.opsz_24.fill_0.woff2 -> ${P}-font_0.woff2
-	https://github.com/hypengw/QmlMaterial/raw/${MY_PV}/assets/MaterialSymbolsRounded.wght_400.opsz_24.fill_1.woff2 -> ${P}-font_1.woff2
+	https://github.com/hypengw/QmlMaterial/raw/${MY_PV}/assets/MaterialSymbolsRounded.wght_400.opsz_24.fill_0.woff2
+	https://github.com/hypengw/QmlMaterial/raw/${MY_PV}/assets/MaterialSymbolsRounded.wght_400.opsz_24.fill_1.woff2
 "
 
 S="${WORKDIR}/QmlMaterial-${MY_PV}"
@@ -32,6 +32,7 @@ BDEPEND="virtual/pkgconfig"
 
 src_unpack() {
 	default
-	ln -sf "${DISTDIR}/${P}-font_0.woff2" "${S}/assets/MaterialSymbolsRounded.wght_400.opsz_24.fill_0.woff2" || die
-	ln -sf "${DISTDIR}/${P}-font_1.woff2" "${S}/assets/MaterialSymbolsRounded.wght_400.opsz_24.fill_1.woff2" || die
+	cp -t "${S}/assets" \
+		"${DISTDIR}/MaterialSymbolsRounded.wght_400.opsz_24.fill_0.woff2" \
+		"${DISTDIR}/MaterialSymbolsRounded.wght_400.opsz_24.fill_1.woff2" || die
 }
