@@ -10,7 +10,9 @@ NUGETS="
 	microsoft.codeanalysis.csharp@4.12.0
 	microsoft.extensions.dependencyinjection.abstractions@10.0.7
 	microsoft.extensions.dependencyinjection@10.0.7
+	microsoft.netcore.platforms@1.1.0
 	minver@6.0.0
+	netstandard.library@2.0.3
 	sharpziplib@1.4.2
 	system.buffers@4.5.1
 	system.collections.immutable@8.0.0
