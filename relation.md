@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-05 21:28:43 CST)
+(The last generation time: 2026-07-05 21:51:43 CST)
 
 ### Packages
 
@@ -319,6 +319,8 @@
  dev-python/adafruit-board-toolkit                     | 1.1.2              |            | https://github.com/adafruit/Adafruit_Board_Toolkit/                                     | CircuitPython board identification and information
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-python/archspec                                   | 0.2.6              |            | https://github.com/archspec/archspec                                                    | A library for detecting, labeling, and reasoning about microarchitectures
+-------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
+ dev-python/browser-cookie3                            | 0.20.1             |            | https://github.com/borisbabic/browser_cookie3                                           | Loads cookies from your browser into a cookiejar object
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-python/conda                                      | 26.5.3             |            | https://docs.conda.io/                                                                  | OS-agnostic, system-level binary package manager and ecosystem
    dev-python/conda-libmamba-solver                    | 26.6.0             |  D, RD     | https://github.com/conda/conda-libmamba-solver                                          | The libmamba based solver for conda
