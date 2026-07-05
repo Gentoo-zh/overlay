@@ -10,7 +10,15 @@ This repository is a Gentoo overlay fork. Prefer generic Gentoo ebuild workflow 
 
 ## Git Workflow
 
-- Before starting package work, ensure an `upstream` remote exists for the upstream overlay.
+- Every repository modification is PR-bound work unless the user explicitly says otherwise in the current request. This applies to ebuilds, manifests, metadata, documentation, CI files, and README-only changes.
+- Automated agents, AI assistants, scripts operating on behalf of a maintainer, and human maintainers using automation must complete the mandatory PR preflight before editing any tracked file.
+- Human-only exploratory inspection may read files without this preflight, but any tracked file edit must follow it.
+- Treat `master` as the upstream-sync branch only. Never make feature, package, documentation, CI, or metadata changes directly on `master`.
+
+### Mandatory PR Preflight
+
+- Before editing any tracked file, run `git status --short --branch`, `git branch --show-current`, and `git remote -v`.
+- Verify an `upstream` remote exists and points to `git@github.com:Gentoo-zh/overlay.git`.
 - If `upstream` is missing, add it with:
 
   ```bash
@@ -19,13 +27,22 @@ This repository is a Gentoo overlay fork. Prefer generic Gentoo ebuild workflow 
   ```
 
 - If `upstream` already exists but points elsewhere, do not silently rewrite it; report the current URL and confirm before changing it.
-- Treat `master` as the upstream-sync branch. Do not make feature work directly on `master`.
+- If currently on `master`, first sync `master` from `upstream/master`, then create a topic branch before editing.
+- If the worktree contains unrelated changes, preserve them. Do not overwrite, revert, stage, or commit unrelated changes.
+- Stop before editing and ask the user when the current branch is `master`, `upstream` is missing or points to an unexpected URL, `master` cannot be synced from `upstream/master`, unrelated local changes make branch creation or staging ambiguous, or the requested change spans multiple unrelated logical PRs.
+
+### Topic Branches
+
 - Use one topic branch per logical pull request.
-- Branch package work from a freshly synced `master`; for version bumps, prefer names like `category-package-version`.
+- Branch all PR-bound work from a freshly synced `master`; for version bumps, prefer names like `category-package-version`.
 - A pull request may touch multiple packages only when they are part of one logical contribution, such as one dependency chain, one coordinated version bump, or one shared fix.
 - Keep unrelated package changes in separate branches and PRs.
 - Never split an ebuild change and its `Manifest` update across separate PRs.
 - When rebasing an open PR, prefer `git rebase upstream/master` and push with `--force-with-lease`.
+
+### Completion Reports
+
+- Every completed change must report the topic branch used, upstream remote status, base branch and sync status, files changed, commands run with pass/fail results, checks skipped and why, and any remaining warnings, risks, or limitations.
 
 ## Ebuild Policy
 
