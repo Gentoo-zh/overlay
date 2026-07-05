@@ -1,0 +1,31 @@
+--- a/cmake/cef_variables.cmake
++++ b/cmake/cef_variables.cmake
+@@ -191,28 +191,6 @@
+       )
+   endif()
+ 
+-  if(PROJECT_ARCH STREQUAL "x86_64")
+-    # 64-bit architecture.
+-    list(APPEND CEF_COMPILER_FLAGS
+-      -m64
+-      -march=x86-64
+-      )
+-    list(APPEND CEF_LINKER_FLAGS
+-      -m64
+-      )
+-  elseif(PROJECT_ARCH STREQUAL "x86")
+-    # 32-bit architecture.
+-    list(APPEND CEF_COMPILER_FLAGS
+-      -msse2
+-      -mfpmath=sse
+-      -mmmx
+-      -m32
+-      )
+-    list(APPEND CEF_LINKER_FLAGS
+-      -m32
+-      )
+-  endif()
+-
+   # Standard libraries.
+   set(CEF_STANDARD_LIBS
+     X11

@@ -1,0 +1,10 @@
+--- a/libcef_dll/CMakeLists.txt
++++ b/libcef_dll/CMakeLists.txt
+@@ -816,6 +816,7 @@
+ source_group(libcef_dll\\\\wrapper FILES ${LIBCEF_WRAPPER_SRCS})
+ 
+ add_library(${CEF_TARGET}
++  STATIC
+   ${LIBCEF_SRCS}
+   ${LIBCEF_BASE_SRCS}
+   ${LIBCEF_CPPTOC_SRCS}

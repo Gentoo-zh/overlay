@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>me@puqns67.icu</email>
+		<name>Puqns67</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">waywallen/open-wallpaper-engine</remote-id>
+	</upstream>
+	<use>
+		<flag name="scene">Build Scene Renderer</flag>
+		<flag name="web">Build Web Renderer</flag>
+		<flag name="waywallen">Build as waywallen plugin</flag>
+		<flag name="pipewire">Build with pipewire (not pulse)</flag>
+	</use>
+</pkgmetadata>

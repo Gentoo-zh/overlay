@@ -1,0 +1,21 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 64ecf6a..f64aed3 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -66,14 +66,9 @@ if(BUILD_WAYWALLEN)
+     add_subdirectory(waywallen)
+ endif()
+ 
+-pkg_check_modules(GLFW IMPORTED_TARGET glfw3)
+-option(BUILD_VIEWER "Build the GLFW standalone viewer" ${GLFW_FOUND})
++option(BUILD_VIEWER "Build the GLFW standalone viewer" OFF)
+ if((BUILD_WESCENE AND BUILD_VIEWER) OR (BUILD_WEWEB AND BUILD_VIEWER))
+-    if(NOT GLFW_FOUND)
+-        message(FATAL_ERROR
+-            "Need glfw3 for any standalone viewer. Install glfw3 "
+-            "development headers or set BUILD_VIEWER=OFF and BUILD_WEWEB=OFF.")
+-    endif()
++    pkg_check_modules(GLFW REQUIRED IMPORTED_TARGET glfw3)
+     add_subdirectory(viewer)
+ endif()
+ 

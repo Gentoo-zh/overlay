@@ -1,0 +1,16 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 9f72a83..c75f49d 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -8,7 +8,10 @@ pkg_check_modules(WAVSEN_SWRESAMPLE           IMPORTED_TARGET libswresample>=3)
+ # Optional: VAAPI hardware decode. Headers + symbols come from libavutil
+ # itself; libva pkg-config is presence-checked so the build also succeeds
+ # against an FFmpeg compiled without --enable-vaapi.
+-pkg_check_modules(WAVSEN_LIBVA                IMPORTED_TARGET libva libva-drm)
++option(WAVSEM_USE_VAAPI "VAAPI hardware decode" ON)
++if(WAVSEM_USE_VAAPI)
++    pkg_check_modules(WAVSEN_LIBVA   REQUIRED IMPORTED_TARGET libva libva-drm)
++endif()
+ 
+ set(WAVSEN_AUDIO_BACKEND "pulse" CACHE STRING
+     "Audio backend for wavsen::audio (pulse|pipewire)")

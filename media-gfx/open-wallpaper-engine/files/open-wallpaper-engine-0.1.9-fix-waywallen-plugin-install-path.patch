@@ -1,0 +1,19 @@
+diff --git a/waywallen/CMakeLists.txt b/waywallen/CMakeLists.txt
+index ec03027..0ff297f 100644
+--- a/waywallen/CMakeLists.txt
++++ b/waywallen/CMakeLists.txt
+@@ -12,11 +12,11 @@ if(OWE_WAYWALLEN_PLUGIN_BUNDLE_LAYOUT)
+ else()
+     set(_OWE_PLUGIN_DIR share/waywallen/plugins/${OWE_WAYWALLEN_PLUGIN_ID})
+     set(OWE_WESCENE_BIN ../../../../bin/waywallen-wescene-renderer)
+-    set(OWE_WEWEB_BIN ../../../../bin/weweb/waywallen-weweb-renderer)
+-    set(_OWE_WEWEB_FILES_PREFIX ../../../../bin/weweb)
++    set(OWE_WEWEB_BIN ../../../../lib/weweb/waywallen-weweb-renderer)
++    set(_OWE_WEWEB_FILES_PREFIX ../../../../lib/weweb)
+ endif()
+ set(_OWE_WESCENE_INSTALL_DIR bin)
+-set(_OWE_WEWEB_INSTALL_DIR bin/weweb)
++set(_OWE_WEWEB_INSTALL_DIR lib/weweb)
+ set(_OWE_STRIP_FILES ${OWE_WESCENE_BIN})
+ 
+ add_library(waywallen-bridge-producer STATIC)
