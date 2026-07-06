@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-06 08:48:11 CST)
+(The last generation time: 2026-07-06 09:29:19 CST)
 
 ### Packages
 
@@ -845,8 +845,6 @@
  net-proxy/sing-box-windows-bin                        | 2.3.1              |            | https://github.com/xinggaoya/sing-box-windows                                           | Modern sing-box desktop client
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/smartproxy                                  | 0.9.5              |            | https://github.com/microcai/smartproxy                                                  | A fast, proxy smart selector
--------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-proxy/tun2socks                                   | 2.6.0              |            | https://github.com/xjasonlyu/tun2socks                                                  | tun2socks - powered by gVisor TCP/IP stack
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/v2rayA                                      | 2.2.7.5            |            | https://v2raya.org/                                                                     | web GUI of Project V which supports V2Ray, Xray, SS, SSR, Trojan and Pingtunnel
                                                        | 9999               |            |                                                                                         |
