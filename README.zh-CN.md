@@ -92,5 +92,3 @@ GENTOO_MIRRORS="${GENTOO_MIRRORS} https://mirrors.cqu.edu.cn/gentoo-zh"
 ```
 GENTOO_MIRRORS="${GENTOO_MIRRORS} https://mirrors.nju.edu.cn/gentoo-zh"
 ```
-
-# 关于部分无法工作的包，请参见 wiki

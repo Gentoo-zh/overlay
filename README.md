@@ -97,5 +97,3 @@ Nanjing University mirror:
 ```
 GENTOO_MIRRORS="${GENTOO_MIRRORS} https://mirrors.nju.edu.cn/gentoo-zh"
 ```
-
-# See wiki for some package not working
