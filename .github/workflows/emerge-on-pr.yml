@@ -67,9 +67,12 @@ jobs:
 
         declare -a ignore_list=(
             .gitignore
+            AGENTS.md
             AUTHORS
             COPYING
+            MIGRATION.md
             README.md
+            README.zh-CN.md
             repo.xml
             skel.ChangeLog
             skel.metadata.xml
