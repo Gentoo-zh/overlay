@@ -54,7 +54,7 @@ https://github.com/gentoo-zh/overlay/blob/deps-table/relation.md
 
 # 貢獻
 
-* 我信任擁有提交權限的貢獻者，因此提交者在提交前應謹慎確認。
+* 我們信任擁有提交權限的貢獻者，因此提交者在提交前應謹慎確認。
 
 * 可以使用生成式 AI 輔助 ebuild 維護，但貢獻者必須確保相關 ebuild
   修改的品質。尤其要在修改後驗證功能正確性；包括 CLI、GUI 等應用型態在內的應用，

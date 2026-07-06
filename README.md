@@ -54,7 +54,7 @@ It is recommended to run `pkgdev commit` to quickly generate commit messages.
 
 # Contributions
 
-* I trust contributors that have commit rights, therefore commitors
+* We trust contributors that have commit rights, therefore commitors
   should think carefully before committing.
 
 * Generative AI may be used to assist ebuild maintenance, but contributors must
