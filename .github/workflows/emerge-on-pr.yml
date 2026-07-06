@@ -73,6 +73,7 @@ jobs:
             MIGRATION.md
             README.md
             README.zh-CN.md
+            README.zh-TW.md
             repo.xml
             skel.ChangeLog
             skel.metadata.xml
