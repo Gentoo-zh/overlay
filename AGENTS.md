@@ -40,6 +40,10 @@ This repository is a Gentoo overlay fork. Prefer generic Gentoo ebuild workflow 
 - Never split an ebuild change and its `Manifest` update across separate PRs.
 - When rebasing an open PR, prefer `git rebase upstream/master` and push with `--force-with-lease`.
 
+### CI Ignore List
+
+- When adding or modifying non-ebuild-related files, check whether `.github/workflows/emerge-on-pr.yml` needs its `ignore_list` updated so those paths do not get interpreted as package atoms for emerge-on-PR testing.
+
 ### Completion Reports
 
 - Every completed change must report the topic branch used, upstream remote status, base branch and sync status, files changed, commands run with pass/fail results, checks skipped and why, and any remaining warnings, risks, or limitations.
