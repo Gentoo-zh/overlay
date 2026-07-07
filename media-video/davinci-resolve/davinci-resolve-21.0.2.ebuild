@@ -39,7 +39,7 @@ RDEPEND="
 	llvm-runtimes/libcxxabi
 	llvm-runtimes/openmp
 	sys-libs/libxcrypt
-	virtual/jre:*
+	virtual/jre
 	virtual/opencl
 	video_cards_nvidia? ( x11-drivers/nvidia-drivers )
 	video_cards_amdgpu? ( dev-libs/rocm-opencl-runtime )
@@ -164,13 +164,13 @@ src_prepare() {
 
 	local _syslib="${EPREFIX}/usr/$(get_libdir)"
 
-	rm -f "${squashfs}/libs"/libglib-2.0.so.0{,.6800.4} || die
-	rm -f "${squashfs}/libs"/libgio-2.0.so.0{,.6800.4} || die
-	rm -f "${squashfs}/libs"/libgmodule-2.0.so.0{,.6800.4} || die
-	rm -f "${squashfs}/libs"/libgobject-2.0.so.0{,.6800.4} || die
+	rm -f "${squashfs}/libs"/libglib-2.0.so.0* || die
+	rm -f "${squashfs}/libs"/libgio-2.0.so.0* || die
+	rm -f "${squashfs}/libs"/libgmodule-2.0.so.0* || die
+	rm -f "${squashfs}/libs"/libgobject-2.0.so.0* || die
 
-	rm -f "${squashfs}/libs"/libc++.so{,.1,.1.0} || die
-	rm -f "${squashfs}/libs"/libc++abi.so{,.1,.1.0} || die
+	rm -f "${squashfs}/libs"/libc++.so* || die
+	rm -f "${squashfs}/libs"/libc++abi.so* || die
 
 	ln -s "${_syslib}/libglib-2.0.so.0" "${squashfs}/libs/libglib-2.0.so.0" || die
 	ln -s "${_syslib}/libgio-2.0.so.0" "${squashfs}/libs/libgio-2.0.so.0" || die
