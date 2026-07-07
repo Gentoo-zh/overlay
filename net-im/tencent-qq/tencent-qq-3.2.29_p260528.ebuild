@@ -7,7 +7,6 @@ inherit unpacker xdg
 
 MY_PV="${PV/_p/_}"
 _QQDownloadURLPrefix="https://qqdl.gtimg.cn/qqfile/QQNT/9.9.31/release/00e6a3e7"
-_LiteLoader_PV="1.4.1"
 
 DESCRIPTION="The new version of the official linux-qq"
 HOMEPAGE="https://im.qq.com/index/#/linux"
@@ -16,10 +15,6 @@ SRC_URI="
 	amd64? ( ${_QQDownloadURLPrefix}/QQ_${MY_PV}_amd64_01.deb -> ${P}_amd64.deb )
 	arm64? ( ${_QQDownloadURLPrefix}/QQ_${MY_PV}_arm64_01.deb -> ${P}_arm64.deb )
 	loong? ( ${_QQDownloadURLPrefix}/QQ_${MY_PV}_loongarch64_01.deb -> ${P}_loong.deb )
-	liteloader? (
-		https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/releases/download/${_LiteLoader_PV}/LiteLoaderQQNT.zip \
-		-> LiteLoaderQQNT-${_LiteLoader_PV}.zip
-	)
 "
 
 S="${WORKDIR}"
@@ -28,7 +23,7 @@ LICENSE="Tencent"
 SLOT="0"
 KEYWORDS="-* ~amd64 ~arm64"
 
-IUSE="bwrap system-fdk-aac system-libssh2 system-openh264 system-zlib gnome liteloader"
+IUSE="bwrap system-fdk-aac system-libssh2 system-openh264 system-zlib gnome"
 
 RESTRICT="strip mirror"
 
@@ -64,7 +59,6 @@ RDEPEND="
 	x11-libs/libxkbcommon
 	x11-misc/xdg-utils
 "
-BDEPEND="liteloader? ( app-arch/unzip )"
 
 src_unpack() {
 	:
@@ -111,40 +105,20 @@ src_install() {
 	fi
 
 	sed -i 's:^Exec=.*$:Exec=/usr/bin/qq %U:g;s:^Icon=.*$:Icon=qq:g' "${D}/usr/share/applications/qq.desktop" || die
-
-	if use liteloader; then
-		unzip -qo "${DISTDIR}/LiteLoaderQQNT-${_LiteLoader_PV}.zip" -d "${D}/opt/QQ/liteloader" || die
-		echo 'require("/opt/QQ/liteloader")' > "${D}/opt/QQ/resources/app/app_launcher/liteloader.js" || die
-		sed -i "s:./application.asar/app_launcher/index.js:./app_launcher/liteloader.js:" \
-			"${D}/opt/QQ/resources/app/package.json" || die
-	fi
 }
 
 pkg_postinst() {
 	xdg_pkg_postinst
-	if use bwrap || use liteloader; then
+	if use bwrap; then
 		elog "-EN-----------------------------------------------------------------"
-		if use bwrap; then
-			elog "Enabled Bubblewrap support."
-			elog "If you want to download files to system download folder in QQ,"
-			elog "please set the download folder to the system download folder in the QQ settings."
-		fi
-		if use liteloader; then
-			elog "Enabled LiteLoaderQQNT support."
-			elog "Relevant plugins can be download from \"https://liteloaderqqnt.github.io/\"."
-			elog "Unzip downloaded plugin then put them to \"~/.config/QQ/LiteLoaderQQNT/plugins\","
-			elog "changes will take effect after QQ restart."
-		fi
+		elog "Enabled Bubblewrap support."
+		elog "If you want to download files to system download folder in QQ,"
+		elog "please set the download folder to the system download folder in the QQ settings."
 		elog "--------------------------------------------------------------------"
 		elog "-ZH-----------------------------------------------------------------"
-		if use bwrap; then
-			elog "启用 Bubblewrap 支持后如果要在 QQ 中下载文件至系统下载文件夹，"
-			elog "请先在「设置」->「存储管理」中把下载文件夹更改为系统的下载文件夹。"
-		fi
-		if use liteloader; then
-			elog "启用 LiteLoaderQQNT 支持后可以从“https://liteloaderqqnt.github.io/”下载相关插件，"
-			elog "解压下载的插件至“~/.config/QQ/LiteLoaderQQNT/plugins”目录下，重启 QQ 后生效。"
-		fi
+		elog "Bubblewrap 支持已启用。"
+		elog "如果需要在 QQ 中下载文件至系统下载文件夹，"
+		elog "请在「设置」->「存储管理」中把下载文件夹更改为系统的下载文件夹。"
 		elog "--------------------------------------------------------------------"
 	fi
 }

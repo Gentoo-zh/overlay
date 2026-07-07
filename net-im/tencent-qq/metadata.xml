@@ -20,6 +20,5 @@
 		<flag name="system-openh264">Use <pkg>media-libs/openh264</pkg> instead of shipped libs.</flag>
 		<flag name="system-zlib">Use <pkg>virtual/zlib</pkg> instead of shipped libs.</flag>
 		<flag name="gnome">Supporting screenshot when using GNOME</flag>
-		<flag name="liteloader">Add liteloader support</flag>
 	</use>
 </pkgmetadata>
