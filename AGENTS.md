@@ -11,25 +11,36 @@ This repository is a Gentoo overlay fork. Prefer generic Gentoo ebuild workflow 
 ## Git Workflow
 
 - Every repository modification is PR-bound work unless the user explicitly says otherwise in the current request. This applies to ebuilds, manifests, metadata, documentation, CI files, and README-only changes.
-- Automated agents, AI assistants, scripts operating on behalf of a maintainer, and human maintainers using automation must complete the mandatory PR preflight before editing any tracked file.
-- Human-only exploratory inspection may read files without this preflight, but any tracked file edit must follow it.
+- Automated agents, AI assistants, scripts operating on behalf of a maintainer, and human maintainers using automation must complete the mandatory PR preflight before starting PR-bound editing work.
+- Human-only exploratory inspection may read files without this preflight, but tracked file edits must happen only after the relevant preflight has been completed for the current work item.
 - Treat `master` as the upstream-sync branch only. Never make feature, package, documentation, CI, or metadata changes directly on `master`.
 
 ### Mandatory PR Preflight
 
-- Before editing any tracked file, run `git status --short --branch`, `git branch --show-current`, and `git remote -v`.
-- Verify an `upstream` remote exists and points to `git@github.com:Gentoo-zh/overlay.git`.
-- If `upstream` is missing, add it with:
+- At the start of a PR-bound work item, make sure the current branch and worktree state are known. When a git query is needed, prefer `git status --short --branch`, which reports both. Do not repeat this before every individual file edit when the state is already known in the current task.
+- When fresh upstream state is needed, such as syncing `master`, creating a topic branch from `master`, rebasing an existing topic branch, or preparing a PR, identify the canonical remote for `git@github.com:gentoo-zh/overlay.git` or `https://github.com/gentoo-zh/overlay.git`. Compare GitHub owner and repository names case-insensitively, but write newly added URLs with lowercase `gentoo-zh`. Do not inspect remotes merely because a tracked file will be edited. Support both common clone layouts:
+  - fork clone: `origin` points to a personal fork and `upstream` points to `gentoo-zh/overlay`;
+  - direct clone: `origin` points to `gentoo-zh/overlay`; publish PR topic branches to a personal fork remote, not to the canonical remote.
+- Use the existing canonical remote, whatever its name is. Do not add `upstream` just because it is absent.
+- If no existing remote points to `gentoo-zh/overlay`, treat the checkout as a fork clone that needs a canonical remote, add `upstream`, and fetch it:
 
   ```bash
-  git remote add upstream git@github.com:Gentoo-zh/overlay.git
+  git remote add upstream git@github.com:gentoo-zh/overlay.git
   git fetch upstream
   ```
 
-- If `upstream` already exists but points elsewhere, do not silently rewrite it; report the current URL and confirm before changing it.
-- If currently on `master`, first sync `master` from `upstream/master`, then create a topic branch before editing.
+- If a canonical remote already exists, fetch that remote instead:
+
+  ```bash
+  git fetch <canonical-remote>
+  ```
+
+- If fetching the canonical remote fails, do not silently rewrite or bypass it; report the current canonical remote URL or fetch error before changing it.
+- If currently on `master`, first sync `master` from `<canonical-remote>/master`, then create a topic branch before editing tracked files.
+- Push PR work only from topic branches on a personal fork remote. Never push PR work directly to `master` or to topic branches on the canonical remote.
 - If the worktree contains unrelated changes, preserve them. Do not overwrite, revert, stage, or commit unrelated changes.
-- Stop before editing and ask the user when the current branch is `master`, `upstream` is missing or points to an unexpected URL, `master` cannot be synced from `upstream/master`, unrelated local changes make branch creation or staging ambiguous, or the requested change spans multiple unrelated logical PRs.
+- Stop before editing and ask the user when the canonical remote is ambiguous or cannot be fetched, `master` cannot be synced from `<canonical-remote>/master`, a topic branch cannot be created safely, unrelated local changes make branch creation or staging ambiguous, or the requested change spans multiple unrelated logical PRs.
+- Stop before publishing PR work when the personal fork remote is missing or ambiguous.
 
 ### Topic Branches
 
@@ -38,7 +49,7 @@ This repository is a Gentoo overlay fork. Prefer generic Gentoo ebuild workflow 
 - A pull request may touch multiple packages only when they are part of one logical contribution, such as one dependency chain, one coordinated version bump, or one shared fix.
 - Keep unrelated package changes in separate branches and PRs.
 - Never split an ebuild change and its `Manifest` update across separate PRs.
-- When rebasing an open PR, prefer `git rebase upstream/master` and push with `--force-with-lease`.
+- When rebasing an open PR, prefer `git rebase <canonical-remote>/master` and push with `--force-with-lease`.
 
 ### CI Ignore List
 
@@ -46,7 +57,7 @@ This repository is a Gentoo overlay fork. Prefer generic Gentoo ebuild workflow 
 
 ### Completion Reports
 
-- Every completed change must report the topic branch used, upstream remote status, base branch and sync status, files changed, commands run with pass/fail results, checks skipped and why, and any remaining warnings, risks, or limitations.
+- Every completed change must report the topic branch used, canonical remote status, base branch and sync status, files changed, commands run with pass/fail results, checks skipped and why, and any remaining warnings, risks, or limitations.
 
 ## Ebuild Policy
 
