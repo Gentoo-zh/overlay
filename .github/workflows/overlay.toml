@@ -498,12 +498,6 @@ use_latest_release = true
 prefix = "v"
 github_account = ["CHN-beta", "gouwazi"]
 
-["dev-db/dbeaver-bin"]
-source = "github"
-github = "dbeaver/dbeaver"
-use_latest_release = true
-github_account = "gouwazi"
-
 # TODO: multiple slot
 #["dev-db/mongodb"]
 
