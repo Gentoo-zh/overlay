@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-10 11:30:22 CST)
+(The last generation time: 2026-07-10 11:39:01 CST)
 
 ### Packages
 
@@ -942,7 +942,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  www-apps/folo-bin                                     | 1.10.0             |            | https://folo.is/                                                                        | Next generation information browser
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- www-client/brave-bin                                  | 1.92.138           |            | https://brave.com/                                                                      | Web browser that blocks ads and trackers by default
+ www-client/brave-bin                                  | 1.92.139           |            | https://brave.com/                                                                      | Web browser that blocks ads and trackers by default
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  www-client/zen-browser-bin                            | 1.18.4_beta        |            | https://zen-browser.app/                                                                | Experience tranquillity while browsing the web without people tracking you!
                                                        | 1.21.5_beta        |            |                                                                                         |
