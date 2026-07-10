@@ -58,6 +58,11 @@ use_latest_release = true
 prefix = "v"
 github_account = "liangyongxiang"
 
+["app-backup/snapper-gui"]
+source = "github"
+github = "ricardomv/snapper-gui"
+use_latest_release = true
+
 # live package only
 #["app-backup/snapper-gui"]
 
@@ -78,17 +83,32 @@ use_latest_release = true
 prefix = "v"
 github_account = "huaji2369"
 
+["app-dicts/fcitx-pinyin-custom-pinyin-dictionary"]
+source = "github"
+github = "wuhgit/CustomPinyinDictionary"
+use_latest_release = true
+
 ["app-dicts/fcitx-pinyin-moegirl"]
 source = "github"
 github = "outloudvi/mw2fcitx"
 use_latest_release = true
 github_account = "blackteahamburger"
 
+["app-dicts/fcitx-pinyin-sougou-dict"]
+source = "github"
+github = "blackteahamburger/fcitx5-pinyin-sougou-dict"
+use_latest_release = true
+
 ["app-dicts/fcitx-pinyin-zhwiki"]
 source = "archpkg"
 archpkg = "fcitx5-pinyin-zhwiki"
 strip_release = true
 github_account = "blackteahamburger"
+
+["app-doc/reeknote"]
+source = "github"
+github = "vitaly-zdanevich/reeknote"
+use_latest_release = true
 
 ["app-editors/antigravity"]
 source = "regex"
@@ -102,24 +122,15 @@ github = "AppFlowy-IO/AppFlowy"
 use_latest_release = true
 github_account = ["Linerre", "gouwazi"]
 
-["dev-lang/dart"]
-source = "apt"
-pkg = "dart"
-mirror = "https://storage.googleapis.com/download.dartlang.org/linux/debian"
-suite = "stable"
-strip_release = true
-github_account = "peeweep"
-
-["dev-util/fvm"]
+["app-editors/edit"]
 source = "github"
-github = "leoafarias/fvm"
+github = "microsoft/edit"
 use_latest_release = true
-github_account = "peeweep"
 
-["dev-util/gemini-cli"]
-source = "regex"
-url = "https://registry.npmjs.org/@google/gemini-cli"
-regex = '"latest":"([\d.]+)"'
+["app-editors/flowblade"]
+source = "github"
+github = "jliljebl/flowblade"
+use_latest_release = true
 
 ["app-editors/marktext-bin"]
 source = "github"
@@ -128,11 +139,34 @@ use_latest_release = true
 prefix = "v"
 github_account = ["Schroedingersdoraemon", "gouwazi"]
 
+# Neomacs is alpha-stage, so gentoo-zh carries only a live ebuild for now.
+["app-editors/neomacs"]
+source = "github"
+github = "eval-exec/neomacs"
+use_latest_release = true
+prefix = "v"
+github_account = "xz-dev"
+
 ["app-editors/typora"]
 source = "regex"
 url = "https://typora.io/#linu://typora.io/releases/stable.html"
 regex = "typora_([\\d.]+)_amd64.deb"
 github_account = ["CHN-beta", "gouwazi"]
+
+["app-editors/void-editor"]
+source = "github"
+github = "voideditor/binaries"
+use_latest_release = true
+
+["app-emulation/la-ow-syscall"]
+source = "github"
+github = "AOSC-Dev/la_ow_syscall"
+use_latest_release = true
+
+["app-emulation/liblol-libxcrypt"]
+source = "github"
+github = "besser82/libxcrypt"
+use_latest_release = true
 
 # TODO:
 #["app-emulation/deepin-udis86"]
@@ -230,6 +264,11 @@ github = "fcitx/fcitx5-skk"
 use_latest_tag = true
 github_account = "liuyujielol"
 
+["app-i18n/fcitx5-vinput"]
+source = "github"
+github = "xifan2333/fcitx5-vinput"
+use_latest_release = true
+
 # live package only
 #["app-i18n/ibus-rime"]
 
@@ -248,6 +287,11 @@ debianpkg = "lunar"
 from_pattern = "^(\\d+\\.\\d+)-(\\d+)$"
 to_pattern = "\\1_p\\2"
 github_account = ["liangyongxiang", "gouwazi"]
+
+["app-i18n/vocotype"]
+source = "github"
+github = "LeonardNJU/VocoType-linux"
+use_latest_release = true
 
 ["app-i18n/zh-autoconvert"]
 source = "debianpkg"
@@ -283,6 +327,13 @@ use_latest_release = true
 prefix = "v"
 github_account = ["liangyongxiang", "gouwazi"]
 
+["app-misc/cc-switch-cli"]
+source = "github"
+github = "SaladDay/cc-switch-cli"
+use_latest_release = true
+prefix = "v"
+github_account = "liangyongxiang"
+
 ["app-misc/codex-auth"]
 source = "github"
 github = "Loongphy/codex-auth"
@@ -290,12 +341,15 @@ use_latest_release = true
 prefix = "v"
 github_account = "liangyongxiang"
 
-["app-misc/cc-switch-cli"]
+["app-misc/copilot"]
 source = "github"
-github = "SaladDay/cc-switch-cli"
+github = "github/copilot-cli"
 use_latest_release = true
-prefix = "v"
-github_account = "liangyongxiang"
+
+["app-misc/crush"]
+source = "github"
+github = "charmbracelet/crush"
+use_latest_release = true
 
 # dead website, http status code 599
 # ["app-misc/ccal"]
@@ -337,6 +391,21 @@ github = "rvaiya/keyd"
 use_latest_tag = true
 prefix = "v"
 github_account = "st0nie"
+
+["app-misc/mdx_util"]
+source = "github"
+github = "raymanzhang/mdx_util"
+use_latest_release = true
+
+["app-misc/openclaude"]
+source = "github"
+github = "Gitlawb/openclaude"
+use_latest_release = true
+
+["app-misc/qwen-code"]
+source = "github"
+github = "QwenLM/qwen-code"
+use_latest_release = true
 
 ["app-misc/rmtrash"]
 source = "github"
@@ -381,6 +450,11 @@ filter = '.versions.Linux_deb_x64.version_number'
 prefix = "Linux-x64-deb@V"
 github_account = "gouwazi"
 
+["app-office/evernote-repack"]
+source = "github"
+github = "vitaly-zdanevich/evernote-linux-repackage"
+use_latest_release = true
+
 ["app-office/freeoffice"]
 source = "regex"
 url = "https://www.freeoffice.com/de/support/installation/linux"
@@ -392,6 +466,11 @@ source = "regex"
 url = "https://linux.wps.cn/wpslinuxlog"
 regex = "wps-office_([\\d.]+)_amd64.deb"
 github_account = ["Universebenzene", "gouwazi"]
+
+["app-shells/gentoo-fish-completion"]
+source = "github"
+github = "douglarek/gentoo-fish-completion"
+use_latest_release = true
 
 # live package only
 #["app-pda/ipadcharge"]
@@ -442,6 +521,11 @@ use_latest_release = true
 prefix = "v"
 github_account = ["blackteahamburger", "gouwazi"]
 
+["app-text/lektra"]
+source = "github"
+github = "dheerajshenoy/lektra"
+use_latest_release = true
+
 ["app-text/lemminx-bin"]
 source = "github"
 github = "eclipse-lemminx/lemminx"
@@ -455,6 +539,16 @@ use_latest_release = true
 prefix = "v"
 github_account = "gouwazi"
 
+["app-text/tre"]
+source = "github"
+github = "dduan/tre"
+use_latest_release = true
+
+["app-text/wik"]
+source = "github"
+github = "yashsinghcodes/wik"
+use_latest_release = true
+
 # dead upstream
 #["app-text/groff-utf8"]
 
@@ -463,6 +557,11 @@ source = "github"
 github = "easymotion/vim-easymotion"
 use_latest_release = true
 prefix = "v"
+
+["dev-cpp/cppcoro"]
+source = "github"
+github = "Garcia6l20/cppcoro"
+use_latest_release = true
 
 # live package only
 #["app-vim/powerline"]
@@ -506,12 +605,30 @@ source = "github"
 github = "lldb-tools/lldb-mi"
 use_latest_tag = true
 
+["dev-go/gotests"]
+source = "github"
+github = "cweill/gotests"
+use_latest_release = true
+
+["dev-go/staticcheck"]
+source = "github"
+github = "dominikh/go-tools"
+use_latest_release = true
+
 ["dev-java/google-java-format"]
 source = "github"
 github = "google/google-java-format"
 use_latest_release = true
 prefix = "v"
 github_account = ["oatiz", "gouwazi"]
+
+["dev-lang/dart"]
+source = "apt"
+pkg = "dart"
+mirror = "https://storage.googleapis.com/download.dartlang.org/linux/debian"
+suite = "stable"
+strip_release = true
+github_account = "peeweep"
 
 # TODO: multiple slot
 #["dev-java/oraclejdk-bin"]
@@ -559,6 +676,23 @@ use_latest_release = true
 prefix = "v"
 github_account = ["microcai", "gouwazi"]
 
+["dev-libs/qml-material"]
+source = "github"
+github = "hypengw/QmlMaterial"
+use_latest_release = true
+
+["dev-libs/qnodeeditor"]
+source = "github"
+github = "Qv2ray/QNodeEditor"
+use_latest_release = true
+
+["dev-libs/singleapplication"]
+source = "github"
+github = "itay-grudev/SingleApplication"
+use_latest_tag = true
+prefix = "v"
+github_account = ["blackteahamburger", "gouwazi"]
+
 # high update frequency
 #["dev-libs/v2ray-domain-list-community"]
 
@@ -585,6 +719,10 @@ github = "archspec/archspec"
 use_latest_release = true
 prefix = "v"
 github_account = ["OriPoin", "gouwazi"]
+
+["dev-python/autopxd2"]
+source = "pypi"
+pypi = "autopxd2"
 
 ["dev-python/conda"]
 source = "github"
@@ -623,10 +761,20 @@ source = "pypi"
 pypi = "edalize"
 github_account = ["f3rmata", "gouwazi"]
 
+["dev-python/exifread"]
+source = "github"
+github = "ianare/exif-py"
+use_latest_release = true
+
 ["dev-python/feeluown-bilibili"]
 source = "pypi"
 pypi = "feeluown-bilibili"
 github_account = ["wgjak47", "gouwazi"]
+
+["dev-python/frozendict"]
+source = "github"
+github = "Marco-Sulla/python-frozendict"
+use_latest_release = true
 
 ["dev-python/fuo-netease"]
 source = "pypi"
@@ -648,12 +796,42 @@ source = "pypi"
 pypi = "fusesoc"
 github_account = ["f3rmata", "gouwazi"]
 
+["dev-python/iptcinfo3"]
+source = "github"
+github = "james-see/iptcinfo3"
+use_latest_release = true
+
 ["dev-python/janus"]
 source = "github"
 github = "aio-libs/janus"
 use_latest_release = true
 prefix = "v"
 github_account = "wgjak47"
+
+["dev-python/jieba"]
+source = "pypi"
+pypi = "jieba"
+
+["dev-python/kaldi-native-fbank"]
+source = "pypi"
+pypi = "kaldi-native-fbank"
+
+["dev-python/librosa"]
+source = "pypi"
+pypi = "librosa"
+
+["dev-python/llvmlite"]
+source = "pypi"
+pypi = "llvmlite"
+
+["dev-python/menuinst"]
+source = "github"
+github = "conda/menuinst"
+use_latest_release = true
+
+["dev-python/microfs2"]
+source = "pypi"
+pypi = "microfs2"
 
 ["dev-python/microrepl"]
 source = "pypi"
@@ -665,10 +843,19 @@ source = "pypi"
 pypi = "mw2fcitx"
 github_account = "blackteahamburger"
 
+["dev-python/mwparserfromhell"]
+source = "github"
+github = "earwig/mwparserfromhell"
+use_latest_release = true
+
 ["dev-python/nudatus"]
 source = "pypi"
 pypi = "nudatus"
 github_account = "blackteahamburger"
+
+["dev-python/numba"]
+source = "pypi"
+pypi = "numba"
 
 ["dev-python/nvchecker"]
 source = "github"
@@ -681,6 +868,10 @@ github_account = "liangyongxiang"
 source = "pypi"
 pypi = "okonomiyaki"
 github_account = "f3rmata"
+
+["dev-python/onnxruntime"]
+source = "pypi"
+pypi = "onnxruntime"
 
 ["dev-python/pycosat"]
 source = "github"
@@ -700,12 +891,20 @@ source = "pypi"
 pypi = "PyQt6-Charts"
 github_account = ["blackteahamburger", "gouwazi"]
 
+["dev-python/pyrime"]
+source = "pypi"
+pypi = "pyrime"
+
 ["dev-python/pytube"]
 source = "github"
 github = "pytube/pytube"
 use_latest_tag = true
 prefix = "v"
 github_account = "wgjak47"
+
+["dev-python/pywikibot"]
+source = "pypi"
+pypi = "pywikibot"
 
 ["dev-python/qasync"]
 source = "pypi"
@@ -717,6 +916,14 @@ source = "pypi"
 pypi = "simplesat"
 github_account = "f3rmata"
 
+["dev-python/sounddevice"]
+source = "pypi"
+pypi = "sounddevice"
+
+["dev-python/soxr"]
+source = "pypi"
+pypi = "soxr"
+
 ["dev-python/uv-bin"]
 source = "github"
 github = "astral-sh/uv"
@@ -724,12 +931,10 @@ use_latest_release = true
 prefix = "v"
 github_account = "gouwazi"
 
-["dev-libs/singleapplication"]
+["dev-ruby/filelock"]
 source = "github"
-github = "itay-grudev/SingleApplication"
-use_latest_tag = true
-prefix = "v"
-github_account = ["blackteahamburger", "gouwazi"]
+github = "sheerun/filelock"
+use_latest_release = true
 
 ["dev-util/arch-install-scripts"]
 source = "gitlab"
@@ -752,12 +957,28 @@ use_latest_release = true
 prefix = "v"
 github_account = "gouwazi"
 
+["dev-util/cmakerc"]
+source = "github"
+github = "vector-of-bool/cmrc"
+use_latest_release = true
+
 ["dev-util/codex"]
 source = "github"
 github = "openai/codex"
 use_latest_release = true
 prefix = "rust-v"
 github_account = "vowstar"
+
+["dev-util/fvm"]
+source = "github"
+github = "leoafarias/fvm"
+use_latest_release = true
+github_account = "peeweep"
+
+["dev-util/gemini-cli"]
+source = "regex"
+url = "https://registry.npmjs.org/@google/gemini-cli"
+regex = '"latest":"([\d.]+)"'
 
 ["dev-util/herdr-bin"]
 source = "github"
@@ -774,8 +995,22 @@ aur = "jetbrains-toolbox"
 strip_release = true
 github_account = "gouwazi"
 
-# TODO: need filter mamba- prefix
-#["dev-util/mamba"]
+["dev-util/kimi-cli-bin"]
+source = "github"
+github = "MoonshotAI/kimi-cli"
+use_latest_release = true
+
+["dev-util/mamba"]
+source = "github"
+github = "mamba-org/mamba"
+use_latest_release = true
+
+["dev-util/opencode-bin"]
+source = "github"
+github = "anomalyco/opencode"
+use_latest_release = true
+prefix = "v"
+github_account = ["xz-dev", "gouwazi"]
 
 ["dev-util/osc"]
 source = "github"
@@ -783,12 +1018,30 @@ github = "openSUSE/osc"
 use_latest_tag = true
 github_account = ["douglarek", "gouwazi"]
 
+["dev-util/pack-cli"]
+source = "github"
+github = "buildpacks/pack"
+use_latest_release = true
+
+# FIXME: github graphql api seems to be some confusion between pack-cli and
+# pack-cli-bin, so we disable one of them
+# ["dev-util/pack-cli-bin"]
+# source = "github"
+# github = "buildpacks/pack"
+# use_latest_release = true
+
 ["dev-util/pacstrap"]
 source = "gitlab"
 host = "gitlab.archlinux.org"
 gitlab = "archlinux/arch-install-scripts"
 use_max_tag = true
 prefix = "v"
+
+
+["dev-util/pi-coding-agent-bin"]
+source = "github"
+github = "badlogic/pi-mono"
+use_latest_release = true
 
 # TODO: PV mismatching tag
 #["dev-util/patchelf-liblol"]
@@ -806,12 +1059,23 @@ github = "bensadeh/tailspin"
 use_latest_release = true
 github_account = "liangyongxiang"
 
+["dev-util/vcpkg-tool"]
+source = "github"
+github = "microsoft/vcpkg-tool"
+use_latest_release = true
+
 ["dev-util/vfox"]
 source = "github"
 github = "version-fox/vfox"
 use_latest_tag = true
 prefix = "v"
 github_account = "gouwazi"
+
+
+["dev-util/waza-bin"]
+source = "github"
+github = "microsoft/waza"
+use_latest_release = true
 
 # FIXME: github graphql api seems to be some confusion between vfox and
 # vfox-bin, so we disable one of them
@@ -855,6 +1119,16 @@ from_pattern = '^(\d{4}\.\d{3,4}\.\d+)-lazer$'
 to_pattern = '\1'
 github_account = "Puqns67"
 
+["games-emulation/conty"]
+source = "github"
+github = "Kron4ek/Conty"
+use_latest_release = true
+
+["games-emulation/onscripter-yuri"]
+source = "github"
+github = "YuriSizuku/OnscripterYuri"
+use_latest_release = true
+
 # live package only
 #["games-fps/source-engine"]
 
@@ -863,6 +1137,21 @@ source = "github"
 github = "git-learning-game/oh-my-git"
 use_latest_tag = true
 
+["gnome-extra/gnome-shell-extension-clipboard-indicator"]
+source = "github"
+github = "Tudmotu/gnome-shell-extension-clipboard-indicator"
+use_latest_release = true
+
+["gnome-extra/nautilus-open-any-terminal"]
+source = "github"
+github = "Stunkymonkey/nautilus-open-any-terminal"
+use_latest_release = true
+
+["gnome-extra/resources"]
+source = "github"
+github = "nokyan/resources"
+use_latest_release = true
+
 ["gui-apps/crystal-dock"]
 source = "github"
 github = "dangvd/crystal-dock"
@@ -870,16 +1159,16 @@ prefix = "v"
 use_latest_release = true
 github_account = "liuyujielol"
 
-["gui-apps/waywallen"]
+["gui-apps/tux-manager"]
 source = "github"
-github = "waywallen/waywallen"
+github = "benapetr/TuxManager"
 prefix = "v"
 use_latest_release = true
 github_account = "Puqns67"
 
-["gui-apps/tux-manager"]
+["gui-apps/waywallen"]
 source = "github"
-github = "benapetr/TuxManager"
+github = "waywallen/waywallen"
 prefix = "v"
 use_latest_release = true
 github_account = "Puqns67"
@@ -897,6 +1186,23 @@ github = "dfaust/plasma-applet-netspeed-widget"
 use_latest_tag = true
 prefix = "v"
 github_account = "liuyujielol"
+
+["kde-misc/plasma-ions-china"]
+source = "github"
+github = "arenekosreal/plasma-ions-china"
+use_latest_release = true
+
+["mate-base/caja-bin"]
+source = "github"
+github = "Samueru-sama/caja-appimage-test"
+use_latest_release = true
+
+["media-fonts/Plangothic"]
+source = "github"
+github = "Fitzgerald-Porthmouth-Koenigsegg/Plangothic"
+use_latest_release = true
+prefix = "V"
+github_account = "st0nie"
 
 ["media-fonts/iansui"]
 source = "github"
@@ -940,13 +1246,6 @@ source = "github"
 github = "ryanoasis/nerd-fonts"
 use_latest_release = true
 prefix = "v"
-
-["media-fonts/Plangothic"]
-source = "github"
-github = "Fitzgerald-Porthmouth-Koenigsegg/Plangothic"
-use_latest_release = true
-prefix = "V"
-github_account = "st0nie"
 
 ["media-fonts/sarasa-gothic"]
 source = "github"
@@ -1040,6 +1339,16 @@ aur = "unityhub"
 strip_release = true
 github_account = "gouwazi"
 
+["media-libs/libdicom"]
+source = "github"
+github = "ImagingDataCommons/libdicom"
+use_latest_release = true
+
+["media-libs/openslide"]
+source = "github"
+github = "openslide/openslide"
+use_latest_release = true
+
 # TODO: can't check
 #["media-gfx/zw3d"]
 
@@ -1071,6 +1380,11 @@ github = "waywallen/waywallen-display"
 prefix = "v"
 use_latest_release = true
 github_account = "Puqns67"
+
+["media-sound/euphonica"]
+source = "github"
+github = "htkhiem/euphonica"
+use_latest_release = true
 
 # live package only
 #["media-sound/barva"]
@@ -1128,6 +1442,11 @@ github = "tramhao/termusic"
 use_latest_release = true
 prefix = "v"
 github_account = "liuyujielol"
+
+["media-sound/yamusic-tui-bin"]
+source = "github"
+github = "DECE2183/yamusic-tui"
+use_latest_release = true
 
 ["media-sound/yesplaymusic-bin"]
 source = "github"
@@ -1204,6 +1523,15 @@ use_latest_release = true
 prefix = "v"
 github_account = "gouwazi"
 
+["net-analyzer/pwru"]
+source = "github"
+github = "cilium/pwru"
+use_latest_release = true
+
+["net-analyzer/pwru-bin"]
+source = "github"
+github = "cilium/pwru"
+use_latest_release = true
 ["net-analyzer/realitlscanner"]
 source = "github"
 github = "XTLS/RealiTLScanner"
@@ -1242,6 +1570,11 @@ method = "GET"
 regex = 'com.alibabainc.dingtalk_(.*)_amd64.deb'
 github_account = "gouwazi"
 
+["net-im/kotatogram-bin"]
+source = "github"
+github = "kotatogram/kotatogram-desktop"
+use_latest_release = true
+
 ["net-im/tencent-qq"]
 source = "regex"
 url = "https://cdn-go.cn/qq-web/im.qq.com_new/latest/rainbow/linuxConfig.js"
@@ -1263,6 +1596,11 @@ url = "https://github.com/peeweep/wechat-linux-watcher/raw/refs/heads/master/wec
 regex = '(.*)'
 github_account = "gouwazi"
 
+["net-im/wechat-universal-bwrap"]
+source = "github"
+github = "7Ji-PKGBUILDs/wechat-universal-bwrap"
+use_latest_release = true
+
 #["net-im/wechat-universal-bwrap"]
 
 ["net-im/wemeet"]
@@ -1270,6 +1608,11 @@ source = "aur"
 aur = "wemeet-bin"
 strip_release = true
 github_account = "gouwazi"
+
+["net-libs/bun-bin"]
+source = "github"
+github = "oven-sh/bun"
+use_latest_release = true
 
 # live package only
 #["net-libs/jzmq"]
@@ -1346,6 +1689,11 @@ use_latest_release = true
 prefix = "v"
 github_account = "gouwazi"
 
+["net-misc/flyctl-bin"]
+source = "github"
+github = "superfly/flyctl"
+use_latest_release = true
+
 ["net-misc/geo"]
 source = "github"
 github = "MetaCubeX/geo"
@@ -1361,12 +1709,22 @@ from_pattern = 'v(.*)-(.*)$'
 to_pattern = '\1.\2'
 github_account = "gouwazi"
 
+["net-misc/immich-go"]
+source = "github"
+github = "simulot/immich-go"
+use_latest_release = true
+
 ["net-misc/localsend-bin"]
 source = "github"
 github = "localsend/localsend"
 use_latest_release = true
 prefix = "v"
 github_account = ["Nuralii1i", "gouwazi"]
+
+["net-misc/motrix-next-bin"]
+source = "github"
+github = "AnInsomniacy/motrix-next"
+use_latest_release = true
 
 ["net-misc/ntpd-rs"]
 source = "github"
@@ -1429,6 +1787,12 @@ github = "c0re100/qBittorrent-Enhanced-Edition"
 use_latest_release = true
 prefix = "release-"
 github_account = "gouwazi"
+
+["net-proxy/Xray"]
+source = "github"
+github = "XTLS/Xray-core"
+use_latest_release = true
+prefix = "v"
 
 # TODO: upstream no tags
 #["net-print/epson-inkjet-printer_201207w"]
@@ -1510,6 +1874,36 @@ from_pattern = '(.*)-(.*)'
 to_pattern = '\1_p\2'
 github_account = ["blackteahamburger", "gouwazi"]
 
+["net-proxy/proxy-server"]
+source = "github"
+github = "jackarain/proxy"
+use_latest_release = true
+
+["net-proxy/qv2ray"]
+source = "github"
+github = "Qv2ray/Qv2ray"
+use_latest_release = true
+
+["net-proxy/qvplugin-command"]
+source = "github"
+github = "Qv2ray/QvPlugin-Command"
+use_latest_release = true
+
+["net-proxy/qvplugin-ss"]
+source = "github"
+github = "Qv2ray/QvPlugin-SS"
+use_latest_release = true
+
+["net-proxy/qvplugin-trojan"]
+source = "github"
+github = "Qv2ray/QvPlugin-Trojan"
+use_latest_release = true
+
+["net-proxy/qvplugin-trojan-go"]
+source = "github"
+github = "Qv2ray/QvPlugin-Trojan-Go"
+use_latest_release = true
+
 # TODO: missing KEYWORDS
 #["net-proxy/proxy-server"]
 #source = "github"
@@ -1553,6 +1947,11 @@ github = "microcai/smartproxy"
 use_latest_tag = true
 prefix = "v"
 
+["net-proxy/trojan-go-fork"]
+source = "github"
+github = "Potterli20/trojan-go-fork"
+use_latest_release = true
+
 # high update frequency
 # ["net-proxy/trojan-go-fork"]
 
@@ -1577,18 +1976,17 @@ use_latest_release = true
 prefix = "v"
 github_account = "liuyujielol"
 
-["net-proxy/Xray"]
-source = "github"
-github = "XTLS/Xray-core"
-use_latest_release = true
-prefix = "v"
-
 ["net-proxy/yacd-meta"]
 source = "github"
 github = "MetaCubeX/Yacd-meta"
 use_latest_release = true
 prefix = "v"
 github_account = "st0nie"
+
+["net-proxy/yass"]
+source = "github"
+github = "hukeyue/yass"
+use_latest_release = true
 
 # upstream disappearing, disable temporarily
 # ["net-proxy/yass"]
@@ -1603,12 +2001,22 @@ github = "Zephyruso/zashboard"
 use_latest_tag = true
 prefix = "v"
 
+["net-vpn/rathole"]
+source = "github"
+github = "rathole-org/rathole"
+use_latest_release = true
+
 ["net-vpn/sstp-server"]
 source = "github"
 github = "sorz/sstp-server"
 use_latest_release = true
 prefix = "v"
 github_account = ["microcai", "gouwazi"]
+
+["sci-electronics/circuitjs1-bin"]
+source = "github"
+github = "sharpie7/circuitjs1"
+use_latest_release = true
 
 # live package only
 #["net-wireless/linux-wifi-hotspot"]
@@ -1647,6 +2055,11 @@ github = "trabucayre/openFPGALoader"
 use_latest_release = true
 prefix = "v"
 github_account = "liangyongxiang"
+
+["sci-ml/llama-cpp"]
+source = "github"
+github = "ggml-org/llama.cpp"
+use_latest_release = true
 
 # virtual package
 #["sec-policy/apparmor-profile-deepinwine"]
@@ -1864,6 +2277,11 @@ github = "jonaburg/picom"
 use_latest_tag = true
 prefix = "v"
 
+["x11-misc/snapd-xdg-open"]
+source = "github"
+github = "snapcore/snapd-xdg-open"
+use_latest_release = true
+
 # dead upstream
 #["x11-misc/snapd-xdg-open"]
 #source = "github"
@@ -1913,12 +2331,22 @@ use_latest_release = true
 prefix = "v"
 github_account = ["Nuralii1i", "gouwazi"]
 
+["x11-themes/kvantum-black"]
+source = "github"
+github = "vitaly-zdanevich/kvantum-black"
+use_latest_release = true
+
 ["x11-themes/mint-themes"]
 source = "github"
 github = "linuxmint/mint-themes"
 use_max_tag = true
 include_regex = "\\d+\\.\\d+\\.\\d+"
 github_account = "gouwazi"
+
+["x11-themes/mint-y-icons"]
+source = "github"
+github = "linuxmint/mint-y-icons"
+use_latest_release = true
 
 ["x11-themes/nordic"]
 source = "github"
@@ -1948,10 +2376,3 @@ source = "github"
 github = "hyprwm/Hypr"
 use_latest_release = true
 github_account = ["Goldsrc233", "gouwazi"]
-
-["dev-util/opencode-bin"]
-source = "github"
-github = "anomalyco/opencode"
-use_latest_release = true
-prefix = "v"
-github_account = ["xz-dev", "gouwazi"]
