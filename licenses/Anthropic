@@ -1,0 +1,11 @@
+Anthropic Terms of Service
+
+Claude Desktop is proprietary software from Anthropic PBC. Use of the
+application is governed by Anthropic's terms:
+
+- Consumer Terms of Service: https://www.anthropic.com/legal/consumer-terms
+- Usage Policy: https://www.anthropic.com/legal/aup
+- Privacy Policy: https://www.anthropic.com/legal/privacy
+
+The package redistributes the upstream binary unmodified from
+https://claude.com/download

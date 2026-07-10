@@ -283,6 +283,14 @@ use_latest_release = true
 prefix = "v"
 github_account = ["liangyongxiang", "gouwazi"]
 
+["app-misc/claude-desktop"]
+source = "apt"
+mirror = "https://downloads.claude.ai/claude-desktop/apt/stable"
+suite = "stable"
+repo = "main"
+pkg = "claude-desktop"
+github_account = "zakkaus"
+
 ["app-misc/codex-auth"]
 source = "github"
 github = "Loongphy/codex-auth"
