@@ -63,6 +63,9 @@ src_install() {
 	exeinto /opt/termius
 	doexe opt/Termius/termius-app
 	doexe opt/Termius/chrome-sandbox
+	# chrome_crashpad_handler is posix_spawn()'d by Chromium; without the
+	# executable bit it fails with EACCES and the app dies on startup.
+	doexe opt/Termius/chrome_crashpad_handler
 
 	fperms 4755 /opt/termius/chrome-sandbox
 
