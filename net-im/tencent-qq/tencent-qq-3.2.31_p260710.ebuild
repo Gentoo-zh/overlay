@@ -5,16 +5,14 @@ EAPI=8
 
 inherit unpacker xdg
 
-MY_PV="${PV/_p/_}"
-_QQDownloadURLPrefix="https://qqdl.gtimg.cn/qqfile/QQNT/9.9.31/release/00e6a3e7"
+QQ_DOWNLOAD_URL_PREFIX="https://qqdl.gtimg.cn/qqfile/QQNT/9.9.32/patch/c390e792"
 
 DESCRIPTION="The new version of the official linux-qq"
 HOMEPAGE="https://im.qq.com/index/#/linux"
-
 SRC_URI="
-	amd64? ( ${_QQDownloadURLPrefix}/QQ_${MY_PV}_amd64_01.deb -> ${P}_amd64.deb )
-	arm64? ( ${_QQDownloadURLPrefix}/QQ_${MY_PV}_arm64_01.deb -> ${P}_arm64.deb )
-	loong? ( ${_QQDownloadURLPrefix}/QQ_${MY_PV}_loongarch64_01.deb -> ${P}_loong.deb )
+	amd64? ( ${QQ_DOWNLOAD_URL_PREFIX}/linuxqq_${PV/_*/}-51102_amd64.deb -> ${P}_amd64.deb )
+	arm64? ( ${QQ_DOWNLOAD_URL_PREFIX}/linuxqq_${PV/_*/}-51102_arm64.deb -> ${P}_arm64.deb )
+	loong? ( ${QQ_DOWNLOAD_URL_PREFIX}/linuxqq_${PV/_*/}-51102_loongarch64.deb -> ${P}_loong.deb )
 "
 
 S="${WORKDIR}"
