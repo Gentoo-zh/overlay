@@ -11,7 +11,6 @@ pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
     <flag name="geoip">Install geoip.dat</flag>
   </use>
   <upstream>
-    <remote-id type="github">
-    Loyalsoldier/v2ray-rules-dat</remote-id>
+    <remote-id type="github">Loyalsoldier/v2ray-rules-dat</remote-id>
   </upstream>
 </pkgmetadata>
