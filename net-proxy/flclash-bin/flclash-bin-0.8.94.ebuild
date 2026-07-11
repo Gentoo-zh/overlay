@@ -30,6 +30,7 @@ QA_PRESTRIPPED="
 	/opt/FlClash/FlClashCore
 	/opt/FlClash/lib/libapp.so
 	/opt/FlClash/lib/librust_api.so
+	/opt/FlClash/lib/libflutter_linux_gtk.so
 "
 
 src_install() {
