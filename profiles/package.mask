@@ -1,3 +1,8 @@
+# jinqiang zhang <peeweep@0x0.ee> (2026-07-12)
+# Upstream is deprecated and the git repository has been archived.
+# Masked for removal in 2026-08-12
+net-proxy/yass
+
 # Huang Rui <vowstar@gmail.com> (2026-06-30)
 # No active maintainer in gentoo-zh. These packages were maintained as part of
 # the vocotype stack, but vocotype upstream is no longer maintained.
