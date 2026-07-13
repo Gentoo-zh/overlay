@@ -5,7 +5,7 @@ EAPI=8
 
 inherit cmake
 
-DESCRIPTION="A general-purpose Qt-based library aimed at graph-controlled data processing."
+DESCRIPTION="A general-purpose Qt-based library aimed at graph-controlled data processing"
 HOMEPAGE="https://github.com/Qv2ray/QNodeEditor"
 GIT_COMMIT="808a7cf0359771a474db17a82cbf631746d8735d"
 SRC_URI="https://github.com/Qv2ray/QNodeEditor/archive/${GIT_COMMIT}.tar.gz -> ${P}.tar.gz"

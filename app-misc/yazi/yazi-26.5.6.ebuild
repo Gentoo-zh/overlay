@@ -12,7 +12,7 @@ RUST_MIN_VER="1.95.0"
 
 inherit cargo desktop shell-completion xdg
 
-DESCRIPTION="Blazing fast terminal file manager written in Rust, based on async I/O."
+DESCRIPTION="Blazing fast terminal file manager written in Rust, based on async I/O"
 HOMEPAGE="https://yazi-rs.github.io"
 SRC_URI="
 	https://github.com/sxyazi/yazi/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz

@@ -6,7 +6,7 @@ EAPI=7
 inherit font
 
 MY_PN="SmileySans"
-DESCRIPTION="An open-source font for Chinese."
+DESCRIPTION="An open-source font for Chinese"
 HOMEPAGE="https://github.com/atelier-anchor/smiley-sans"
 SRC_URI="https://github.com/atelier-anchor/smiley-sans/releases/download/v${PV}/smiley-sans-v${PV}.zip -> ${P}.zip"
 S=${WORKDIR}

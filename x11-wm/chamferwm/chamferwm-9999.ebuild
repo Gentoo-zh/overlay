@@ -3,7 +3,7 @@
 
 EAPI=7
 
-DESCRIPTION="A tiling X11 window manager with Vulkan compositor."
+DESCRIPTION="A tiling X11 window manager with Vulkan compositor"
 HOMEPAGE="https://github.com/jaelpark/chamferwm"
 
 EGIT_REPO_URI="https://github.com/jaelpark/chamferwm.git git://github.com/jaelpark/chamferwm.git"

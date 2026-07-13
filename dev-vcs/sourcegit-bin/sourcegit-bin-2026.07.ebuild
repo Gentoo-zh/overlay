@@ -5,7 +5,7 @@ EAPI=8
 
 inherit desktop unpacker xdg
 
-DESCRIPTION="Opensource Git GUI client."
+DESCRIPTION="Opensource Git GUI client"
 HOMEPAGE="https://github.com/sourcegit-scm/sourcegit"
 SRC_URI="https://github.com/sourcegit-scm/sourcegit/releases/download/v${PV}/sourcegit_${PV}-1_amd64.deb"
 

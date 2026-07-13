@@ -8,7 +8,7 @@ CRATES="
 
 inherit cargo
 
-DESCRIPTION="A command line tools for handling mdx related jobs."
+DESCRIPTION="A command line tools for handling mdx related jobs"
 HOMEPAGE="https://github.com/raymanzhang/mdx_util"
 SRC_URI="
 	https://github.com/raymanzhang/mdx_util/archive/068d57bd013ca343ca332c42fada96ee0453e391.tar.gz -> ${P}.tar.gz

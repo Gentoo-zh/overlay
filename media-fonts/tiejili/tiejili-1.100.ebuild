@@ -6,7 +6,7 @@ EAPI=7
 inherit font
 
 MY_PN="Tiejili"
-DESCRIPTION="An open-source font that extends  Reggae One to Chinese."
+DESCRIPTION="An open-source font that extends  Reggae One to Chinese"
 HOMEPAGE="https://github.com/Buernia/Tiejili"
 SRC_URI="https://github.com/Buernia/Tiejili/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"

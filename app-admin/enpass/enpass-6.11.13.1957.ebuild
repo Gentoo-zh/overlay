@@ -5,7 +5,7 @@ EAPI=8
 
 inherit desktop unpacker xdg
 
-DESCRIPTION="A cross-platform, complete password management solution."
+DESCRIPTION="A cross-platform, complete password management solution"
 HOMEPAGE="https://www.enpass.io"
 SRC_URI="https://apt.enpass.io/pool/main/e/${PN}/${PN}_${PV}_amd64.deb"
 

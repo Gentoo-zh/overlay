@@ -5,7 +5,7 @@ EAPI=8
 
 inherit desktop unpacker xdg
 
-DESCRIPTION="Typora will give you a seamless experience as both a reader and a writer."
+DESCRIPTION="Typora will give you a seamless experience as both a reader and a writer"
 HOMEPAGE="https://typora.io"
 SRC_URI="https://web.archive.org/web/20211127121316if_/https://typora.io/linux/typora_${PV}_amd64.deb"
 

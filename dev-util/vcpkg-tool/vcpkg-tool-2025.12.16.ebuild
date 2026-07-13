@@ -5,7 +5,7 @@ EAPI=8
 
 inherit cmake
 
-DESCRIPTION="Library manager for C/C++ (tool only)."
+DESCRIPTION="Library manager for C/C++ (tool only)"
 HOMEPAGE="https://github.com/microsoft/vcpkg-tool https://vcpkg.io/en/index.html"
 format-date() {
 	local input="$1"

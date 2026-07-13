@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{12..15} )
 
 inherit systemd distutils-r1
 
-DESCRIPTION="A Secure Socket Tunneling Protocol (SSTP) server implemented in Python."
+DESCRIPTION="A Secure Socket Tunneling Protocol (SSTP) server implemented in Python"
 HOMEPAGE="https://github.com/sorz/sstp-server/"
 SRC_URI="https://github.com/sorz/sstp-server/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 

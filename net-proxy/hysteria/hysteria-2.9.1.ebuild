@@ -6,7 +6,7 @@ inherit go-module systemd
 
 COMMIT_ID="64c396385631579598cc29d5561bff98c439772f"
 
-DESCRIPTION="A powerful, lightning fast and censorship resistant proxy."
+DESCRIPTION="A powerful, lightning fast and censorship resistant proxy"
 HOMEPAGE="https://github.com/apernet/hysteria"
 
 SRC_URI="

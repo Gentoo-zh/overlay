@@ -4,7 +4,7 @@
 EAPI=8
 inherit go-module
 
-DESCRIPTION="An offline tool for querying IP geographic information and CDN provider."
+DESCRIPTION="An offline tool for querying IP geographic information and CDN provider"
 HOMEPAGE="https://github.com/zu1k/nali"
 
 SRC_URI="

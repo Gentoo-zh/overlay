@@ -3,7 +3,7 @@
 
 EAPI=8
 
-DESCRIPTION="Reformats Java source code to comply with Google Java Style."
+DESCRIPTION="Reformats Java source code to comply with Google Java Style"
 HOMEPAGE="https://github.com/google/google-java-format"
 SRC_URI="https://github.com/google/google-java-format/releases/download/v${PV}/${P}-all-deps.jar"
 S="${WORKDIR}"

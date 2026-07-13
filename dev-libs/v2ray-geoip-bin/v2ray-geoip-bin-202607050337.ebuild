@@ -3,7 +3,7 @@
 
 EAPI=8
 
-DESCRIPTION="GeoIP for V2Ray."
+DESCRIPTION="GeoIP for V2Ray"
 HOMEPAGE="https://github.com/v2fly/geoip"
 SRC_URI="https://github.com/v2fly/geoip/releases/download/${PV}/geoip.dat -> ${P}.dat"
 

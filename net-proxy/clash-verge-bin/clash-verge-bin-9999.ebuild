@@ -5,7 +5,7 @@ EAPI=8
 
 inherit desktop unpacker xdg
 
-DESCRIPTION="(Continuation) of Clash Meta GUI based on Tauri."
+DESCRIPTION="(Continuation) of Clash Meta GUI based on Tauri"
 HOMEPAGE="https://github.com/clash-verge-rev/clash-verge-rev"
 
 if [[ ${PV} == 9999 ]]; then

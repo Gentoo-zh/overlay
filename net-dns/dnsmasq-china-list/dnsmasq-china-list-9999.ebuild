@@ -5,7 +5,7 @@ EAPI=8
 
 inherit git-r3
 
-DESCRIPTION="Chinese-specific configuration to improve your favorite DNS server."
+DESCRIPTION="Chinese-specific configuration to improve your favorite DNS server"
 HOMEPAGE="https://github.com/felixonmars/dnsmasq-china-list"
 
 EGIT_REPO_URI="https://github.com/felixonmars/dnsmasq-china-list.git"

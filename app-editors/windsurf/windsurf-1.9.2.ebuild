@@ -5,7 +5,7 @@ EAPI=8
 
 inherit desktop shell-completion unpacker xdg
 
-DESCRIPTION="AI-powered code editor maintaining flow state with instant assistance."
+DESCRIPTION="AI-powered code editor maintaining flow state with instant assistance"
 HOMEPAGE="https://codeium.com"
 
 SRC_URI="https://windsurf-stable.codeiumdata.com/wVxQEIWkwPUEAGf3/apt/pool/main/w/windsurf/Windsurf-linux-x64-${PV}.deb"

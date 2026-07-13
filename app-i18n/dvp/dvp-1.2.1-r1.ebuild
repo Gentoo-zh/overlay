@@ -6,7 +6,7 @@ EAPI=7
 MY_PV=${PV//./_}
 MY_P="${PN}-${MY_PV}"
 
-DESCRIPTION="The kbd keymap for Programmer Dvorak."
+DESCRIPTION="The kbd keymap for Programmer Dvorak"
 HOMEPAGE="http://kaufmann.no/roland/dvorak/index.html"
 SRC_URI="http://kaufmann.no/downloads/linux/${MY_P}.map.gz"
 

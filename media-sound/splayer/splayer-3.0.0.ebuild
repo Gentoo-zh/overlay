@@ -4,7 +4,7 @@
 EAPI=8
 
 inherit desktop unpacker xdg
-DESCRIPTION="A cross-platform music player."
+DESCRIPTION="A cross-platform music player"
 
 MY_PN="SPlayer"
 HOMEPAGE="https://splayer.imsyy.top/"

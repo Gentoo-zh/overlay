@@ -8,7 +8,7 @@ inherit python-any-r1
 
 EGIT_COMMIT=59456757ca1f0736dcf03b507f661a3693f5b51d
 
-DESCRIPTION="Fcitx5 theme to match KDE's Breeze style."
+DESCRIPTION="Fcitx5 theme to match KDE's Breeze style"
 HOMEPAGE="https://gitlab.com/scratch-er/fcitx5-breeze"
 SRC_URI="https://gitlab.com/scratch-er/fcitx5-breeze/-/archive/v${PV}/fcitx5-breeze-${PV}.tar.bz2"
 

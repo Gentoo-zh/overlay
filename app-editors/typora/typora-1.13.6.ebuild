@@ -5,7 +5,7 @@ EAPI=8
 
 inherit unpacker xdg
 
-DESCRIPTION="A truely minimal markdown editor."
+DESCRIPTION="A truely minimal markdown editor"
 HOMEPAGE="https://typora.io"
 SRC_URI="https://download.typora.io/linux/typora_${PV}_amd64.deb"
 S="${WORKDIR}"

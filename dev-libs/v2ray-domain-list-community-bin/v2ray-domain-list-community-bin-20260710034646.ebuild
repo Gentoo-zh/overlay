@@ -3,7 +3,7 @@
 
 EAPI=8
 
-DESCRIPTION="Community managed domain list for V2Ray."
+DESCRIPTION="Community managed domain list for V2Ray"
 HOMEPAGE="https://github.com/v2fly/domain-list-community"
 SRC_URI="https://github.com/v2fly/domain-list-community/releases/download/${PV}/dlc.dat.xz -> ${P}.dat.xz"
 

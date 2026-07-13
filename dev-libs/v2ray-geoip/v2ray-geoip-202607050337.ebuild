@@ -7,7 +7,7 @@ inherit go-module
 
 DBIP_V="${PV:0:4}-${PV:4:2}"
 
-DESCRIPTION="GeoIP for V2Ray."
+DESCRIPTION="GeoIP for V2Ray"
 HOMEPAGE="https://github.com/v2fly/geoip"
 SRC_URI="
 	https://github.com/v2fly/geoip/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz

@@ -5,7 +5,7 @@ EAPI=8
 
 inherit unpacker shell-completion
 
-DESCRIPTION="Manage your dotfiles across multiple diverse machines, securely."
+DESCRIPTION="Manage your dotfiles across multiple diverse machines, securely"
 HOMEPAGE="https://www.chezmoi.io https://github.com/twpayne/chezmoi"
 
 SRC_URI="

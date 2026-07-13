@@ -6,7 +6,7 @@ EAPI=8
 CMAKE_MAKEFILE_GENERATOR=ninja
 inherit xdg cmake
 
-DESCRIPTION="A protocol plugin for Remmina to launch a Rustdesk connection."
+DESCRIPTION="A protocol plugin for Remmina to launch a Rustdesk connection"
 HOMEPAGE="https://www.muflone.com/remmina-plugin-rustdesk/"
 _BUILDERVER="1.4.27.0"
 SRC_URI="

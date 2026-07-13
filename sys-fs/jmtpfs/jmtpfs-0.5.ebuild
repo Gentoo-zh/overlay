@@ -3,7 +3,7 @@
 
 EAPI=7
 
-DESCRIPTION="A FUSE and libmtp based filesystem for accessing MTP devices."
+DESCRIPTION="A FUSE and libmtp based filesystem for accessing MTP devices"
 HOMEPAGE="http://research.jacquette.com/jmtpfs-exchanging-files-between-android-devices-and-linux"
 SRC_URI="https://github.com/JasonFerrara/jmtpfs/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 

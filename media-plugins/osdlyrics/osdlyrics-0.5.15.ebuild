@@ -6,7 +6,7 @@ PYTHON_COMPAT=( python3_{12..13} )
 
 inherit python-r1 autotools optfeature xdg
 
-DESCRIPTION="Standalone lyrics fetcher/displayer (windowed and OSD mode)."
+DESCRIPTION="Standalone lyrics fetcher/displayer (windowed and OSD mode)"
 HOMEPAGE="https://github.com/osdlyrics/osdlyrics"
 
 LICENSE="GPL-3"

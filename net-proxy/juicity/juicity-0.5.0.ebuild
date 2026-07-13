@@ -5,7 +5,7 @@ EAPI=8
 
 inherit go-module systemd
 
-DESCRIPTION="juicity is a quic-based proxy protocol."
+DESCRIPTION="juicity is a quic-based proxy protocol"
 HOMEPAGE="https://github.com/juicity/juicity"
 SRC_URI="https://github.com/juicity/juicity/releases/download/v${PV}/juicity-full-src.zip -> ${P}.zip"
 

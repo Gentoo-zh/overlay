@@ -3,7 +3,7 @@
 
 EAPI=8
 
-DESCRIPTION="Enhanced edition of V2Ray rules dat files."
+DESCRIPTION="Enhanced edition of V2Ray rules dat files"
 HOMEPAGE="https://github.com/Loyalsoldier/v2ray-rules-dat"
 SRC_URI="
 	geosite? ( https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/${PV}/geosite.dat -> ${P}-geosite.dat )

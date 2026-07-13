@@ -14,7 +14,7 @@ RDEPEND="
 inherit kernel-2
 detect_version
 
-DESCRIPTION="XanMod RT sources and CJKTTY options."
+DESCRIPTION="XanMod RT sources and CJKTTY options"
 HOMEPAGE="https://xanmod.org
 		https://github.com/zhmars/cjktty-patches"
 XANMOD_VERSION="1"

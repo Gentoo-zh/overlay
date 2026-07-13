@@ -5,7 +5,7 @@ EAPI=8
 
 inherit go-module systemd
 
-DESCRIPTION="Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support."
+DESCRIPTION="Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support"
 HOMEPAGE="https://xtls.github.io/ https://github.com/XTLS/Xray-core"
 SRC_URI="https://github.com/XTLS/Xray-core/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/gentoo-zh-drafts/Xray-core/releases/download/v${PV}/Xray-core-${PV}-vendor.tar.xz"

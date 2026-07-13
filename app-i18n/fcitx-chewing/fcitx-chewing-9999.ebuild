@@ -7,7 +7,7 @@ MY_PN="fcitx5-chewing"
 
 inherit cmake git-r3 xdg
 
-DESCRIPTION="Chewing Wrapper for Fcitx."
+DESCRIPTION="Chewing Wrapper for Fcitx"
 HOMEPAGE="https://github.com/fcitx/fcitx5-chewing"
 EGIT_REPO_URI="https://github.com/fcitx/fcitx5-chewing.git"
 

@@ -3,7 +3,7 @@
 
 EAPI=8
 inherit xdg qmake-utils
-DESCRIPTION="A lightweight yet powerful C/C++/GNU Assembly IDE."
+DESCRIPTION="A lightweight yet powerful C/C++/GNU Assembly IDE"
 HOMEPAGE="http://royqh.net/redpandacpp/"
 SRC_URI="https://github.com/royqh1979/RedPanda-CPP/archive/refs/tags/v${PV}.tar.gz -> redpanda-cpp-${PV}.tar.gz"
 S="${WORKDIR}/RedPanda-CPP-${PV}"

@@ -12,7 +12,7 @@ detect_version
 detect_arch
 
 MY_P=linux-${PV%.*}
-DESCRIPTION="Full XanMod source, including the Gentoo patchset and other patch options."
+DESCRIPTION="Full XanMod source, including the Gentoo patchset and other patch options"
 HOMEPAGE="https://xanmod.org"
 
 XANMOD_VERSION="1"

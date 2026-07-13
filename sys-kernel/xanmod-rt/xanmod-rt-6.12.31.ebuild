@@ -8,7 +8,7 @@ KERNEL_IUSE_MODULES_SIGN=1
 
 inherit kernel-build toolchain-funcs
 
-DESCRIPTION="XanMod RT sources w/ genpatches and CJKTTY options."
+DESCRIPTION="XanMod RT sources w/ genpatches and CJKTTY options"
 HOMEPAGE="https://xanmod.org
 		https://github.com/zhmars/cjktty-patches
 		https://github.com/bigshans/cjktty-patches"

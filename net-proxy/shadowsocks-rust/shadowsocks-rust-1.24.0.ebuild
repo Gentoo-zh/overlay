@@ -14,7 +14,7 @@ inherit cargo linux-info systemd
 
 MY_PV=${PV/_alpha/-alpha.}
 
-DESCRIPTION="shadowsocks is a fast tunnel proxy that helps you bypass firewalls."
+DESCRIPTION="shadowsocks is a fast tunnel proxy that helps you bypass firewalls"
 HOMEPAGE="https://github.com/shadowsocks/shadowsocks-rust"
 SRC_URI="
 	https://github.com/shadowsocks/shadowsocks-rust/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz

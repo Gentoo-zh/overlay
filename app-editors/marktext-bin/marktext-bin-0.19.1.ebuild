@@ -5,7 +5,7 @@ EAPI=8
 
 inherit desktop xdg unpacker
 
-DESCRIPTION="A simple and elegant markdown editor, available for Linux, macOS and Windows."
+DESCRIPTION="A simple and elegant markdown editor, available for Linux, macOS and Windows"
 HOMEPAGE="https://github.com/marktext/marktext"
 SRC_URI="https://github.com/marktext/marktext/releases/download/v${PV}/${PN%-bin}-linux-${PV}.deb -> ${P}.deb"
 

@@ -5,7 +5,7 @@ EAPI=8
 
 inherit desktop pax-utils xdg
 
-DESCRIPTION="A complete, free Microsoft Office-compatible alternative office suite."
+DESCRIPTION="A complete, free Microsoft Office-compatible alternative office suite"
 HOMEPAGE="https://www.freeoffice.com"
 BASE_URI="https://www.softmaker.net/down/softmaker-freeoffice-2021-${PV}"
 SRC_URI="${BASE_URI}-amd64.tgz"

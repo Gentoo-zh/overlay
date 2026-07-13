@@ -5,7 +5,7 @@ EAPI=8
 
 inherit go-module
 
-DESCRIPTION="Community managed domain list for V2Ray."
+DESCRIPTION="Community managed domain list for V2Ray"
 HOMEPAGE="https://github.com/v2fly/domain-list-community"
 SRC_URI="
 	https://github.com/v2fly/domain-list-community/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz

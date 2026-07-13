@@ -14,7 +14,7 @@ RUST_MIN_VER="1.88.0"
 
 inherit cargo meson gnome2-utils xdg
 
-DESCRIPTION="An MPD client with delusions of grandeur, made with Rust, GTK and Libadwaita."
+DESCRIPTION="An MPD client with delusions of grandeur, made with Rust, GTK and Libadwaita"
 HOMEPAGE="https://github.com/htkhiem/euphonica"
 SRC_URI="
 	https://github.com/htkhiem/euphonica/archive/v${PV}-beta.1.tar.gz -> ${P}.tar.gz

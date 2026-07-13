@@ -7,7 +7,7 @@ inherit font
 
 MY_PN="Zhudou-Sans"
 
-DESCRIPTION="A font family for CJK symbols and punctuation, derived from Noto Sans."
+DESCRIPTION="A font family for CJK symbols and punctuation, derived from Noto Sans"
 HOMEPAGE="https://github.com/Buernia/Zhudou-Sans"
 SRC_URI="https://github.com/Buernia/Zhudou-Sans/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
