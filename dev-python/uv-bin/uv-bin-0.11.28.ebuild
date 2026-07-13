@@ -3,7 +3,7 @@
 
 EAPI=8
 inherit unpacker
-DESCRIPTION="An extremely fast Python package and project manager, written in Rust."
+DESCRIPTION="An extremely fast Python package and project manager, written in Rust"
 HOMEPAGE="https://github.com/astral-sh/uv"
 URLPREFIX="https://github.com/astral-sh/uv/releases/download"
 SRC_URI="
