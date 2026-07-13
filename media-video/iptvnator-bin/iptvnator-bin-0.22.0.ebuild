@@ -39,6 +39,7 @@ src_install() {
 	insinto /opt/IPTVnator
 	doins -r "${S}"/opt/IPTVnator/.
 	fperms +x /opt/IPTVnator/iptvnator
+	fperms +x /opt/IPTVnator/iptvnator.bin
 	fperms +x /opt/IPTVnator/chrome-sandbox
 	fperms +x /opt/IPTVnator/chrome_crashpad_handler
 
