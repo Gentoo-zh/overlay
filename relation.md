@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-14 03:52:36 CST)
+(The last generation time: 2026-07-14 04:07:23 CST)
 
 ### Packages
 
@@ -18,11 +18,11 @@
  app-admin/1password                                   | 8.12.26            |            | https://1password.com                                                                   | Password manager and secure wallet
    acct-group/onepassword                              | 0-r1               |  D, RD     |                                                                                         | Password manager and secure wallet
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-admin/chezmoi                                     | 2.70.0             |            | https://www.chezmoi.io                                                                  | Manage your dotfiles across multiple diverse machines, securely.
+ app-admin/chezmoi                                     | 2.70.0             |            | https://www.chezmoi.io                                                                  | Manage your dotfiles across multiple diverse machines, securely
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-admin/chezmoi-bin                                 | 2.70.0             |            | https://www.chezmoi.io                                                                  | Manage your dotfiles across multiple diverse machines, securely.
+ app-admin/chezmoi-bin                                 | 2.70.0             |            | https://www.chezmoi.io                                                                  | Manage your dotfiles across multiple diverse machines, securely
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-admin/enpass                                      | 6.10.1.1661        |            | https://www.enpass.io                                                                   | A cross-platform, complete password management solution.
+ app-admin/enpass                                      | 6.10.1.1661        |            | https://www.enpass.io                                                                   | A cross-platform, complete password management solution
                                                        | 6.11.13.1957       |            |                                                                                         |
                                                        | 6.11.6.1833        |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -64,20 +64,20 @@
  app-editors/flowblade                                 | 2.24.2             |            | https://github.com/jliljebl/flowblade                                                   | Multitrack non-linear video editor
                                                        | 9999               |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-editors/marktext-bin                              | 0.19.1             |            | https://github.com/marktext/marktext                                                    | A simple and elegant markdown editor, available for Linux, macOS and Windows.
+ app-editors/marktext-bin                              | 0.19.1             |            | https://github.com/marktext/marktext                                                    | A simple and elegant markdown editor, available for Linux, macOS and Windows
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-editors/neomacs                                   | 9999               |            | https://github.com/eval-exec/neomacs                                                    | Modern Emacs fork rewriting Emacs internals in Rust
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-editors/neovim-bin                                | 9999               |            | https://neovim.io                                                                       | Vim-fork focused on extensibility and agility
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-editors/typora                                    | 0.11.18            |            | https://typora.io                                                                       | Typora will give you a seamless experience as both a reader and a writer.
+ app-editors/typora                                    | 0.11.18            |            | https://typora.io                                                                       | Typora will give you a seamless experience as both a reader and a writer
                                                        | 1.13.6             |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-editors/void-editor                               | 1.2.1.25105        |            | https://voideditor.com                                                                  | Void Editor - AI Code Editor
                                                        | 1.99.30034         |            |                                                                                         |
                                                        | 1.99.30044         |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-editors/windsurf                                  | 1.9.2              |            | https://codeium.com                                                                     | AI-powered code editor maintaining flow state with instant assistance.
+ app-editors/windsurf                                  | 1.9.2              |            | https://codeium.com                                                                     | AI-powered code editor maintaining flow state with instant assistance
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-emulation/deepin-udis86                           | 1.72-r4            |            | https://www.deepin.org                                                                  | Disassembler library for x86 (32-bit shared library)
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -100,7 +100,7 @@
  app-emulation/winetricks-zh                           | 9999               |            | https://github.com/hillwoodroc/winetricks-zh/                                           | windows applications setup wizard for Chinese wine users
                                                        | 20240105.1         |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-i18n/dvp                                          | 1.2.1-r1           |            | http://kaufmann.no/roland/dvorak/index.html                                             | The kbd keymap for Programmer Dvorak.
+ app-i18n/dvp                                          | 1.2.1-r1           |            | http://kaufmann.no/roland/dvorak/index.html                                             | The kbd keymap for Programmer Dvorak
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-i18n/fcitx5-vinput                                | 2.3.2              |            | https://github.com/xifan2333/fcitx5-vinput                                              | Voice input addon for Fcitx5 with local sherpa-onnx ASR and LLM postprocess
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -114,7 +114,7 @@
    app-i18n/fcitx-bamboo                               | 1.0.10             | RD         | https://github.com/fcitx/fcitx5-bamboo                                                  | Typing Vietnamese by Bamboo core engine for Fcitx5
                                                        | 1.0.7              |            |                                                                                         |
                                                        | 1.0.8              |            |                                                                                         |
-   app-i18n/fcitx-chewing                              | 9999               | RD         | https://github.com/fcitx/fcitx5-chewing                                                 | Chewing Wrapper for Fcitx.
+   app-i18n/fcitx-chewing                              | 9999               | RD         | https://github.com/fcitx/fcitx5-chewing                                                 | Chewing Wrapper for Fcitx
    app-i18n/fcitx-chinese-addons                       | 9999               |  D, RD     | https://github.com/fcitx/fcitx5-chinese-addons                                          | Addons related to Chinese, including IME previous bundled inside fcitx4
      app-i18n/fcitx-lua                                | 9999               |  D, RD     | https://github.com/fcitx/fcitx5-lua                                                     | Lua support for fcitx
      app-i18n/fcitx-qt                                 | 9999               |  D, RD     | https://github.com/fcitx/fcitx5-qt                                                      | Qt library and IM module for fcitx5
@@ -210,7 +210,7 @@
  app-misc/keyd                                         | 2.6.0              |            | https://github.com/rvaiya/keyd                                                          | A key remapping daemon for linux
    acct-group/keyd                                     | 0                  |  D, RD     |                                                                                         | A key remapping daemon for linux
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-misc/mdx_util                                     | 20251029           |            | https://github.com/raymanzhang/mdx_util                                                 | A command line tools for handling mdx related jobs.
+ app-misc/mdx_util                                     | 20251029           |            | https://github.com/raymanzhang/mdx_util                                                 | A command line tools for handling mdx related jobs
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-misc/openclaude                                   | 0.13.0             |            | https://github.com/Gitlawb/openclaude                                                   | Open-source coding-agent CLI for cloud and local LLM providers
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -224,7 +224,7 @@
  app-misc/xmind                                        | 26.01.07153        |            | https://www.xmind.net                                                                   | Brainstorming and Mind Mapping Software
                                                        | 26.04.01327        |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-misc/yazi                                         | 26.5.6             |            | https://yazi-rs.github.io                                                               | Blazing fast terminal file manager written in Rust, based on async I/O.
+ app-misc/yazi                                         | 26.5.6             |            | https://yazi-rs.github.io                                                               | Blazing fast terminal file manager written in Rust, based on async I/O
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-misc/z-library                                    | 3.1.0              |            | https://z-lib.fm/z-access                                                               | Z-library application
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -236,7 +236,7 @@
                                                        | 11.21.5_p1         |            |                                                                                         |
                                                        | 11.22.4_p1         |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-office/freeoffice                                 | 1062               |            | https://www.freeoffice.com                                                              | A complete, free Microsoft Office-compatible alternative office suite.
+ app-office/freeoffice                                 | 1062               |            | https://www.freeoffice.com                                                              | A complete, free Microsoft Office-compatible alternative office suite
                                                        | 1064               |            |                                                                                         |
                                                        | 1068               |            |                                                                                         |
                                                        | 1220               |            |                                                                                         |
@@ -247,7 +247,7 @@
                                                        | 12.1.2.22571       |            |                                                                                         |
                                                        | 12.1.2.25882       |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-pda/ipadcharge                                    | 9999               |            | https://github.com/mkorenkov/ipad_charge                                                | Enables USB charging for Apple devices.
+ app-pda/ipadcharge                                    | 9999               |            | https://github.com/mkorenkov/ipad_charge                                                | Enables USB charging for Apple devices
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-shells/blesh                                      | 9999               |            | https://github.com/akinomyoga/ble.sh                                                    | A line editor written in pure Bash with enhanced features
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -288,7 +288,7 @@
  app-vim/easymotion                                    | 1.3                |            | http://www.vim.org/scripts/script.php?script_id=3526                                    | vim plugin: Vim motions on speed!
                                                        | 3.0.1              |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-vim/powerline                                     | 9999               |            | http://www.vim.org/scripts/script.php?script_id=3881                                    | vim plugin: The ultimate vim statusline utility.
+ app-vim/powerline                                     | 9999               |            | http://www.vim.org/scripts/script.php?script_id=3881                                    | vim plugin: The ultimate vim statusline utility
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-cpp/cppcoro                                       | 0.0_p210105        |            | https://github.com/Garcia6l20/cppcoro                                                   | A library of C++ coroutine abstractions for the coroutines TS
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -307,7 +307,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-go/staticcheck                                    | 2025.1.1           |            | https://staticcheck.dev                                                                 | Go static analysis, detecting bugs, performance issues, and much more
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-java/google-java-format                           | 1.35.0             |            | https://github.com/google/google-java-format                                            | Reformats Java source code to comply with Google Java Style.
+ dev-java/google-java-format                           | 1.35.0             |            | https://github.com/google/google-java-format                                            | Reformats Java source code to comply with Google Java Style
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-java/oraclejdk-bin                                | 8.391              |            | https://www.oracle.com/java                                                             | Oracle's Java SE Development Kit
                                                        | 21.0.1             |            |                                                                                         |
@@ -321,7 +321,7 @@
  dev-libs/lunar-calendar                               | 3.0.1              |            | https://github.com/yetist/lunar-calendar                                                | a gtk+ calendar widget for chinese lunar library
    dev-libs/lunar-date                                 | 3.2.0              |  D         | https://github.com/yetist/lunar-date                                                    | Chinese Lunar Library
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-libs/v2ray-rules-dat-bin                          | 202607092306       |            | https://github.com/Loyalsoldier/v2ray-rules-dat                                         | Enhanced edition of V2Ray rules dat files.
+ dev-libs/v2ray-rules-dat-bin                          | 202607092306       |            | https://github.com/Loyalsoldier/v2ray-rules-dat                                         | Enhanced edition of V2Ray rules dat files
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-python/adafruit-board-toolkit                     | 1.1.2              |            | https://github.com/adafruit/Adafruit_Board_Toolkit/                                     | CircuitPython board identification and information
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -437,14 +437,14 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/reasonix-bin                                 | 1.16.0             |            | https://github.com/esengine/DeepSeek-Reasonix                                           | Cache-first DeepSeek coding agent for the terminal
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-util/redpanda-cpp                                 | 3.4                |            | http://royqh.net/redpandacpp/                                                           | A lightweight yet powerful C/C++/GNU Assembly IDE.
+ dev-util/redpanda-cpp                                 | 3.4                |            | http://royqh.net/redpandacpp/                                                           | A lightweight yet powerful C/C++/GNU Assembly IDE
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/tailspin                                     | 5.5.0              |            | https://github.com/bensadeh/tailspin                                                    | A log file highlighter
                                                        | 6.1.0              |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/trae-ide                                     | 2.3.49398          |            | https://www.trae.cn/                                                                    | Trae IDE (binary package)
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-util/vcpkg-tool                                   | 2025.12.16         |            | https://github.com/microsoft/vcpkg-tool                                                 | Library manager for C/C++ (tool only).
+ dev-util/vcpkg-tool                                   | 2025.12.16         |            | https://github.com/microsoft/vcpkg-tool                                                 | Library manager for C/C++ (tool only)
    dev-util/cmakerc                                    | 2.0.1              | BD         | https://github.com/vector-of-bool/cmrc                                                  | A Resource Compiler in a Single CMake Script
                                                        | 2.0.1_p20230725    |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -463,7 +463,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-vcs/rebased-bin                                   | 1.1.6              |            | https://github.com/DetachHead/rebased                                                   | Git client based on the IntelliJ platform
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-vcs/sourcegit-bin                                 | 2026.07            |            | https://github.com/sourcegit-scm/sourcegit                                              | Opensource Git GUI client.
+ dev-vcs/sourcegit-bin                                 | 2026.07            |            | https://github.com/sourcegit-scm/sourcegit                                              | Opensource Git GUI client
                                                        | 2026.09            |            |                                                                                         |
                                                        | 2026.15            |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -517,7 +517,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  gui-apps/tux-manager                                  | 1.0.7              |            | https://github.com/benapetr/TuxManager                                                  | A Linux Task Manager alternative built with Qt6
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- kde-misc/plasma-applet-netspeed-widget                | 3.1                |            | https://www.kde-look.org/p/998895/                                                      | Plasma 5 widget that displays the currently used network bandwidth.
+ kde-misc/plasma-applet-netspeed-widget                | 3.1                |            | https://www.kde-look.org/p/998895/                                                      | Plasma 5 widget that displays the currently used network bandwidth
                                                        | 9999               |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  kde-misc/plasma-ions-china                            | 0.1.0              |            | https://github.com/arenekosreal/plasma-ions-china                                       | A collection of plasma weather ions for Chinese users
@@ -527,7 +527,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-fonts/Plangothic                                | 2.9.5795           |            | https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Plangothic_Project                  | 遍黑体项目（Plangothic Project）
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- media-fonts/iansui                                    | 1.020              |            | https://github.com/ButTaiwan/iansui                                                     | An open-source Chinese font derived from Klee One (Fontworks).
+ media-fonts/iansui                                    | 1.020              |            | https://github.com/ButTaiwan/iansui                                                     | An open-source Chinese font derived from Klee One (Fontworks)
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-fonts/ipamj                                     | 006.01             |            | https://moji.or.jp/mojikiban/font/                                                      | IPAmj 明朝 (IPAmj Mincho) font
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -551,11 +551,11 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-fonts/shanggu                                   | 1.028              |            | https://github.com/GuiWonder/Shanggu                                                    | A Noto-based font for traditional Chinese characters
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- media-fonts/smiley-sans                               | 2.0.1              |            | https://github.com/atelier-anchor/smiley-sans                                           | An open-source font for Chinese.
+ media-fonts/smiley-sans                               | 2.0.1              |            | https://github.com/atelier-anchor/smiley-sans                                           | An open-source font for Chinese
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-fonts/taipei-sans-tc                            | 1.0                |            | https://sites.google.com/view/jtfoundry/                                                | JT Foundry - Taipei Sans TC Beta font
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- media-fonts/tiejili                                   | 1.100              |            | https://github.com/Buernia/Tiejili                                                      | An open-source font that extends Reggae One to Chinese.
+ media-fonts/tiejili                                   | 1.100              |            | https://github.com/Buernia/Tiejili                                                      | An open-source font that extends Reggae One to Chinese
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-fonts/ttf-wps-fonts                             | 9999               |            | https://github.com/iamdh4/ttf-wps-fonts                                                 | Symbol fonts required by wps-office
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -563,7 +563,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-fonts/yozai-font                                | 0.868              |            | https://github.com/lxgw/yozai-font                                                      | Yozai Font (悠哉字体) - A Chinese font derived from Y.OzFont
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- media-fonts/zhudou                                    | 2.000              |            | https://github.com/Buernia/Zhudou-Sans                                                  | A font family for CJK symbols and punctuation, derived from Noto Sans.
+ media-fonts/zhudou                                    | 2.000              |            | https://github.com/Buernia/Zhudou-Sans                                                  | A font family for CJK symbols and punctuation, derived from Noto Sans
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-gfx/bambustudio-bin                             | 02.07.01.62        |            | https://bambulab.com                                                                    | Bambu Studio is a cutting-edge, feature-rich slicing software
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -577,7 +577,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-gfx/scangearmp                                  | 2.4.10             |            | https://www.canon.com                                                                   | Driver and utility package for Canon scanners
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- media-gfx/tgs2png                                     | 9999               |            | https://github.com/zevlg/tgs2png                                                        | Convert Telegram's animated stickers in TGS format into series of PNG images.
+ media-gfx/tgs2png                                     | 9999               |            | https://github.com/zevlg/tgs2png                                                        | Convert Telegram's animated stickers in TGS format into series of PNG images
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-gfx/tifig-bin                                   | 0.2.2              |            | https://github.com/monostream/tifig                                                     | Converts iOS 11 HEIC images to practical formats - Static binary
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -587,7 +587,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-gfx/zwcad                                       | 2026.26.1.3.4      |            | https://www.zwsoft.cn/product/zwcad/linux                                               | CAD software for 2D drawing, reviewing and printing work
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- media-plugins/osdlyrics                               | 0.5.15             |            | https://github.com/osdlyrics/osdlyrics                                                  | Standalone lyrics fetcher/displayer (windowed and OSD mode).
+ media-plugins/osdlyrics                               | 0.5.15             |            | https://github.com/osdlyrics/osdlyrics                                                  | Standalone lyrics fetcher/displayer (windowed and OSD mode)
                                                        | 9999               |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-plugins/waylyrics                               | 0.3.21             |            | https://waylyrics.github.io/waylyrics/waylyrics                                         | Simple On Screen lyrics Display for linux/unix
@@ -597,7 +597,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-sound/cider                                     | 3.1.8              |            | https://cider.sh/                                                                       | A cross-platform Apple Music experience built on Vue.js (Proprietary V3)
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- media-sound/euphonica                                 | 0.98.1             |            | https://github.com/htkhiem/euphonica                                                    | An MPD client with delusions of grandeur, made with Rust, GTK and Libadwaita.
+ media-sound/euphonica                                 | 0.98.1             |            | https://github.com/htkhiem/euphonica                                                    | An MPD client with delusions of grandeur, made with Rust, GTK and Libadwaita
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-sound/feeluown                                  | 5.0.2              |            | https://github.com/feeluown/FeelUOwn                                                    | A user-friendly and hackable music player
    dev-python/janus                                    | 2.0.0              | RD         | https://github.com/aio-libs/janus                                                       | Implementation of the asyncio (PEP 3156) event-loop with Qt
@@ -617,7 +617,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-sound/rew                                       | 5.31.3             |            | https://www.roomeqwizard.com/                                                           | Room acoustics, loudspeaker and audio device measurement software
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- media-sound/splayer                                   | 3.0.0              |            | https://splayer.imsyy.top/                                                              | A cross-platform music player.
+ media-sound/splayer                                   | 3.0.0              |            | https://splayer.imsyy.top/                                                              | A cross-platform music player
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-sound/spotube-bin                               | 5.1.1              |            | https://github.com/KRTirtho/spotube                                                     | A lightweight Spotify client using YouTube as audio source
                                                        | 5.1.2              |            |                                                                                         |
@@ -657,7 +657,7 @@
  net-analyzer/cfspeedtest-bin                          | 2.2.1              |            | https://github.com/code-inflation/cfspeedtest                                           | Unofficial CLI for speed.cloudflare.com
                                                        | 2.2.2              |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-analyzer/nali                                     | 0.8.1              |            | https://github.com/zu1k/nali                                                            | An offline tool for querying IP geographic information and CDN provider.
+ net-analyzer/nali                                     | 0.8.1              |            | https://github.com/zu1k/nali                                                            | An offline tool for querying IP geographic information and CDN provider
                                                        | 0.8.1_p20250221    |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-analyzer/pwru                                     | 1.0.9              |            | https://github.com/cilium/pwru                                                          | eBPF-based Linux kernel networking debugger
@@ -670,7 +670,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-dns/dnslookup                                     | 1.12.0             |            | https://github.com/ameshkov/dnslookup                                                   | Simple command line utility to make DNS lookups to the specified server
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-dns/dnsmasq-china-list                            | 9999               |            | https://github.com/felixonmars/dnsmasq-china-list                                       | Chinese-specific configuration to improve your favorite DNS server.
+ net-dns/dnsmasq-china-list                            | 9999               |            | https://github.com/felixonmars/dnsmasq-china-list                                       | Chinese-specific configuration to improve your favorite DNS server
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-dns/q                                             | 0.19.12            |            | https://github.com/natesales/q                                                          | A tiny command line DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -762,7 +762,7 @@
    acct-group/reframe                                  | 0                  |  D, RD     |                                                                                         | group for reframe
    acct-user/reframe                                   | 0                  |  D, RD     |                                                                                         | user for reframe
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-misc/remmina-plugin-rustdesk                      | 1.0.0.0-r1         |            | https://www.muflone.com/remmina-plugin-rustdesk/                                        | A protocol plugin for Remmina to launch a Rustdesk connection.
+ net-misc/remmina-plugin-rustdesk                      | 1.0.0.0-r1         |            | https://www.muflone.com/remmina-plugin-rustdesk/                                        | A protocol plugin for Remmina to launch a Rustdesk connection
    net-misc/rustdesk                                   | 1.4.9              |  D, RD     | https://rustdesk.com/                                                                   | An open-source remote desktop, and alternative to TeamViewer
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-misc/reqable                                      | 3.2.4              |            | https://reqable.com/en-US/                                                              | Reqable = Fiddler + Charles + Postman, 让API调试更快 🚀 更简单 👌
@@ -793,7 +793,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/clash-rs                                    | 0.10.7             |            | https://watfaq.gitbook.io/clashrs-user-manual/                                          | Custom protocol, rule based network proxy
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-proxy/clash-verge-bin                             | 2.4.3              |            | https://github.com/clash-verge-rev/clash-verge-rev                                      | (Continuation) of Clash Meta GUI based on Tauri.
+ net-proxy/clash-verge-bin                             | 2.4.3              |            | https://github.com/clash-verge-rev/clash-verge-rev                                      | (Continuation) of Clash Meta GUI based on Tauri
                                                        | 9999               |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/clash-verge-rev                             | 2.5.1              |            | https://www.clashverge.dev                                                              | GUI client based on Tauri for tailored proxy experience
@@ -810,12 +810,12 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/flclash-bin                                 | 0.8.94             |            | https://github.com/chen08209/FlClash                                                    | A multi-platform proxy client based on ClashMeta
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-proxy/hysteria                                    | 2.9.1              |            | https://github.com/apernet/hysteria                                                     | A powerful, lightning fast and censorship resistant proxy.
+ net-proxy/hysteria                                    | 2.9.1              |            | https://github.com/apernet/hysteria                                                     | A powerful, lightning fast and censorship resistant proxy
                                                        | 2.9.3              |            |                                                                                         |
-   acct-group/hysteria                                 | 0                  |  D, RD     |                                                                                         | A powerful, lightning fast and censorship resistant proxy.
-   acct-user/hysteria                                  | 0                  |  D, RD     |                                                                                         | A powerful, lightning fast and censorship resistant proxy.
+   acct-group/hysteria                                 | 0                  |  D, RD     |                                                                                         | A powerful, lightning fast and censorship resistant proxy
+   acct-user/hysteria                                  | 0                  |  D, RD     |                                                                                         | A powerful, lightning fast and censorship resistant proxy
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-proxy/juicity                                     | 0.5.0              |            | https://github.com/juicity/juicity                                                      | juicity is a quic-based proxy protocol.
+ net-proxy/juicity                                     | 0.5.0              |            | https://github.com/juicity/juicity                                                      | juicity is a quic-based proxy protocol
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/naiveproxy-bin                              | 150.0.7871.63_p1   |            | https://github.com/klzgrad/naiveproxy                                                   | A proxy using Chromium's network stack to camouflage traffic
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -829,19 +829,19 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/qvplugin-trojan-go                          | 3.0.0              |            | https://github.com/Qv2ray/QvPlugin-Trojan-Go                                            | Plugin for Qv2ray to support Trojan-Go proxy in Qv2ray
    net-proxy/qv2ray                                    | 2.7.0_p20240625-r1 | RD         | https://github.com/Qv2ray/Qv2ray                                                        | Qt GUI fontend of v2ray
-     dev-libs/qnodeeditor                              | 2.1.7_p20210113    |  D, RD     | https://github.com/Qv2ray/QNodeEditor                                                   | A general-purpose Qt-based library aimed at graph-controlled data processing.
+     dev-libs/qnodeeditor                              | 2.1.7_p20210113    |  D, RD     | https://github.com/Qv2ray/QNodeEditor                                                   | A general-purpose Qt-based library aimed at graph-controlled data processing
      dev-libs/singleapplication                        | 3.5.6              |  D         | https://itay-grudev.github.io/SingleApplication/                                        | Replacement of QtSingleApplication support for inter-instance communication
-     net-proxy/Xray                                    | 26.3.27            | RD         | https://xtls.github.io/                                                                 | Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support.
+     net-proxy/Xray                                    | 26.3.27            | RD         | https://xtls.github.io/                                                                 | Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support
                                                        | 26.5.9             |            |                                                                                         |
        app-alternatives/v2ray-geoip                    | 0-r2               |  D, RD     |                                                                                         | symlink for v2ray-geoip
        app-alternatives/v2ray-geosite                  | 0-r2               |  D, RD     |                                                                                         | symlink for v2ray-geosite
-     net-proxy/v2ray                                   | 5.51.2             | RD         | https://www.v2fly.org/                                                                  | A platform for building proxies to bypass network restrictions.
+     net-proxy/v2ray                                   | 5.51.2             | RD         | https://www.v2fly.org/                                                                  | A platform for building proxies to bypass network restrictions
      net-proxy/v2ray-bin                               | 5.47.0             | RD         | https://www.v2fly.org                                                                   | A platform for building proxies to bypass network restrictions
    net-proxy/trojan-go-fork                            | 2026.02.15         | RD         | https://github.com/Potterli20/trojan-go-fork                                            | A fork of trojan-go
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/serenity                                    | 1.1.0_beta3        |            | https://serenity.sagernet.org/                                                          | The configuration generator for sing-box
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-proxy/shadowsocks-rust                            | 1.24.0             |            | https://github.com/shadowsocks/shadowsocks-rust                                         | shadowsocks is a fast tunnel proxy that helps you bypass firewalls.
+ net-proxy/shadowsocks-rust                            | 1.24.0             |            | https://github.com/shadowsocks/shadowsocks-rust                                         | shadowsocks is a fast tunnel proxy that helps you bypass firewalls
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/sing-box                                    | 1.11.15-r1         |            | https://sing-box.sagernet.org/                                                          | The universal proxy platform
                                                        | 1.12.25            |            |                                                                                         |
@@ -862,7 +862,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-vpn/rathole                                       | 0.5.0              |            | https://github.com/rathole-org/rathole                                                  | A reverse proxy for NAT traversal
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-vpn/sstp-server                                   | 0.7.2              |            | https://github.com/sorz/sstp-server/                                                    | A Secure Socket Tunneling Protocol (SSTP) server implemented in Python.
+ net-vpn/sstp-server                                   | 0.7.2              |            | https://github.com/sorz/sstp-server/                                                    | A Secure Socket Tunneling Protocol (SSTP) server implemented in Python
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-wireless/linux-wifi-hotspot                       | 9999               |            | https://github.com/lakinduakash/linux-wifi-hotspot                                      | Linux Wifi Hotspot
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -899,7 +899,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  sys-boot/ventoy-bin                                   | 1.1.16             |            | https://www.ventoy.net/                                                                 | A new multiboot USB solution
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- sys-fs/jmtpfs                                         | 0.5                |            | http://research.jacquette.com/jmtpfs-exchanging-files-between-android-devices-and-linux | A FUSE and libmtp based filesystem for accessing MTP devices.
+ sys-fs/jmtpfs                                         | 0.5                |            | http://research.jacquette.com/jmtpfs-exchanging-files-between-android-devices-and-linux | A FUSE and libmtp based filesystem for accessing MTP devices
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  sys-fs/ltfs                                           | 9999               |            | https://github.com/LinearTapeFileSystem/ltfs                                            | LTFS for LTO tapes
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -924,19 +924,19 @@
                                                        | 6.6.8              |            |                                                                                         |
                                                        | 7.0.14-r2          |            |                                                                                         |
    sys-kernel/xanmod-kernel                            | 7.1.3              | RD         | https://www.kernel.org/                                                                 | XanMod kernel built with Gentoo patches and cjktty
-   sys-kernel/xanmod-rt                                | 6.0.11             | RD         | https://xanmod.org                                                                      | XanMod RT sources and CJKTTY options.
+   sys-kernel/xanmod-rt                                | 6.0.11             | RD         | https://xanmod.org                                                                      | XanMod RT sources and CJKTTY options
                                                        | 6.12.31            |            |                                                                                         |
-   sys-kernel/xanmod-sources                           | 7.1.3              | RD         | https://xanmod.org                                                                      | Full XanMod source, including the Gentoo patchset and other patch options.
+   sys-kernel/xanmod-sources                           | 7.1.3              | RD         | https://xanmod.org                                                                      | Full XanMod source, including the Gentoo patchset and other patch options
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  virtual/v2ray-domain-list-community                   | 0                  |            |                                                                                         | Virtual for v2ray-domain-list-community
-   dev-libs/v2ray-domain-list-community                | 20260710034646     | RD         | https://github.com/v2fly/domain-list-community                                          | Community managed domain list for V2Ray.
-   dev-libs/v2ray-domain-list-community-bin            | 20260710034646     | RD         | https://github.com/v2fly/domain-list-community                                          | Community managed domain list for V2Ray.
+   dev-libs/v2ray-domain-list-community                | 20260710034646     | RD         | https://github.com/v2fly/domain-list-community                                          | Community managed domain list for V2Ray
+   dev-libs/v2ray-domain-list-community-bin            | 20260710034646     | RD         | https://github.com/v2fly/domain-list-community                                          | Community managed domain list for V2Ray
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  virtual/v2ray-geoip                                   | 0                  |            |                                                                                         | Virtual for v2ray-geoip
-   dev-libs/v2ray-geoip                                | 202607050337       | RD         | https://github.com/v2fly/geoip                                                          | GeoIP for V2Ray.
-   dev-libs/v2ray-geoip-bin                            | 202607050337       | RD         | https://github.com/v2fly/geoip                                                          | GeoIP for V2Ray.
+   dev-libs/v2ray-geoip                                | 202607050337       | RD         | https://github.com/v2fly/geoip                                                          | GeoIP for V2Ray
+   dev-libs/v2ray-geoip-bin                            | 202607050337       | RD         | https://github.com/v2fly/geoip                                                          | GeoIP for V2Ray
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- www-apps/cherry-studio-bin                            | 1.9.11             |            | https://github.com/CherryHQ/cherry-studio                                               | Cherry Studio is a desktop client that supports for multiple LLM providers.
+ www-apps/cherry-studio-bin                            | 1.9.11             |            | https://github.com/CherryHQ/cherry-studio                                               | Cherry Studio is a desktop client that supports for multiple LLM providers
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  www-apps/dufs                                         | 0.45.0             |            | https://github.com/sigoden/dufs                                                         | A distinctive utility file server
                                                        | 0.46.0             |            |                                                                                         |
@@ -978,7 +978,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  x11-themes/bibata-cursor                              | 2.0.7              |            | https://www.bibata.live                                                                 | Open source, compact, and material designed cursor set
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- x11-themes/fcitx-breeze                               | 3.1.0              |            | https://gitlab.com/scratch-er/fcitx5-breeze                                             | Fcitx5 theme to match KDE's Breeze style.
+ x11-themes/fcitx-breeze                               | 3.1.0              |            | https://gitlab.com/scratch-er/fcitx5-breeze                                             | Fcitx5 theme to match KDE's Breeze style
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  x11-themes/kora-icon-theme                            | 2.0.4              |            | https://github.com/bikass/kora                                                          | An SVG icon theme with lots of new icons for GNU/Linux operating systems
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -999,7 +999,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  x11-themes/ori-fcitx5                                 | 9999               |            | https://github.com/Reverier-Xu/Ori-fcitx5                                               | Ori theme for Fcitx5
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- x11-wm/chamferwm                                      | 9999               |            | https://github.com/jaelpark/chamferwm                                                   | A tiling X11 window manager with Vulkan compositor.
+ x11-wm/chamferwm                                      | 9999               |            | https://github.com/jaelpark/chamferwm                                                   | A tiling X11 window manager with Vulkan compositor
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  x11-wm/hypr                                           | 1.1.4              |            | https://github.com/hyprwm/Hypr                                                          | A dynamic Linux tiling window manager for Xorg
                                                        | 9999               |            |                                                                                         |
