@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-13 14:44:58 CST)
+(The last generation time: 2026-07-13 21:26:20 CST)
 
 ### Packages
 
@@ -190,7 +190,7 @@
                                                        | 5.5.0              |            |                                                                                         |
                                                        | 5.8.7              |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-misc/claude-desktop                               | 1.19367.0          |            | https://claude.com/download                                                             | Desktop application for Claude.ai
+ app-misc/claude-desktop                               | 1.20186.1          |            | https://claude.com/download                                                             | Desktop application for Claude.ai
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-misc/codex-auth                                   | 0.2.8              |            | https://github.com/Loongphy/codex-auth                                                  | Command-line tool for switching Codex accounts
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -972,7 +972,7 @@
  x11-terms/blackbox-terminal                           | 0.15.2             |            | https://gitlab.gnome.org/raggesilver/blackbox                                           | A beautiful GTK 4 terminal
    dev-libs/libpqmarble                                | 2.0.0_p20250109    |  D, RD     | https://gitlab.gnome.org/raggesilver/marble                                             | Utility library for GNOME apps
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- x11-terms/termius                                     | 9.40.1-r1          |            | https://termius.com/download/linux                                                      | Desktop SSH Client
+ x11-terms/termius                                     | 9.41.1             |            | https://termius.com/download/linux                                                      | Desktop SSH Client
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  x11-terms/wezterm-bin                                 | 20240203           |            | https://wezfurlong.org/wezterm                                                          | A terminal emulator and multiplexer implemented in Rust
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
