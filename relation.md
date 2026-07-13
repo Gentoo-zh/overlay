@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-14 03:49:32 CST)
+(The last generation time: 2026-07-14 03:50:10 CST)
 
 ### Packages
 
@@ -399,7 +399,7 @@
      sys-apps/pacman                                   | 7.0.0              |  D         | https://archlinux.org/pacman/                                                           | Archlinux's binary package manager
                                                        | 7.1.0              |            |                                                                                         |
        app-crypt/archlinux-keyring                     | 20251116           |  D, RD     | https://gitlab.archlinux.org/archlinux/archlinux-keyring                                | GnuPG keyring of Archlinux developer keys
-                                                       | 20260612           |            |                                                                                         |
+                                                       | 20260707.1         |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/asdf-vm                                      | 0.20.0             |            | https://github.com/asdf-vm/asdf                                                         | Manage all your runtime versions with one tool
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -730,7 +730,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-misc/biliup-rs                                    | 0.2.4              |            | https://github.com/biliup/biliup-rs                                                     | Upload video to bilibili
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-misc/bruno-bin                                    | 3.5.1              |            | https://www.usebruno.com/                                                               | Opensource IDE For Exploring and Testing Api's
+ net-misc/bruno-bin                                    | 3.5.2              |            | https://www.usebruno.com/                                                               | Opensource IDE For Exploring and Testing Api's
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-misc/flyctl-bin                                   | 0.4.54             |            | https://github.com/superfly/flyctl                                                      | Command line tools for fly.io services
                                                        | 0.4.59             |            |                                                                                         |
