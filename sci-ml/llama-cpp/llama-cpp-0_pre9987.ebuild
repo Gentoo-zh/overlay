@@ -59,22 +59,13 @@ CPU_FLAGS=(
 	"${RISCV_CPU_FLAGS[@]/#/cpu_flags_riscv_}"
 )
 
-IUSE="openblas +openmp blis rocm cuda opencl vulkan flexiblas wmma examples rpc +server webui spacemit ${CPU_FLAGS[*]}"
+IUSE="openblas +openmp blis rocm cuda opencl vulkan flexiblas wmma examples rpc +server webui ${CPU_FLAGS[*]}"
 
 REQUIRED_USE="
 	?? ( openblas blis flexiblas )
 	rocm? ( ${ROCM_REQUIRED_USE} !riscv )
 	wmma? ( rocm )
 	webui? ( server )
-	spacemit? (
-		riscv
-		cpu_flags_riscv_v
-		cpu_flags_riscv_zfh
-		cpu_flags_riscv_zvfh
-		cpu_flags_riscv_zicbop
-		cpu_flags_riscv_zihintpause
-		cpu_flags_riscv_zba
-	)
 "
 
 CDEPEND="
@@ -129,6 +120,7 @@ src_unpack() {
 		else
 			ln -s "${WORKDIR}/llama-${MY_PV}" "${S}/tools/ui/dist" || die
 		fi
+		echo "{\"version\":\"${MY_PV}\"}" > "${S}/tools/ui/dist/build.json"
 	fi
 }
 
@@ -161,64 +153,62 @@ src_configure() {
 		-DLLAMA_BUILD_UI="$(usex webui)"
 
 		-DGGML_RPC="$(usex rpc)"
-		-DGGML_CUDA="$(usex cuda)"
 		-DGGML_OPENCL="$(usex opencl)"
 		-DGGML_OPENMP="$(usex openmp)"
 		-DGGML_VULKAN="$(usex vulkan)"
 
 		-DGGML_NATIVE=OFF
-		-DGGML_SSE42="$(usex cpu_flags_x86_sse4_2)"
-		-DGGML_AVX="$(usex cpu_flags_x86_avx)"
-		-DGGML_AVX_VNNI="$(usex cpu_flags_x86_avx_vnni)"
-		-DGGML_AVX2="$(usex cpu_flags_x86_avx2)"
-		-DGGML_BMI2="$(usex cpu_flags_x86_bmi2)"
-		-DGGML_AVX512_VBMI="$(usex cpu_flags_x86_avx512vbmi)"
-		-DGGML_AVX512_VNNI="$(usex cpu_flags_x86_avx512_vnni)"
-		-DGGML_AVX512_BF16="$(usex cpu_flags_x86_avx512_bf16)"
-		-DGGML_FMA="$(usex cpu_flags_x86_fma3)"
-		-DGGML_F16C="$(usex cpu_flags_x86_f16c)"
-		-DGGML_AMX_TILE="$(usex cpu_flags_x86_amx_tile)"
-		-DGGML_AMX_INT8="$(usex cpu_flags_x86_amx_int8)"
-		-DGGML_AMX_BF16="$(usex cpu_flags_x86_amx_bf16)"
-
-		-DGGML_RVV="$(usex cpu_flags_riscv_v)"
-		-DGGML_RV_ZFH="$(usex cpu_flags_riscv_zfh)"
-		-DGGML_RV_ZVFH="$(usex cpu_flags_riscv_zvfh)"
-		-DGGML_RV_ZICBOP="$(usex cpu_flags_riscv_zicbop)"
-		-DGGML_RV_ZIHINTPAUSE="$(usex cpu_flags_riscv_zihintpause)"
-		-DGGML_XTHEADVECTOR="$(usex cpu_flags_riscv_xtheadvector)"
-		-DGGML_CPU_RISCV64_SPACEMIT="$(usex spacemit)"
 	)
 
-	if use cpu_flags_x86_avx512f &&
-		use cpu_flags_x86_avx512cd &&
-		use cpu_flags_x86_avx512vl &&
-		use cpu_flags_x86_avx512dq &&
-		use cpu_flags_x86_avx512bw; then
-		mycmakeargs+=( -DGGML_AVX512=ON )
-	else
-		mycmakeargs+=( -DGGML_AVX512=OFF )
-	fi
-
-	if use openblas; then
+	if [[ ${ARCH} = "amd64" ]]; then
 		mycmakeargs+=(
-			-DGGML_BLAS=ON -DGGML_BLAS_VENDOR=OpenBLAS
+			-DGGML_SSE42="$(usex cpu_flags_x86_sse4_2)"
+			-DGGML_AVX="$(usex cpu_flags_x86_avx)"
+			-DGGML_AVX_VNNI="$(usex cpu_flags_x86_avx_vnni)"
+			-DGGML_AVX2="$(usex cpu_flags_x86_avx2)"
+			-DGGML_BMI2="$(usex cpu_flags_x86_bmi2)"
+			-DGGML_AVX512_VBMI="$(usex cpu_flags_x86_avx512vbmi)"
+			-DGGML_AVX512_VNNI="$(usex cpu_flags_x86_avx512_vnni)"
+			-DGGML_AVX512_BF16="$(usex cpu_flags_x86_avx512_bf16)"
+			-DGGML_FMA="$(usex cpu_flags_x86_fma3)"
+			-DGGML_F16C="$(usex cpu_flags_x86_f16c)"
+			-DGGML_AMX_TILE="$(usex cpu_flags_x86_amx_tile)"
+			-DGGML_AMX_INT8="$(usex cpu_flags_x86_amx_int8)"
+			-DGGML_AMX_BF16="$(usex cpu_flags_x86_amx_bf16)"
+		)
+		if use cpu_flags_x86_avx512f &&
+			use cpu_flags_x86_avx512cd &&
+			use cpu_flags_x86_avx512vl &&
+			use cpu_flags_x86_avx512dq &&
+			use cpu_flags_x86_avx512bw; then
+			mycmakeargs+=( -DGGML_AVX512=ON )
+		else
+			mycmakeargs+=( -DGGML_AVX512=OFF )
+		fi
+	elif [[ ${ARCH} = "riscv" ]]; then
+		mycmakeargs+=(
+			-DGGML_RVV="$(usex cpu_flags_riscv_v)"
+			-DGGML_RV_ZFH="$(usex cpu_flags_riscv_zfh)"
+			-DGGML_RV_ZVFH="$(usex cpu_flags_riscv_zvfh)"
+			-DGGML_RV_ZICBOP="$(usex cpu_flags_riscv_zicbop)"
+			-DGGML_RV_ZIHINTPAUSE="$(usex cpu_flags_riscv_zihintpause)"
+			-DGGML_XTHEADVECTOR="$(usex cpu_flags_riscv_xtheadvector)"
 		)
 	fi
 
-	if use blis; then
-		mycmakeargs+=(
-			-DGGML_BLAS=ON -DGGML_BLAS_VENDOR=FLAME
-		)
-	fi
-
-	if use flexiblas; then
-		mycmakeargs+=(
-			-DGGML_BLAS=ON -DGGML_BLAS_VENDOR=FlexiBLAS
-		)
+	if use openblas || use blis || use flexiblas; then
+		mycmakeargs+=( -DGGML_BLAS=ON )
+		if use openblas; then
+			mycmakeargs+=( -DGGML_BLAS_VENDOR=OpenBLAS )
+		elif use blis; then
+			mycmakeargs+=( -DGGML_BLAS_VENDOR=FLAME )
+		elif use flexiblas; then
+			mycmakeargs+=( -DGGML_BLAS_VENDOR=FlexiBLAS )
+		fi
 	fi
 
 	if use cuda; then
+		mycmakeargs+=( -DGGML_CUDA=ON )
 		local -x CUDAHOSTCXX="$(cuda_gccdir)"
 		# tries to recreate dev symlinks
 		cuda_add_sandbox
@@ -232,10 +222,6 @@ src_configure() {
 			-DGGML_HIP=ON
 			-DGGML_HIP_ROCWMMA_FATTN="$(usex wmma)"
 		)
-	fi
-
-	if use spacemit; then
-		mycmakeargs+=( -DCMAKE_TOOLCHAIN_FILE="${S}/cmake/riscv64-spacemit-linux-gnu-gcc.cmake" )
 	fi
 
 	cmake_src_configure
