@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-14 03:51:38 CST)
+(The last generation time: 2026-07-14 03:52:36 CST)
 
 ### Packages
 
@@ -416,7 +416,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/gitea-cli                                    | 0.14.1             |            | https://gitea.com/gitea/tea                                                             | Command line tool to interact with Gitea
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-util/herdr-bin                                    | 0.7.1              |            | https://herdr.dev                                                                       | Terminal workspace manager for AI coding agents
+ dev-util/herdr-bin                                    | 0.7.3              |            | https://herdr.dev                                                                       | Terminal workspace manager for AI coding agents
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/jetbrains-toolbox                            | 3.6.1.85592        |            | https://www.jetbrains.com/toolbox-app/                                                  | Manage all your JetBrains Projects and Tools
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -806,7 +806,7 @@
  net-proxy/daed                                        | 1.21.1             |            | https://github.com/daeuniverse/daed                                                     | A Modern Dashboard For dae
                                                        | 1.27.0-r1          |            |                                                                                         |
                                                        | 9999               |            |                                                                                         |
-   sys-apps/pnpm                                       | 11.9.0             | BD         | https://pnpm.io                                                                         | Fast, disk space efficient package manager
+   sys-apps/pnpm                                       | 11.12.0            | BD         | https://pnpm.io                                                                         | Fast, disk space efficient package manager
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/flclash-bin                                 | 0.8.94             |            | https://github.com/chen08209/FlClash                                                    | A multi-platform proxy client based on ClashMeta
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
