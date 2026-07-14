@@ -29,6 +29,7 @@ RDEPEND="
 	dev-python/pyqt6[svg,${PYTHON_USEDEP}]
 	dev-python/qasync[${PYTHON_USEDEP}]
 	dev-qt/qtwayland:6
+	dev-qt/qtsvg:6
 "
 BDEPEND="virtual/pkgconfig"
 
