@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-14 08:23:18 CST)
+(The last generation time: 2026-07-14 12:09:10 CST)
 
 ### Packages
 
@@ -810,8 +810,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-proxy/flclash-bin                                 | 0.8.94             |            | https://github.com/chen08209/FlClash                                                    | A multi-platform proxy client based on ClashMeta
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-proxy/hysteria                                    | 2.10.0             |            | https://github.com/apernet/hysteria                                                     | A powerful, lightning fast and censorship resistant proxy
-                                                       | 2.9.1              |            |                                                                                         |
+ net-proxy/hysteria                                    | 2.10.0-r1          |            | https://github.com/apernet/hysteria                                                     | A powerful, lightning fast and censorship resistant proxy
    acct-group/hysteria                                 | 0                  |  D, RD     |                                                                                         | A powerful, lightning fast and censorship resistant proxy
    acct-user/hysteria                                  | 0                  |  D, RD     |                                                                                         | A powerful, lightning fast and censorship resistant proxy
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
