@@ -24,7 +24,7 @@ BDEPEND="
 
 RDEPEND="
 	$(python_gen_cond_dep 'dev-python/boltons[${PYTHON_USEDEP}]')
-	sys-libs/libsolv:=[conda,python_single_target_python3_13(-)]
+	sys-libs/libsolv:=[conda,${PYTHON_SINGLE_USEDEP}]
 	dev-util/mamba:=[python,${PYTHON_SINGLE_USEDEP}]
 "
 
