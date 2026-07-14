@@ -12,3 +12,11 @@ dev-python/numba
 dev-python/onnxruntime
 dev-python/sounddevice
 dev-python/soxr
+
+# Huang Rui <vowstar@gmail.com> (2026-07-13)
+# Upstream download is dead and overlay distfiles are not mirrored, so these
+# packages are uninstallable, re-home upstream or they will be removed
+# Removal on 2026-08-13
+app-emulation/deepin-wine-helper
+app-emulation/deepin-wine-plugin
+app-misc/ccal
