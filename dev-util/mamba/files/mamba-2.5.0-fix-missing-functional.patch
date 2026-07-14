@@ -1,0 +1,10 @@
+--- a/libmamba/include/mamba/util/random.hpp
++++ b/libmamba/include/mamba/util/random.hpp
+@@ -11,6 +11,7 @@
+ #include <algorithm>
+ #include <array>
+ #include <cstring>
++#include <functional>
+ #include <limits>
+ #include <random>
+ #include <string>

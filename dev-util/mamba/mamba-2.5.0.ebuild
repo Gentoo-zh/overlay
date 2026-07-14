@@ -70,6 +70,7 @@ BDEPEND="
 PATCHES=(
 	"${FILESDIR}/mamba-sh.patch"
 	"${FILESDIR}/${P}-fix-UnresolvedChannel.patch"
+	"${FILESDIR}/${P}-fix-missing-functional.patch"
 )
 
 src_prepare() {
