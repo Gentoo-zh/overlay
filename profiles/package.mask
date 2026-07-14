@@ -3,7 +3,6 @@
 # the vocotype stack, but vocotype upstream is no longer maintained.
 # Removal on 2026-07-30 unless a new maintainer steps up.
 app-i18n/vocotype
-dev-python/autopxd2
 dev-python/funasr-onnx
 dev-python/jieba
 dev-python/kaldi-native-fbank
