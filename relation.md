@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-14 08:10:26 CST)
+(The last generation time: 2026-07-14 08:23:18 CST)
 
 ### Packages
 
@@ -356,11 +356,11 @@
  dev-python/fuo-ytmusic                                | 0.4.14             |            | https://github.com/feeluown/feeluown-ytmusic                                            | youtube music support for feeluown
                                                        | 0.4.2              |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-python/fusesoc                                    | 2.4.4              |            | https://github.com/olofk/fusesoc/                                                       | Award-winnning package manager and build abstraction tool for HDL code.
+ dev-python/fusesoc                                    | 2.4.4              |            | https://github.com/olofk/fusesoc/                                                       | Award-winnning package manager and build abstraction tool for HDL code
                                                        | 2.4.6              |            |                                                                                         |
-   dev-python/edalize                                  | 0.6.8              | RD         | https://github.com/olofk/edalize/                                                       | Library for interfacing EDA tools.
-   dev-python/simplesat                                | 0.9.2              | RD         | https://github.com/enthought/sat-solver                                                 | Prototype for SAT-based dependency handling.
-     dev-python/okonomiyaki                            | 3.0.0              | RD         | https://github.com/enthought/okonomiyaki                                                | Self-contained library to deal with metadata in egg and runtime archives.
+   dev-python/edalize                                  | 0.6.8              | RD         | https://github.com/olofk/edalize/                                                       | Library for interfacing EDA tools
+   dev-python/simplesat                                | 0.9.2              | RD         | https://github.com/enthought/sat-solver                                                 | Prototype for SAT-based dependency handling
+     dev-python/okonomiyaki                            | 3.0.0              | RD         | https://github.com/enthought/okonomiyaki                                                | Self-contained library to deal with metadata in egg and runtime archives
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-python/iptcinfo3                                  | 2.3.0              |            | https://github.com/james-see/iptcinfo3                                                  | To read/write image metadata
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
