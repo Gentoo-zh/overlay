@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-14 12:18:01 CST)
+(The last generation time: 2026-07-14 15:53:23 CST)
 
 ### Packages
 
@@ -160,7 +160,7 @@
    dev-python/jieba                                    | 0.42.1             | RD         | https://github.com/fxsjy/jieba                                                          | Chinese text segmentation library
    dev-python/pyrime                                   | 0.2.3              | RD         | https://github.com/Freed-Wu/pyrime                                                      | rime for python
      app-i18n/librime                                  | 9999               |  D, RD     | https://rime.im/                                                                        | RIME (Rime Input Method Engine) core library
-     dev-python/autopxd2                               | 3.2.2              | BD         | https://github.com/elijahr/python-autopxd2                                              | Generate Cython pxd files from C header files
+     dev-python/autopxd2                               | 3.2.3              | BD         | https://github.com/elijahr/python-autopxd2                                              | Generate Cython pxd files from C header files
    dev-python/sounddevice                              | 0.5.5              | RD         | https://github.com/spatialaudio/python-sounddevice                                      | Play and record sound with Python via PortAudio
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-i18n/zh-autoconvert                               | 0.3.16_p10         |            | https://packages.debian.org/stable/source/zh-autoconvert                                | Chinese HZ/GB/BIG5/UNI/UTF7/UTF8 encodings auto-converter
