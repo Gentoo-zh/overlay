@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-14 12:09:10 CST)
+(The last generation time: 2026-07-14 12:18:01 CST)
 
 ### Packages
 
@@ -20,7 +20,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-admin/chezmoi                                     | 2.71.0             |            | https://www.chezmoi.io                                                                  | Manage your dotfiles across multiple diverse machines, securely
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- app-admin/chezmoi-bin                                 | 2.70.0             |            | https://www.chezmoi.io                                                                  | Manage your dotfiles across multiple diverse machines, securely
+ app-admin/chezmoi-bin                                 | 2.71.0             |            | https://www.chezmoi.io                                                                  | Manage your dotfiles across multiple diverse machines, securely
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  app-admin/enpass                                      | 6.10.1.1661        |            | https://www.enpass.io                                                                   | A cross-platform, complete password management solution
                                                        | 6.11.13.1957       |            |                                                                                         |
