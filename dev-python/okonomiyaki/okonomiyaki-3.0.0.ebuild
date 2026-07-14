@@ -9,7 +9,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="
-	Self-contained library to deal with metadata in egg and runtime archives.
+	Self-contained library to deal with metadata in egg and runtime archives
 "
 HOMEPAGE="
 	https://github.com/enthought/okonomiyaki

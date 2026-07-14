@@ -9,7 +9,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="
-	Prototype for SAT-based dependency handling.
+	Prototype for SAT-based dependency handling
 "
 HOMEPAGE="
 	https://github.com/enthought/sat-solver

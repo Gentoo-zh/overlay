@@ -9,7 +9,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="
-Award-winnning package manager and build abstraction tool for HDL code.
+Award-winnning package manager and build abstraction tool for HDL code
 "
 HOMEPAGE="
 	https://github.com/olofk/fusesoc/

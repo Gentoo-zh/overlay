@@ -13,7 +13,7 @@ PATCHES=(
 )
 
 DESCRIPTION="
-Award-winnning package manager and build abstraction tool for HDL code.
+Award-winnning package manager and build abstraction tool for HDL code
 "
 HOMEPAGE="
 	https://github.com/olofk/fusesoc/

@@ -13,7 +13,7 @@ PATCHES=(
 )
 
 DESCRIPTION="
-	Library for interfacing EDA tools.
+	Library for interfacing EDA tools
 "
 HOMEPAGE="
 	https://github.com/olofk/edalize/

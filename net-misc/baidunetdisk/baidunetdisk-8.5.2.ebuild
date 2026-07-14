@@ -34,8 +34,8 @@ QA_PREBUILT="*"
 src_install() {
 	insinto /opt
 	doins -r opt/"${PN}"
-    find "${D}" -type d -name "node_gyp_bins" -exec rm -rf {} + 2>/dev/null
-    find "${D}" -type d -empty -delete 2>/dev/null
+	find "${D}" -type d -name "node_gyp_bins" -exec rm -rf {} + 2>/dev/null
+	find "${D}" -type d -empty -delete 2>/dev/null
 	fperms +x /opt/"${PN}"/"${PN}"
 	dosym -r /opt/{"${PN}"/"${PN}",bin/"${PN}"}
 
