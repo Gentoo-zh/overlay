@@ -9,11 +9,11 @@ DESCRIPTION="Experience tranquillity while browsing the web without people track
 HOMEPAGE="https://zen-browser.app/"
 SRC_URI="
 	amd64? (
-		https://github.com/zen-browser/desktop/releases/download/${PV}/zen.linux-x86_64.tar.xz
+		https://github.com/zen-browser/desktop/releases/download/${PV/_beta/b}/zen.linux-x86_64.tar.xz
 			-> ${P}-amd64.tar.xz
 	)
 	arm64? (
-		https://github.com/zen-browser/desktop/releases/download/${PV}/zen.linux-aarch64.tar.xz
+		https://github.com/zen-browser/desktop/releases/download/${PV/_beta/b}/zen.linux-aarch64.tar.xz
 			-> ${P}-arm64.tar.xz
 	)
 "
@@ -22,7 +22,7 @@ S="${WORKDIR}/zen"
 
 LICENSE="MPL-2.0"
 SLOT="0"
-KEYWORDS="-* amd64 ~arm64"
+KEYWORDS="-* ~amd64 ~arm64"
 IUSE="wayland"
 RESTRICT="strip"
 
