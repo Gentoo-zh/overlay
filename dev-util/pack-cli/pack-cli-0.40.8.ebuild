@@ -26,11 +26,11 @@ RDEPEND="
 	)
 "
 RDEPEND+=" !dev-util/pack-cli-bin"
-BDEPEND=">=dev-lang/go-1.23.0"
+BDEPEND=">=dev-lang/go-1.25.12"
 
 src_compile() {
-	local ldflags="-X 'github.com/buildpacks/pack.Version=${PV}'"
-	ego build -ldflags "${ldflags}" ./cmd/pack
+	local ldflags="-X 'github.com/buildpacks/pack/pkg/client.Version=${PV}'"
+	ego build -ldflags "${ldflags}" .
 }
 
 src_install() {
