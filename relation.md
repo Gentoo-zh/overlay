@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-16 04:17:04 CST)
+(The last generation time: 2026-07-16 04:21:06 CST)
 
 ### Packages
 
@@ -416,7 +416,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/gitea-cli                                    | 0.14.1             |            | https://gitea.com/gitea/tea                                                             | Command line tool to interact with Gitea
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-util/herdr-bin                                    | 0.7.3              |            | https://herdr.dev                                                                       | Terminal workspace manager for AI coding agents
+ dev-util/herdr-bin                                    | 0.7.4              |            | https://herdr.dev                                                                       | Terminal workspace manager for AI coding agents
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/jetbrains-toolbox                            | 3.6.1.85592        |            | https://www.jetbrains.com/toolbox-app/                                                  | Manage all your JetBrains Projects and Tools
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
@@ -460,7 +460,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-vcs/git-remote-mediawiki                          | 9999               |            | https://github.com/Git-Mediawiki/Git-Mediawiki                                          | Gate between Git and Mediawiki: pull and push Wikipedia articles
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-vcs/rebased-bin                                   | 1.1.6              |            | https://github.com/DetachHead/rebased                                                   | Git client based on the IntelliJ platform
+ dev-vcs/rebased-bin                                   | 1.1.7              |            | https://github.com/DetachHead/rebased                                                   | Git client based on the IntelliJ platform
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-vcs/sourcegit-bin                                 | 2026.07            |            | https://github.com/sourcegit-scm/sourcegit                                              | Opensource Git GUI client
                                                        | 2026.09            |            |                                                                                         |
