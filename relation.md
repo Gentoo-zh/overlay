@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-16 06:16:15 CST)
+(The last generation time: 2026-07-16 06:38:06 CST)
 
 ### Packages
 
@@ -948,7 +948,7 @@
  www-client/brave-bin                                  | 1.92.139           |            | https://brave.com/                                                                      | Web browser that blocks ads and trackers by default
                                                        | 1.92.140           |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- www-client/zen-browser-bin                            | 1.21.6b            |            | https://zen-browser.app/                                                                | Experience tranquillity while browsing the web without people tracking you!
+ www-client/zen-browser-bin                            | 1.21.7b            |            | https://zen-browser.app/                                                                | Experience tranquillity while browsing the web without people tracking you!
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  www-servers/darkhttpd                                 | 1.17               |            | http://unix4lyfe.org/darkhttpd/                                                         | A small, static webserver
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
