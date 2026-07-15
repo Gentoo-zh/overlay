@@ -15,6 +15,7 @@ KEYWORDS="~amd64 ~arm64 ~loong"
 
 RDEPEND="
 	virtual/zlib
+	app-arch/zstd
 	media-libs/libjpeg-turbo
 	media-libs/libpng
 	media-libs/openjpeg:2
