@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-16 04:15:19 CST)
+(The last generation time: 2026-07-16 04:16:36 CST)
 
 ### Packages
 
@@ -714,7 +714,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-misc/another-redis-desktop-manager-bin            | 1.7.1              |            | https://github.com/qishibo/AnotherRedisDesktopManager                                   | A faster, better and more stable Redis desktop manager [GUI client]
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-misc/apifox                                       | 2.8.36             |            | https://apifox.com/                                                                     | API 文档、API 调试、API Mock、API 自动化测试
+ net-misc/apifox                                       | 2.8.38             |            | https://apifox.com/                                                                     | API 文档、API 调试、API Mock、API 自动化测试
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-misc/baidunetdisk                                 | 4.17.8             |            | https://pan.baidu.com/                                                                  | Baidu Net Disk is a cloud storage client (Linux Version)
                                                        | 4.3.0              |            |                                                                                         |
@@ -764,7 +764,7 @@
  net-misc/remmina-plugin-rustdesk                      | 1.0.0.0-r1         |            | https://www.muflone.com/remmina-plugin-rustdesk/                                        | A protocol plugin for Remmina to launch a Rustdesk connection
    net-misc/rustdesk                                   | 1.4.9              |  D, RD     | https://rustdesk.com/                                                                   | An open-source remote desktop, and alternative to TeamViewer
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- net-misc/reqable                                      | 3.2.4              |            | https://reqable.com/en-US/                                                              | Reqable = Fiddler + Charles + Postman, 让API调试更快 🚀 更简单 👌
+ net-misc/reqable                                      | 3.2.9              |            | https://reqable.com/en-US/                                                              | Reqable = Fiddler + Charles + Postman, 让API调试更快 🚀 更简单 👌
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  net-misc/todesk                                       | 4.8.6.2            |            | https://www.todesk.com/                                                                 | Remote control and team work
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
