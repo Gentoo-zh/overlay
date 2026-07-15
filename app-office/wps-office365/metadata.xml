@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>zakk@gentoozh.org</email>
+		<name>Zakk</name>
+	</maintainer>
+	<longdescription lang="en">
+		WPS Office is an office productivity suite by Kingsoft. This package
+		provides the WPS 365 edition (the ".365" upstream build), which bundles
+		the cloud, AI and collaboration add-ons and is the only edition upstream
+		ships for arm64 and loong. It conflicts with app-office/wps-office, the
+		amd64-only Personal edition, as both use the same install paths.
+	</longdescription>
+</pkgmetadata>
