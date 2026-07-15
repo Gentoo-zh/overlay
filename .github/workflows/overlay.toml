@@ -855,6 +855,12 @@ use_latest_release = true
 prefix = "v"
 github_account = "gouwazi"
 
+["games-action/vintagestory"]
+source = "regex"
+url = "https://api.vintagestory.at/lateststable.txt"
+regex = "([\\d.]+)"
+github_account = ["liuyujielol", "gouwazi"]
+
 ["games-arcade/osu-lazer-bin"]
 source = "github"
 github = "ppy/osu"
@@ -870,6 +876,12 @@ github_account = "Puqns67"
 source = "github"
 github = "git-learning-game/oh-my-git"
 use_latest_tag = true
+
+["games-server/vintagestory-server"]
+source = "regex"
+url = "https://api.vintagestory.at/lateststable.txt"
+regex = "([\\d.]+)"
+github_account = ["liuyujielol", "gouwazi"]
 
 ["gui-apps/crystal-dock"]
 source = "github"
