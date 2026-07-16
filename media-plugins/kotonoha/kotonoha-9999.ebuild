@@ -47,7 +47,6 @@ python_configure_all() {
 
 python_install_all() {
 	distutils-r1_python_install_all
-	dodoc LICENSE
 	domenu packaging/kotonoha.desktop
 	newicon src/kotonoha/assets/icon.png kotonoha.png
 	doman packaging/kotonoha.1
