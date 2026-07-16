@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-16 12:39:25 CST)
+(The last generation time: 2026-07-16 13:20:56 CST)
 
 ### Packages
 
@@ -621,7 +621,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-sound/rew                                       | 5.31.3             |            | https://www.roomeqwizard.com/                                                           | Room acoustics, loudspeaker and audio device measurement software
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- media-sound/splayer                                   | 3.0.0              |            | https://splayer.imsyy.top/                                                              | A cross-platform music player
+ media-sound/splayer                                   | 3.1.1              |            | https://splayer.imsyy.top/                                                              | A cross-platform music player
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  media-sound/spotube-bin                               | 5.1.1              |            | https://github.com/KRTirtho/spotube                                                     | A lightweight Spotify client using YouTube as audio source
                                                        | 5.1.2              |            |                                                                                         |
