@@ -7,7 +7,7 @@ inherit go-module
 DESCRIPTION="A immich-CLI alternative"
 HOMEPAGE="https://github.com/simulot/immich-go/"
 SRC_URI="
-	https://codeload.github.com/simulot/immich-go/tar.gz/v${PV} -> ${P}.tar.gz
+	https://github.com/simulot/immich-go/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/gentoo-zh-drafts/immich-go/releases/download/v${PV}/${P}-vendor.tar.xz
 "
 
