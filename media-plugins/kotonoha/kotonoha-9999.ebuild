@@ -17,7 +17,6 @@ LICENSE="ISC LGPL-2.1+ MIT"
 SLOT="0"
 
 DEPEND="
-	${PYTHON_DEPS}
 	dev-libs/wayland
 	dev-qt/qtbase:6=[gui,wayland,widgets]
 	kde-plasma/layer-shell-qt:6
@@ -31,7 +30,7 @@ RDEPEND="
 	dev-qt/qtwayland:6
 	dev-qt/qtsvg:6
 "
-BDEPEND="${BDEPEND}
+BDEPEND="
 	dev-util/wayland-scanner
 	virtual/pkgconfig
 "
