@@ -11,6 +11,7 @@ MY_PV="${MY_PV//_/-}"
 DESCRIPTION="A low latency KVMFR application for guests with VGA PCI Passthrough"
 HOMEPAGE="https://looking-glass.io"
 SRC_URI="https://looking-glass.io/artifact/${MY_PV}/source -> ${P}.tar.gz"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -53,15 +54,15 @@ DEPEND="gui-libs/egl-wayland
 	)"
 RDEPEND="${DEPEND}"
 
-S="${WORKDIR}/${PN}-${MY_PV}"
-
 MY_CMAKE_PROJECT="client "
 
 src_prepare() {
 	default
 	# fix cmake compatibility issues with newer cmake versions
-	find "${S}" -name "CMakeLists.txt" -exec sed -i 's/cmake_minimum_required(VERSION 3\.5)/cmake_minimum_required(VERSION 3.10)/' {} +
-	find "${S}" -name "CMakeLists.txt" -exec sed -i 's/cmake_minimum_required(VERSION [0-9]\.[0-9])/cmake_minimum_required(VERSION 3.10)/' {} +
+	find "${S}" -name "CMakeLists.txt" -exec sed -i \
+		's/cmake_minimum_required(VERSION 3\.5)/cmake_minimum_required(VERSION 3.10)/' {} +
+	find "${S}" -name "CMakeLists.txt" -exec sed -i \
+		's/cmake_minimum_required(VERSION [0-9]\.[0-9])/cmake_minimum_required(VERSION 3.10)/' {} +
 	# add other project
 	if use host; then
 		MY_CMAKE_PROJECT+="host "

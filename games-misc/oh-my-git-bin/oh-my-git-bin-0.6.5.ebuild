@@ -11,6 +11,7 @@ HOMEPAGE="https://ohmygit.org/
 	https://github.com/git-learning-game/oh-my-git"
 PKG_URI="https://blinry.itch.io/oh-my-git"
 SRC_URI="${MY_PN}-linux.zip"
+S="${WORKDIR}"
 
 LICENSE="BlueOak-1.0.0"
 SLOT="0"
@@ -30,8 +31,6 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="app-arch/unzip"
-
-S="${WORKDIR}"
 
 pkg_nofetch() {
 	elog "Please download ${A} from"
