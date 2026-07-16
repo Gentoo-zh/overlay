@@ -61,6 +61,10 @@ BDEPEND="app-arch/unzip"
 RESTRICT="mirror"
 
 QA_PREBUILT="/usr/share/trae-cn/*"
+# prebuilt Electron/sandbox blobs (sbox.so, crashpad_handler, bwrap, bundled .so) ship
+# RWX segments we cannot rebuild; acknowledge so the execstack QA elog does not fail CI.
+# scanelf matches these paths WITHOUT a leading slash (unlike QA_PREBUILT above).
+QA_EXECSTACK="usr/share/trae-cn/*"
 
 src_unpack() {
 	export LANG=C.UTF-8
