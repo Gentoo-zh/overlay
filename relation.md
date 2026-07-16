@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-17 03:58:09 CST)
+(The last generation time: 2026-07-17 04:06:51 CST)
 
 ### Packages
 
@@ -344,6 +344,7 @@
  dev-python/exifread                                   | 2.3.1              |            | https://github.com/ianare/exif-py                                                       | Read Exif metadata from tiff and jpeg files
                                                        | 2.3.2              |            |                                                                                         |
                                                        | 3.3.2              |            |                                                                                         |
+                                                       | 3.5.1              |            |                                                                                         |
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-python/feeluown-bilibili                          | 0.4.1              |            | https://github.com/feeluown/feeluown-bilibili                                           | bilibili support for feeluown
                                                        | 0.5.5              |            |                                                                                         |
