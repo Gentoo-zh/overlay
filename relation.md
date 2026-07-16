@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-16 19:35:30 CST)
+(The last generation time: 2026-07-16 19:48:05 CST)
 
 ### Packages
 
@@ -423,7 +423,7 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/jetbrains-toolbox                            | 3.6.2.85969        |            | https://www.jetbrains.com/toolbox-app/                                                  | Manage all your JetBrains Projects and Tools
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-util/kimi-cli-bin                                 | 1.48.0             |            | https://github.com/MoonshotAI/kimi-cli                                                  | Kimi Code CLI - an agentic coding tool by Moonshot AI
+ dev-util/kimi-cli-bin                                 | 1.49.0             |            | https://github.com/MoonshotAI/kimi-cli                                                  | Kimi Code CLI - an agentic coding tool by Moonshot AI
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/maixvision                                   | 1.2.2-r1           |            | https://www.sipeed.com/maixvision                                                       | MaixVision - AIoT development platform
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
