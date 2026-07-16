@@ -32,6 +32,12 @@ repo = "main"
 pkg = "enpass"
 github_account = ["aieu", "gouwazi"]
 
+["app-admin/proton-authenticator-bin"]
+source = "regex"
+url = "https://proton.me/download/authenticator/linux/version.json"
+regex = '"Version": "([\d.]+)"'
+github_account = "xz-dev"
+
 ["app-admin/rbw"]
 source = "github"
 github = "doy/rbw"
@@ -78,9 +84,23 @@ use_latest_release = true
 prefix = "v"
 github_account = "huaji2369"
 
+["app-dicts/fcitx-pinyin-custom-pinyin-dictionary"]
+source = "regex"
+url = "https://raw.githubusercontent.com/wuhgit/CustomPinyinDictionary/main/status.json"
+regex = '"updateDate":\s*"([\d-]+)"'
+from_pattern = '(\d+)-(\d+)-(\d+)'
+to_pattern = '\1\2\3'
+github_account = "blackteahamburger"
+
 ["app-dicts/fcitx-pinyin-moegirl"]
 source = "github"
 github = "outloudvi/mw2fcitx"
+use_latest_release = true
+github_account = "blackteahamburger"
+
+["app-dicts/fcitx-pinyin-sougou-dict"]
+source = "github"
+github = "blackteahamburger/fcitx5-pinyin-sougou-dict"
 use_latest_release = true
 github_account = "blackteahamburger"
 
@@ -89,6 +109,12 @@ source = "archpkg"
 archpkg = "fcitx5-pinyin-zhwiki"
 strip_release = true
 github_account = "blackteahamburger"
+
+["app-doc/reeknote"]
+source = "github"
+github = "vitaly-zdanevich/reeknote"
+use_latest_release = true
+github_account = "vitaly-zdanevich"
 
 ["app-editors/antigravity"]
 source = "regex"
@@ -102,12 +128,230 @@ github = "AppFlowy-IO/AppFlowy"
 use_latest_release = true
 github_account = ["Linerre", "gouwazi"]
 
+["app-editors/edit"]
+source = "github"
+github = "microsoft/edit"
+use_latest_release = true
+prefix = "v"
+github_account = "peeweep"
+
+["app-editors/void-editor"]
+source = "github"
+github = "voideditor/binaries"
+use_latest_release = true
+github_account = "AmarBego"
+
+["app-emulation/la-ow-syscall"]
+source = "github"
+github = "AOSC-Dev/la_ow_syscall"
+use_latest_release = true
+from_pattern = '^debian/v?(.+)$'
+to_pattern = '\1'
+github_account = "xen0n"
+
+["app-emulation/liblol"]
+source = "github"
+github = "AOSC-Dev/liblol"
+use_latest_release = true
+prefix = "v"
+github_account = "xen0n"
+
+["app-i18n/fcitx5-vinput"]
+source = "github"
+github = "xifan2333/fcitx5-vinput"
+use_latest_release = true
+prefix = "v"
+github_account = ["liangyongxiang", "vowstar"]
+
+["app-misc/copilot"]
+source = "github"
+github = "github/copilot-cli"
+use_latest_release = true
+prefix = "v"
+github_account = "douglarek"
+
+["app-misc/crush"]
+source = "github"
+github = "charmbracelet/crush"
+use_latest_release = true
+prefix = "v"
+github_account = "douglarek"
+
+["app-misc/openclaude"]
+source = "github"
+github = "Gitlawb/openclaude"
+use_latest_release = true
+prefix = "v"
+github_account = "liangyongxiang"
+
+["app-misc/qwen-code"]
+source = "github"
+github = "QwenLM/qwen-code"
+use_max_tag = true
+include_regex = "^v\\d+\\.\\d+\\.\\d+$"
+prefix = "v"
+github_account = "douglarek"
+
+["app-office/evernote-repack"]
+source = "github"
+github = "vitaly-zdanevich/evernote-linux-repackage"
+use_latest_release = true
+prefix = "v"
+from_pattern = "(.*)-(.*)"
+to_pattern = '\1_p\2'
+github_account = "vitaly-zdanevich"
+
+["app-shells/gentoo-fish-completion"]
+source = "github"
+github = "douglarek/gentoo-fish-completion"
+use_latest_tag = true
+prefix = "v"
+github_account = "douglarek"
+
+["app-text/gzpaste"]
+source = "github"
+github = "gentoo-zh/gzpaste"
+use_latest_release = true
+prefix = "v"
+github_account = "Zakkaus"
+
+["app-text/lektra"]
+source = "github"
+github = "dheerajshenoy/lektra"
+use_latest_release = true
+prefix = "v"
+github_account = "douglarek"
+
+["app-text/tre"]
+source = "github"
+github = "dduan/tre"
+use_latest_release = true
+prefix = "v"
+github_account = "vitaly-zdanevich"
+
+["app-text/wik"]
+source = "github"
+github = "yashsinghcodes/wik"
+use_latest_tag = true
+prefix = "v"
+github_account = "vitaly-zdanevich"
+
+["app-text/wiki2man_on_rust"]
+source = "gitlab"
+gitlab = "vitaly_zdanevich_wikimedia/wiki2man_on_rust"
+use_max_tag = true
+github_account = "vitaly-zdanevich"
+
+["dev-embedded/at32workbench"]
+source = "regex"
+url = "https://www.arterytek.com/json/Document.json"
+regex = 'AT32_Work_Bench_Linux-x86_64_V([\d.]+)\.zip'
+github_account = "microcai"
+
+["dev-go/gotests"]
+source = "github"
+github = "cweill/gotests"
+use_latest_release = true
+prefix = "v"
+github_account = "douglarek"
+
+["dev-go/staticcheck"]
+source = "github"
+github = "dominikh/go-tools"
+use_latest_release = true
+github_account = "douglarek"
+
 ["dev-lang/dart"]
 source = "apt"
 pkg = "dart"
 mirror = "https://storage.googleapis.com/download.dartlang.org/linux/debian"
 suite = "stable"
 strip_release = true
+github_account = "peeweep"
+
+["dev-python/autopxd2"]
+source = "github"
+github = "elijahr/python-autopxd2"
+use_latest_release = true
+prefix = "v"
+github_account = "vowstar"
+
+["dev-python/browser-cookie3"]
+source = "github"
+github = "borisbabic/browser_cookie3"
+use_latest_tag = true
+github_account = "locez"
+
+["dev-python/exifread"]
+source = "github"
+github = "ianare/exif-py"
+use_latest_release = true
+github_account = "vitaly-zdanevich"
+
+["dev-python/frozendict"]
+source = "github"
+github = "Marco-Sulla/python-frozendict"
+use_latest_release = true
+prefix = "v"
+github_account = "OriPoin"
+
+["dev-python/iptcinfo3"]
+source = "github"
+github = "james-see/iptcinfo3"
+use_latest_release = true
+prefix = "v"
+github_account = "vitaly-zdanevich"
+
+["dev-python/menuinst"]
+source = "github"
+github = "conda/menuinst"
+use_latest_release = true
+github_account = "OriPoin"
+
+["dev-python/microfs2"]
+source = "github"
+github = "blackteahamburger/microfs"
+use_latest_release = true
+prefix = "v"
+github_account = "blackteahamburger"
+
+["dev-python/mwparserfromhell"]
+source = "github"
+github = "earwig/mwparserfromhell"
+use_latest_release = true
+prefix = "v"
+github_account = "vitaly-zdanevich"
+
+["dev-python/pure-protobuf"]
+source = "github"
+github = "eigenein/protobuf"
+use_latest_release = true
+github_account = "locez"
+
+["dev-python/pyrime"]
+source = "github"
+github = "Freed-Wu/pyrime"
+use_latest_release = true
+github_account = "Freed-Wu"
+
+["dev-python/pywikibot"]
+source = "pypi"
+pypi = "pywikibot"
+github_account = "vitaly-zdanevich"
+
+# dev-qt/qtgrpc: kept in sync with the main tree qt, no nvchecker needed
+
+["dev-ruby/filelock"]
+source = "github"
+github = "sheerun/filelock"
+use_latest_tag = true
+prefix = "v"
+github_account = "peeweep"
+
+["dev-util/cmakerc"]
+source = "github"
+github = "vector-of-bool/cmrc"
+use_latest_release = true
 github_account = "peeweep"
 
 ["dev-util/fvm"]
@@ -767,6 +1011,14 @@ use_latest_release = true
 prefix = "rust-v"
 github_account = "vowstar"
 
+["dev-util/gitea-cli"]
+source = "gitea"
+gitea = "gitea/tea"
+host = "gitea.com"
+use_max_tag = true
+prefix = "v"
+github_account = "douglarek"
+
 ["dev-util/herdr-bin"]
 source = "github"
 github = "ogulcancelik/herdr"
@@ -782,6 +1034,18 @@ aur = "jetbrains-toolbox"
 strip_release = true
 github_account = "gouwazi"
 
+["dev-util/kimi-cli-bin"]
+source = "github"
+github = "MoonshotAI/kimi-cli"
+use_latest_release = true
+github_account = "liangyongxiang"
+
+["dev-util/maixvision"]
+source = "regex"
+url = "https://cdn.sipeed.com/maixvision/latest-linux.yml"
+regex = 'version:\s*([\d.]+)'
+github_account = "semes1"
+
 # TODO: need filter mamba- prefix
 #["dev-util/mamba"]
 
@@ -790,6 +1054,13 @@ source = "github"
 github = "openSUSE/osc"
 use_latest_tag = true
 github_account = ["douglarek", "gouwazi"]
+
+["dev-util/pack-cli"]
+source = "github"
+github = "buildpacks/pack"
+use_latest_release = true
+prefix = "v"
+github_account = "tsln1998"
 
 ["dev-util/pacstrap"]
 source = "gitlab"
@@ -800,6 +1071,21 @@ prefix = "v"
 
 # TODO: PV mismatching tag
 #["dev-util/patchelf-liblol"]
+
+["dev-util/pi-coding-agent-bin"]
+source = "github"
+github = "badlogic/pi-mono"
+use_latest_release = true
+prefix = "v"
+github_account = "douglarek"
+
+["dev-util/reasonix-bin"]
+source = "github"
+github = "esengine/DeepSeek-Reasonix"
+use_max_release = true
+include_regex = "v\\d+\\.\\d+\\.\\d+"
+prefix = "v"
+github_account = "xz-dev"
 
 ["dev-util/redpanda-cpp"]
 source = "github"
@@ -813,6 +1099,20 @@ source = "github"
 github = "bensadeh/tailspin"
 use_latest_release = true
 github_account = "liangyongxiang"
+
+["dev-util/trae-ide"]
+source = "regex"
+url = "https://api.trae.cn/icube/api/v1/native/version/trae/cn/latest"
+regex = '"linux":\{"version":"([\d.]+)"'
+github_account = "microcai"
+
+["dev-util/vcpkg-tool"]
+source = "github"
+github = "microsoft/vcpkg-tool"
+use_latest_release = true
+from_pattern = '(\d{4})-(\d{2})-(\d{2})'
+to_pattern = '\1.\2.\3'
+github_account = "microcai"
 
 ["dev-util/vfox"]
 source = "github"
@@ -828,6 +1128,14 @@ github_account = "gouwazi"
 # github = "version-fox/vfox"
 # use_latest_release = true
 # prefix = "v"
+
+["dev-util/waza-bin"]
+source = "github"
+github = "microsoft/waza"
+use_max_tag = true
+include_regex = "v\\d+\\.\\d+\\.\\d+"
+prefix = "v"
+github_account = "liangyongxiang"
 
 ["dev-util/zprint-bin"]
 source = "github"
@@ -855,12 +1163,32 @@ use_latest_release = true
 prefix = "v"
 github_account = "gouwazi"
 
+["games-action/vintagestory"]
+source = "regex"
+url = "https://api.vintagestory.at/lateststable.txt"
+regex = "([\\d.]+)"
+github_account = "liuyujielol"
+
 ["games-arcade/osu-lazer-bin"]
 source = "github"
 github = "ppy/osu"
 use_latest_release = true
 from_pattern = '^(\d{4}\.\d{3,4}\.\d+)-lazer$'
 to_pattern = '\1'
+github_account = "Puqns67"
+
+["games-emulation/conty"]
+source = "github"
+github = "Kron4ek/Conty"
+use_latest_release = true
+github_account = "vitaly-zdanevich"
+
+["games-emulation/onscripter-yuri"]
+source = "github"
+github = "YuriSizuku/OnscripterYuri"
+use_max_tag = true
+prefix = "v"
+exclude_regex = ".*(beta|test)"
 github_account = "Puqns67"
 
 # live package only
@@ -870,6 +1198,24 @@ github_account = "Puqns67"
 source = "github"
 github = "git-learning-game/oh-my-git"
 use_latest_tag = true
+
+["games-server/vintagestory-server"]
+source = "regex"
+url = "https://api.vintagestory.at/lateststable.txt"
+regex = "([\\d.]+)"
+github_account = "liuyujielol"
+
+["games-strategy/zedonline-bin"]
+source = "regex"
+url = "https://sourceforge.net/projects/zedonline/rss?path=/releases"
+regex = 'v(\d+(?:\.\d+)+)'
+github_account = "vitaly-zdanevich"
+
+["gnome-extra/nautilus-open-any-terminal"]
+source = "github"
+github = "Stunkymonkey/nautilus-open-any-terminal"
+use_latest_release = true
+github_account = "Jack77793"
 
 ["gui-apps/crystal-dock"]
 source = "github"
@@ -912,6 +1258,12 @@ github = "ButTaiwan/iansui"
 use_latest_release = true
 prefix = "v"
 github_account = "Linerre"
+
+["media-fonts/ipamj"]
+source = "regex"
+url = "https://moji.or.jp/mojikiban/font/"
+regex = 'Ver\.([0-9]{3}\.[0-9]{2})'
+github_account = "liangyongxiang"
 
 ["media-fonts/jf-openhuninn"]
 source = "github"
@@ -1054,12 +1406,19 @@ github_account = "gouwazi"
 # TODO: can't check
 #["media-gfx/zwcad"]
 
-# live package only
-#["media-libs/openslide"]
-#source = "github"
-#github = "openslide/openslide"
-#use_latest_release = true
-#prefix = "v"
+["media-libs/libdicom"]
+source = "github"
+github = "ImagingDataCommons/libdicom"
+use_latest_release = true
+prefix = "v"
+github_account = "Puqns67"
+
+["media-libs/openslide"]
+source = "github"
+github = "openslide/openslide"
+use_latest_release = true
+prefix = "v"
+github_account = "st0nie"
 
 ["media-plugins/osdlyrics"]
 source = "github"
@@ -1083,6 +1442,15 @@ github_account = "Puqns67"
 # live package only
 #["media-sound/barva"]
 
+["media-sound/euphonica"]
+source = "github"
+github = "htkhiem/euphonica"
+use_latest_tag = true
+# Upstream only ships v<ver>-beta[.N] prereleases; strip v prefix and -beta suffix.
+from_pattern = "^v?([^-]+)(?:-.*)?$"
+to_pattern = "\\1"
+github_account = "Jack77793"
+
 ["media-sound/feeluown"]
 source = "github"
 github = "feeluown/FeelUOwn"
@@ -1096,6 +1464,13 @@ github = "anhoder/go-musicfox"
 use_latest_release = true
 prefix = "v"
 github_account = ["st0nie", "gouwazi"]
+
+["media-sound/harmonoid"]
+source = "github"
+github = "alexmercerind2/harmonoid-releases"
+use_latest_release = true
+prefix = "v"
+github_account = "flying-balloon-cat"
 
 ["media-sound/listen1_desktop-bin"]
 source = "github"
@@ -1123,6 +1498,21 @@ url = "https://y.qq.com/download/download.js"
 regex = "qqmusic_([\\d.]+)_amd64.deb"
 github_account = "st0nie"
 
+["media-sound/rew"]
+source = "regex"
+url = "https://www.roomeqwizard.com/"
+regex = 'REW_linux_no_jre_([\d_]+)\.sh'
+from_pattern = '_'
+to_pattern = '.'
+github_account = "vitaly-zdanevich"
+
+["media-sound/splayer"]
+source = "github"
+github = "imsyy/SPlayer"
+use_latest_release = true
+prefix = "v"
+github_account = "flying-balloon-cat"
+
 ["media-sound/spotube-bin"]
 source = "github"
 github = "KRTirtho/spotube"
@@ -1136,6 +1526,13 @@ github = "tramhao/termusic"
 use_latest_release = true
 prefix = "v"
 github_account = "liuyujielol"
+
+["media-sound/yamusic-tui-bin"]
+source = "github"
+github = "DECE2183/yamusic-tui"
+use_latest_release = true
+prefix = "v"
+github_account = "vitaly-zdanevich"
 
 ["media-sound/yesplaymusic-bin"]
 source = "github"
@@ -1166,6 +1563,14 @@ prefix = "v"
 from_pattern = "(.*)-(.*)"
 to_pattern = '\1_p\2'
 github_account = "gouwazi"
+
+["media-video/davinci-resolve"]
+source = "regex"
+url = "https://www.blackmagicdesign.com/api/support/latest-stable-version/davinci-resolve/linux"
+regex = '("major":\d+,"minor":\d+,"releaseNum":\d+)'
+from_pattern = '"major":(\d+),"minor":(\d+),"releaseNum":(\d+)'
+to_pattern = '\1.\2.\3'
+github_account = "Jack77793"
 
 ["media-video/implay"]
 source = "github"
@@ -1202,6 +1607,13 @@ use_latest_release = true
 prefix = "v"
 github_account = ["peeweep", "irort"]
 
+["media-video/wiliwili"]
+source = "github"
+github = "xfangfang/wiliwili"
+use_latest_release = true
+prefix = "v"
+github_account = "liuyujielol"
+
 # dead upstream
 # ["net-analyzer/nali"]
 
@@ -1211,6 +1623,13 @@ github = "code-inflation/cfspeedtest"
 use_latest_release = true
 prefix = "v"
 github_account = "gouwazi"
+
+["net-analyzer/pwru-bin"]
+source = "github"
+github = "cilium/pwru"
+use_latest_release = true
+prefix = "v"
+github_account = "douglarek"
 
 ["net-analyzer/realitlscanner"]
 source = "github"
@@ -1278,6 +1697,13 @@ source = "aur"
 aur = "wemeet-bin"
 strip_release = true
 github_account = "gouwazi"
+
+["net-libs/bun-bin"]
+source = "github"
+github = "oven-sh/bun"
+use_latest_release = true
+prefix = "bun-v"
+github_account = "douglarek"
 
 # live package only
 #["net-libs/jzmq"]
@@ -1354,6 +1780,13 @@ use_latest_release = true
 prefix = "v"
 github_account = "gouwazi"
 
+["net-misc/flyctl-bin"]
+source = "github"
+github = "superfly/flyctl"
+use_latest_release = true
+prefix = "v"
+github_account = "akira7095"
+
 ["net-misc/geo"]
 source = "github"
 github = "MetaCubeX/geo"
@@ -1369,12 +1802,26 @@ from_pattern = 'v(.*)-(.*)$'
 to_pattern = '\1.\2'
 github_account = "gouwazi"
 
+["net-misc/immich-go"]
+source = "github"
+github = "simulot/immich-go"
+use_latest_release = true
+prefix = "v"
+github_account = "peeweep"
+
 ["net-misc/localsend-bin"]
 source = "github"
 github = "localsend/localsend"
 use_latest_release = true
 prefix = "v"
 github_account = ["Nuralii1i", "gouwazi"]
+
+["net-misc/motrix-next-bin"]
+source = "github"
+github = "AnInsomniacy/motrix-next"
+use_latest_release = true
+prefix = "v"
+github_account = "gouwazi"
 
 ["net-misc/ntpd-rs"]
 source = "github"
@@ -1394,6 +1841,13 @@ gitlab = "prips/prips"
 use_max_tag = true
 prefix = "release/"
 github_account = "gouwazi"
+
+["net-misc/reframe"]
+source = "github"
+github = "AlynxZhou/reframe"
+use_latest_release = true
+prefix = "v"
+github_account = "Jack77793"
 
 ["net-misc/remmina-plugin-rustdesk"]
 source = "github"
@@ -1418,6 +1872,20 @@ source = "regex"
 url = "https://www.todesk.com/linux.html"
 regex = "todesk-v(.*)-amd64.deb"
 github_account = ["microcai", "gouwazi"]
+
+["net-misc/tsshd"]
+source = "github"
+github = "trzsz/tsshd"
+use_latest_release = true
+prefix = "v"
+github_account = "locez"
+
+["net-misc/yaak-bin"]
+source = "github"
+github = "mountain-loop/yaak"
+use_latest_release = true
+prefix = "v"
+github_account = "gouwazi"
 
 # live package only
 #["net-p2p/amule-dlp"]
@@ -1611,6 +2079,13 @@ github = "Zephyruso/zashboard"
 use_latest_tag = true
 prefix = "v"
 
+["net-vpn/rathole"]
+source = "github"
+github = "rathole-org/rathole"
+use_latest_release = true
+prefix = "v"
+github_account = "peeweep"
+
 ["net-vpn/sstp-server"]
 source = "github"
 github = "sorz/sstp-server"
@@ -1724,6 +2199,12 @@ github_account = "gouwazi"
 
 # live package only
 #["sys-fs/systemd-zpool-scrub"]
+
+["sys-kernel/cachyos-sources"]
+source = "github"
+github = "blackteahamburger/gentoo-CachyOS-kernel-patches-tarball"
+use_latest_release = true
+github_account = "blackteahamburger"
 
 ["sys-kernel/liquorix-sources"]
 source = "github"
@@ -1905,7 +2386,6 @@ use_latest_release = true
 prefix = "v"
 github_account = ["Nuralii1i", "gouwazi"]
 
-
 ["x11-themes/kora-icon-theme"]
 source = "github"
 github = "bikass/kora"
@@ -1913,12 +2393,25 @@ use_latest_release = true
 prefix = "v"
 github_account = ["Nuralii1i", "gouwazi"]
 
+["x11-themes/kvantum-black"]
+source = "github"
+github = "vitaly-zdanevich/kvantum-black"
+use_latest_release = true
+prefix = "v"
+github_account = "vitaly-zdanevich"
+
 ["x11-themes/mint-themes"]
 source = "github"
 github = "linuxmint/mint-themes"
 use_max_tag = true
 include_regex = "\\d+\\.\\d+\\.\\d+"
 github_account = "gouwazi"
+
+["x11-themes/mint-y-icons"]
+source = "github"
+github = "linuxmint/mint-y-icons"
+use_latest_tag = true
+github_account = "akira7095"
 
 ["x11-themes/nordic"]
 source = "github"
