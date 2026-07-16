@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-16 19:49:02 CST)
+(The last generation time: 2026-07-16 19:50:18 CST)
 
 ### Packages
 
@@ -436,9 +436,9 @@
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/pack-cli-bin                                 | 0.37.0             |            | https://buildpacks.io                                                                   | CLI for building apps using Cloud Native Buildpacks
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-util/pi-coding-agent-bin                          | 0.50.7             |            | https://github.com/badlogic/pi-mono                                                     | A terminal-based coding agent with multi-model support
+ dev-util/pi-coding-agent-bin                          | 0.80.7             |            | https://github.com/badlogic/pi-mono                                                     | A terminal-based coding agent with multi-model support
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
- dev-util/reasonix-bin                                 | 1.16.0             |            | https://github.com/esengine/DeepSeek-Reasonix                                           | Cache-first DeepSeek coding agent for the terminal
+ dev-util/reasonix-bin                                 | 1.17.13            |            | https://github.com/esengine/DeepSeek-Reasonix                                           | Cache-first DeepSeek coding agent for the terminal
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
  dev-util/redpanda-cpp                                 | 3.4                |            | http://royqh.net/redpandacpp/                                                           | A lightweight yet powerful C/C++/GNU Assembly IDE
 -------------------------------------------------------|--------------------|------------|-----------------------------------------------------------------------------------------|--------------------
