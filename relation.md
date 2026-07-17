@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-17 13:15:26 CST)
+(The last generation time: 2026-07-17 14:41:39 CST)
 
 ### Packages
 
@@ -100,7 +100,7 @@
  app-emulation/winetricks-zh                           | 9999               |            | https://github.com/hillwoodroc/winetricks-zh/                              | windows applications setup wizard for Chinese wine users
                                                        | 20240105.1         |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- app-i18n/dvp                                          | 1.2.1-r1           |            | http://kaufmann.no/roland/dvorak/index.html                                | The kbd keymap for Programmer Dvorak
+ app-i18n/dvp                                          | 1.2.1-r1           |            | https://www.kaufmann.no/roland/dvorak/index.html                           | The kbd keymap for Programmer Dvorak
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  app-i18n/fcitx5-vinput                                | 2.3.3              |            | https://github.com/xifan2333/fcitx5-vinput                                 | Voice input addon for Fcitx5 with local sherpa-onnx ASR and LLM postprocess
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -269,7 +269,7 @@
    app-arch/libzim                                     | 9.5.1              |  D, RD     | https://wiki.openzim.org/wiki/OpenZIM                                      | ZIM file format: an offline storage solution for content coming from the Web
                                                        | 9.8.1              |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- app-text/groff-utf8                                   | 0-r1               |            | http://www.haible.de/bruno/packages-groff-utf8.html                        | GNU groff wrapper allowing UTF-8 input
+ app-text/groff-utf8                                   | 0-r1               |            | https://www.haible.de/bruno/packages-groff-utf8.html                       | GNU groff wrapper allowing UTF-8 input
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  app-text/gzpaste                                      | 0.1.3              |            | https://github.com/gentoo-zh/gzpaste                                       | Command-line client for the paste.gentoozh.org pastebin
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -283,7 +283,7 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  app-text/wik                                          | 2.0.1              |            | https://github.com/yashsinghcodes/wik                                      | Wikipedia like a man - in the terminal, without images, with caching
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- app-text/wiki2man_on_rust                             | 0.1.10             |            | https://gitlab.com/vitaly-zdanevich/wiki2man_on_rust                       | Convert MediaWiki XML dumps into man(7) pages - so you can read Wikipedia in man
+ app-text/wiki2man_on_rust                             | 0.1.10             |            | https://gitlab.com/vitaly_zdanevich_wikimedia/wiki2man_on_rust             | Convert MediaWiki XML dumps into man(7) pages - so you can read Wikipedia in man
                                                        | 0.2.1              |            |                                                                            |
                                                        | 0.5.1              |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -696,7 +696,7 @@
    virtual/loong-ow-compat                             | 0                  | RD         |                                                                            | Virtual for LoongArch old-world compatibility
      app-emulation/liblol                              | 0.1.10             | RD         | https://liblol.aosc.io                                                     | LoongArch old-world ABI compatibility layer from AOSC OS
    x11-misc/flatpak-xdg-utils                          | 1.0.6              | RD         | https://github.com/flatpak/flatpak-xdg-utils                               | Utilities for containerized apps to launch programs outside the container
-   x11-misc/snapd-xdg-open                             | 20170401           | RD         | https://github.com/snapcore/snapd-xdg-open                                 | Software for opening links from snaps in desktop
+   x11-misc/snapd-xdg-open                             | 20170401           | RD         | https://github.com/canonical/snapd-xdg-open                                | Software for opening links from snaps in desktop
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  net-im/vesktop-bin                                    | 1.6.5              |            | https://github.com/Vencord/Vesktop                                         | Discord Desktop with Vencord preinstalled
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -726,9 +726,7 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  net-misc/apifox                                       | 2.8.38             |            | https://apifox.com/                                                        | API 文档、API 调试、API Mock、API 自动化测试
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- net-misc/baidunetdisk                                 | 4.17.8             |            | https://pan.baidu.com/                                                     | Baidu Net Disk is a cloud storage client (Linux Version)
-                                                       | 4.3.0              |            |                                                                            |
-                                                       | 8.5.2              |            |                                                                            |
+ net-misc/baidunetdisk                                 | 8.5.2              |            | https://pan.baidu.com/                                                     | Baidu Net Disk is a cloud storage client (Linux Version)
                                                        | 8.5.2-r1           |            |                                                                            |
                                                        | 8.6.0              |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -895,7 +893,7 @@
    acct-group/aptly                                    | 0                  | RD         |                                                                            | A swiss army knife for Debian repository management
    acct-user/aptly                                     | 0                  | RD         |                                                                            | A swiss army knife for Debian repository management
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- sys-apps/isd                                          | 0.6.2              |            | https://github.com/isd-project/isd                                         | isd (interactive systemd) — a better way to work with systemd units
+ sys-apps/isd                                          | 0.6.2              |            | https://github.com/kainctl/isd                                             | isd (interactive systemd) — a better way to work with systemd units
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  sys-apps/mdp                                          | 9999               |            | https://github.com/visit1985/mdp                                           | A command-line based markdown presentation tool
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -983,7 +981,7 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  x11-terms/termius                                     | 9.41.1             |            | https://termius.com/download/linux                                         | Desktop SSH Client
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- x11-terms/wezterm-bin                                 | 20240203           |            | https://wezfurlong.org/wezterm                                             | A terminal emulator and multiplexer implemented in Rust
+ x11-terms/wezterm-bin                                 | 20240203           |            | https://wezfurlong.org/wezterm/                                            | A terminal emulator and multiplexer implemented in Rust
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  x11-themes/bibata-cursor                              | 2.0.7              |            | https://www.bibata.live                                                    | Open source, compact, and material designed cursor set
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -998,7 +996,7 @@
  x11-themes/nordic                                     | 2.1.0              |            | https://github.com/EliverLara/Nordic                                       | Dark Gtk3.20+ theme created using the awesome Nord color pallete
                                                        | 2.2.0-r1           |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- x11-themes/nordzy-cursors                             | 0.5.0              |            | https://github.com/alvatip/Nordzy-cursors                                  | Cursor theme using the Nord color palette and based on Vimix and cz-Viator
+ x11-themes/nordzy-cursors                             | 0.5.0              |            | https://github.com/guillaumeboehm/Nordzy-cursors                           | Cursor theme using the Nord color palette and based on Vimix and cz-Viator
                                                        | 2.4.0              |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  x11-themes/nordzy-icon                                | 1.5                |            | https://github.com/alvatip/Nordzy-icon                                     | A free and open source icon theme for Linux desktops
