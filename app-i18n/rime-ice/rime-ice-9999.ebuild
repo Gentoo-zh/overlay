@@ -9,6 +9,11 @@ DESCRIPTION="Rime ICE - A long-term maintained simplified Chinese Rime schema"
 HOMEPAGE="https://github.com/iDvel/rime-ice"
 EGIT_REPO_URI="https://github.com/iDvel/rime-ice.git"
 
+# === Optimization: Shallow Clone ===
+# Force shallow clone (depth=1) to save bandwidth and disk space.
+# This repo contains heavy git history which is unnecessary for deployment.
+EGIT_MIN_CLONE_TYPE="shallow"
+
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS=""
