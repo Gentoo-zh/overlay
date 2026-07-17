@@ -4,10 +4,11 @@
 EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{10..14} pypy3 )
+PYPI_VERIFY_REPO=https://github.com/aio-libs/janus
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="Implementation of the asyncio (PEP 3156) event-loop with Qt"
+DESCRIPTION="Mixed sync-async queue to interoperate between asyncio tasks and classic threads"
 HOMEPAGE="https://github.com/aio-libs/janus"
 LICENSE="BSD"
 
