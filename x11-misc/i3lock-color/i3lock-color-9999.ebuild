@@ -6,8 +6,8 @@ EAPI=8
 inherit git-r3 autotools
 
 DESCRIPTION="An improved i3lock"
-HOMEPAGE="https://github.com/chrjguill/i3lock-color"
-EGIT_REPO_URI="https://github.com/chrjguill/i3lock-color.git"
+HOMEPAGE="https://github.com/Raymo111/i3lock-color"
+EGIT_REPO_URI="https://github.com/Raymo111/i3lock-color.git"
 LICENSE="BSD"
 
 SLOT="0"
