@@ -116,7 +116,7 @@ src_unpack() {
 			mkdir -p "${S}/tools/ui/dist"
 			einfo Downloading webui dist from huggingface bucket...
 			wget -qO - "https://huggingface.co/buckets/ggml-org/llama-ui/resolve/latest/dist.tar.gz" \
-				| tar -xzC "${S}/tools/ui/dist"
+				| tar -xzf - -C "${S}/tools/ui/dist"
 		else
 			ln -s "${WORKDIR}/llama-${MY_PV}" "${S}/tools/ui/dist" || die
 		fi
