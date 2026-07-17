@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-17 10:46:48 CST)
+(The last generation time: 2026-07-17 10:50:55 CST)
 
 ### Packages
 
@@ -46,7 +46,7 @@
                                                        | 20260511           |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  app-dicts/fcitx-pinyin-sougou-dict                    | 20260319           |            | https://github.com/blackteahamburger/fcitx5-pinyin-sougou-dict             | Sougou Pinyin dictionary for Fcitx5 and RIME
-   app-i18n/ibus-rime                                  | 9999               | RD         | http://code.google.com/p/rimeime/                                          | Rime Input Method Engine for IBus Framework
+   app-i18n/ibus-rime                                  | 9999               | RD         | https://rime.im/                                                           | Rime Input Method Engine for IBus Framework
    app-text/imewlconverter                             | 3.4.3              | BD         | https://github.com/studyzy/imewlconverter                                  | An open source and free input method dictionary conversion program
                                                        | 9999               |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -492,10 +492,10 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  games-emulation/onscripter-yuri                       | 0.7.6              |            | https://github.com/YuriSizuku/OnscripterYuri                               | An enhancement ONScripter project porting to many platforms, especially web
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- games-fps/openarena                                   | 0.8.8              |            | http://openarena.ws                                                        | A violent, sexy, multiplayer first person shooter based on the ioquake3 engine
+ games-fps/openarena                                   | 0.8.8              |            | https://openarena.ws                                                       | A violent, sexy, multiplayer first person shooter based on the ioquake3 engine
                                                        | 9999               |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- games-fps/openarena-bin                               | 0.8.8              |            | http://openarena.ws                                                        | A violent, sexy, multiplayer first person shooter based on the ioquake3 engine
+ games-fps/openarena-bin                               | 0.8.8              |            | https://openarena.ws                                                       | A violent, sexy, multiplayer first person shooter based on the ioquake3 engine
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  games-fps/source-engine                               | 9999               |            | https://github.com/nillerusr/source-engine                                 | A 3D game engine developed by Valve
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -562,7 +562,7 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  media-fonts/tiejili                                   | 1.100              |            | https://github.com/Buernia/Tiejili                                         | An open-source font that extends Reggae One to Chinese
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- media-fonts/ttf-wps-fonts                             | 9999               |            | https://github.com/iamdh4/ttf-wps-fonts                                    | Symbol fonts required by wps-office
+ media-fonts/ttf-wps-fonts                             | 9999               |            | https://github.com/dv-anomaly/ttf-wps-fonts                                | Symbol fonts required by wps-office
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  media-fonts/wangfonts                                 | 1.3.0              |            | https://code.google.com/archive/p/wangfonts                                | Free Chinese TrueType fonts donated by Prof. Hann-Tzong Wang
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -974,7 +974,7 @@
  x11-misc/extramaus                                    | 3                  |            | https://aur.archlinux.org/packages/extramaus                               | workaround to always show mouse cursor under x11
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  x11-misc/i3lock-fancy                                 | 9999               |            | https://github.com/meskarune/i3lock-fancy                                  | A fancy i3lock
-   x11-misc/i3lock-color                               | 9999               |  D, RD     | https://github.com/chrjguill/i3lock-color                                  | An improved i3lock
+   x11-misc/i3lock-color                               | 9999               |  D, RD     | https://github.com/Raymo111/i3lock-color                                   | An improved i3lock
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  x11-misc/picom-jonaburg                               | 8                  |            | https://github.com/jonaburg/picom                                          | jonaburg's picom fork with dual_kawase blur and rounded corners
                                                        | 9999               |            |                                                                            |
