@@ -11,7 +11,7 @@ SPECIAL_DIRVER="${PV}.427"
 
 DESCRIPTION="Baidu Net Disk is a cloud storage client (Linux Version)"
 HOMEPAGE="https://pan.baidu.com/"
-SRC_URI="http://wppkg.baidupcs.com/issue/netdisk/Linuxguanjia/${SPECIAL_DIRVER}/${PN}_${PV}_amd64.deb"
+SRC_URI="https://issuecdn.baidupcs.com/issue/netdisk/LinuxGuanjia/${SPECIAL_DIRVER}/${PN}_${PV}_amd64.deb"
 
 S="${WORKDIR}"
 LICENSE="BaiduNetDisk"
