@@ -11,12 +11,6 @@ HOMEPAGE="https://v2raya.org/"
 SRC_URI="
 	https://github.com/v2rayA/v2rayA/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/v2rayA/v2rayA/releases/download/v${PV}/web.tar.gz -> ${P}-web.tar.gz
-	amd64? ( https://github.com/v2rayA/v2rayA/releases/download/v${PV}/v2raya_core_linux_x64_${PV} -> v2raya_core-${PV} )
-	arm64? ( https://github.com/v2rayA/v2rayA/releases/download/v${PV}/v2raya_core_linux_arm64_${PV} -> v2raya_core-${PV} )
-	arm? ( https://github.com/v2rayA/v2rayA/releases/download/v${PV}/v2raya_core_linux_armv7_${PV} -> v2raya_core-${PV} )
-	x86? ( https://github.com/v2rayA/v2rayA/releases/download/v${PV}/v2raya_core_linux_x86_${PV} -> v2raya_core-${PV} )
-	loong? ( https://github.com/v2rayA/v2rayA/releases/download/v${PV}/v2raya_core_linux_loongarch64_${PV} -> v2raya_core-${PV} )
-	riscv? ( https://github.com/v2rayA/v2rayA/releases/download/v${PV}/v2raya_core_linux_riscv64_${PV} -> v2raya_core-${PV} )
 "
 # maintainer generated deps pack
 # generated with gentoo-zh/gentoo-deps/.github/workflows/generator.yml
@@ -27,17 +21,18 @@ SRC_URI+="
 LICENSE="AGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~loong"
-IUSE=""
+IUSE="xray"
 
 RDEPEND="
-	app-alternatives/v2ray-geoip
-	app-alternatives/v2ray-geosite
+	|| (
+		>=net-proxy/v2ray-5
+		>=net-proxy/v2ray-bin-5
+	)
+	xray? ( net-proxy/Xray )
 "
 BDEPEND="
 	>=dev-lang/go-1.26:*
 "
-
-QA_PREBUILT="/usr/bin/v2raya_core"
 
 src_compile() {
 	mv -v "${WORKDIR}/web" "${S}/service/server/router/web" || die
@@ -50,19 +45,6 @@ src_compile() {
 
 src_install() {
 	dobin "${S}"/service/v2raya
-
-	# install prebuilt v2raya_core (bundled xray-core fork, arch-specific)
-	newbin "${DISTDIR}/v2raya_core-${PV}" v2raya_core
-
-	# symlink geoip/geosite dat files so both v2raya_core (looks in
-	# /usr/share/xray/) and v2rayA service (looks in /usr/share/v2raya/
-	# via XDG) can find them. Actual files live in /usr/share/v2ray/
-	# and are provided by app-alternatives/v2ray-geoip and v2ray-geosite.
-	dosym -r /usr/share/v2ray/geoip.dat /usr/share/xray/geoip.dat
-	dosym -r /usr/share/v2ray/geosite.dat /usr/share/xray/geosite.dat
-	dosym -r /usr/share/v2ray/geoip.dat /usr/share/v2raya/geoip.dat
-	dosym -r /usr/share/v2ray/geosite.dat /usr/share/v2raya/geosite.dat
-
 	# directory for runtime use
 	keepdir "/etc/v2raya"
 
@@ -103,13 +85,5 @@ pkg_postinst() {
 		elog "net-proxy/v2rayA-2.2.7.5 is kept if you need the old version."
 		elog ">> 2.4.0 起数据改用 SQLite，从旧版升级会做一次迁移，部分用户"
 		elog ">> 遇到过服务器/订阅丢失（2.4.1 已修空订阅）。升级前请先备份。旧版 2.2.7.5 保留。"
-	fi
-
-	if has_version '<net-proxy/v2rayA-2.4.6' ; then
-		elog "2.4.6 bundles its own v2raya_core binary (fork of xray-core)."
-		elog "net-proxy/v2ray and net-proxy/v2ray-bin are no longer required"
-		elog "by v2rayA. You may remove them if not needed by other packages."
-		elog ">> 2.4.6 起使用自带的 v2raya_core 内核（基于 xray-core），"
-		elog ">> 不再依赖独立的 v2ray/v2ray-bin 包，可以按需清理。"
 	fi
 }
