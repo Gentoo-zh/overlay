@@ -1,4 +1,4 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -52,21 +52,28 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 QA_PREBUILT="
-	/opt/circuitjs1/libGLESv2.so
-	/opt/circuitjs1/circuitjs1
-	/opt/circuitjs1/libffmpeg.so
-	/opt/circuitjs1/libEGL.so
-	/opt/circuitjs1/libvk_swiftshader.so
-	/opt/circuitjs1/swiftshader/libGLESv2.so
-	/opt/circuitjs1/swiftshader/libEGL.so
+	/opt/${PN}/libGLESv2.so
+	/opt/${PN}/${MY_PN}
+	/opt/${PN}/libffmpeg.so
+	/opt/${PN}/libEGL.so
+	/opt/${PN}/libvk_swiftshader.so
+	/opt/${PN}/swiftshader/libGLESv2.so
+	/opt/${PN}/swiftshader/libEGL.so
 "
 
 QA_FLAGS_IGNORED="
-	/opt/circuitjs1/chrome-sandbox
-	/opt/circuitjs1/libvulkan.so
+	/opt/${PN}/chrome-sandbox
+	/opt/${PN}/libvulkan.so
 "
 
-src_install(){
+src_prepare() {
+	default
+	# Upstream repackages the offline build on macOS, so the tarball carries
+	# AppleDouble (._*) sidecar files; drop them so they are not installed.
+	find . -name '._*' -delete || die
+}
+
+src_install() {
 	insinto "/opt/${PN}"
 	doins -r .
 	fperms 0755 "/opt/${PN}/${MY_PN}"
