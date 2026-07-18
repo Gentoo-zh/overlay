@@ -11,4 +11,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND="dev-lang/perl"
+RDEPEND="
+	app-arch/rpm
+	dev-lang/perl
+"
