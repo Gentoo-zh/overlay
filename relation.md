@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-18 18:57:20 CST)
+(The last generation time: 2026-07-18 20:20:17 CST)
 
 ### Packages
 
@@ -269,7 +269,7 @@
    app-arch/libzim                                     | 9.5.1              |  D, RD     | https://wiki.openzim.org/wiki/OpenZIM                                      | ZIM file format: an offline storage solution for content coming from the Web
                                                        | 9.8.1              |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- app-text/groff-utf8                                   | 0-r1               |            | https://www.haible.de/bruno/packages-groff-utf8.html                       | GNU groff wrapper allowing UTF-8 input
+ app-text/groff-utf8                                   | 0-r2               |            | https://www.haible.de/bruno/packages-groff-utf8.html                       | GNU groff wrapper allowing UTF-8 input
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  app-text/gzpaste                                      | 0.1.3              |            | https://github.com/gentoo-zh/gzpaste                                       | Command-line client for the paste.gentoozh.org pastebin
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
