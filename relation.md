@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-18 11:44:35 CST)
+(The last generation time: 2026-07-18 13:17:58 CST)
 
 ### Packages
 
@@ -427,7 +427,7 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  dev-util/maixvision                                   | 1.2.2-r1           |            | https://sipeed.com/maixvision                                              | MaixVision - AIoT development platform
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- dev-util/obs-build                                    | 20260623           |            | https://github.com/openSUSE/obs-build                                      | OBS build script
+ dev-util/obs-build                                    | 20260623-r1        |            | https://github.com/openSUSE/obs-build                                      | OBS build script
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  dev-util/opencode-bin                                 | 1.18.3             |            | https://opencode.ai                                                        | The open source AI coding agent
                                                        | 9999               |            |                                                                            |
