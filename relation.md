@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-19 04:47:59 CST)
+(The last generation time: 2026-07-19 07:46:12 CST)
 
 ### Packages
 
@@ -887,6 +887,8 @@
  sci-electronics/lceda-pro                             | 3.2.166            |            | https://lceda.cn/                                                          | LCEDA Pro (binary package)
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  sci-electronics/openfpgaloader                        | 1.1.1              |            | https://trabucayre.github.io/openFPGALoader/                               | Universal utility for programming FPGAs
+-------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
+ sci-mathematics/rstudio-desktop-bin                   | 2026.07.0_p139     |            | https://posit.co/products/open-source/rstudio/                             | RStudio IDE for R (open-source desktop edition, prebuilt)
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  sci-ml/llama-cpp                                      | 0_pre10054         |            | https://github.com/ggml-org/llama.cpp                                      | LLM inference in C/C++
                                                        | 9999               |            |                                                                            |
