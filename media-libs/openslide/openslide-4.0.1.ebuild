@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -13,6 +13,9 @@ LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~loong"
 
+IUSE="doc"
+RESTRICT="test"
+
 RDEPEND="
 	virtual/zlib
 	app-arch/zstd
@@ -26,5 +29,15 @@ RDEPEND="
 	dev-libs/libxml2
 	dev-db/sqlite:3
 	media-libs/libdicom
+	doc? ( app-text/doxygen )
 "
 DEPEND="${RDEPEND}"
+
+src_configure() {
+	# Disable test, its requires download big test resource from the Internet.
+	local emesonargs=(
+		-Dtest=disabled
+		$(meson_feature doc)
+	)
+	meson_src_configure
+}
