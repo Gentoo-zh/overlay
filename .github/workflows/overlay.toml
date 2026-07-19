@@ -2219,7 +2219,7 @@ github = "CachyOS/linux"
 use_latest_release = true
 from_pattern = "cachyos-([0-9.]+)-[0-9]+"
 to_pattern = "\\1"
-github_account = ["blackteahamburger", "Zakkaus"]
+github_account = ["blackteahamburger", "Zakkaus", "locez"]
 
 ["sys-kernel/liquorix-sources"]
 source = "github"
