@@ -158,7 +158,7 @@ jobs:
     - name: git identity
       run: |
         git config --global --add safe.directory "$(realpath .)"
-        git config user.name  "gentoo-zh-bot"
+        git config user.name  "gentoozh-bot"
         git config user.email "bot@gentoozh.org"
 
     - name: restore state
