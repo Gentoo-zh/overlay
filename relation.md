@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-20 11:51:16 CST)
+(The last generation time: 2026-07-20 12:34:36 CST)
 
 ### Packages
 
@@ -696,13 +696,12 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  net-im/kotatogram-bin                                 | 1.4.9              |            | https://thatcat.space/kotatogram/                                          | Telegram Desktop fork with wide messages, local folders, square avatars
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- net-im/tencent-qq                                     | 3.2.31_p260710     |            | https://im.qq.com/index/#/linux                                            | The new version of the official linux-qq
+ net-im/tencent-qq                                     | 3.2.31_p51102      |            | https://im.qq.com/index/#/linux                                            | The new version of the official linux-qq
    media-libs/openslide                                | 4.0.1              | RD         | https://openslide.org/                                                     | A C library that provides a simple interface to read whole-slide images
      media-libs/libdicom                               | 1.3.0              |  D, RD     | https://libdicom.readthedocs.io/                                           | A C library and a set of command-line tools for reading DICOM WSI files
    virtual/loong-ow-compat                             | 0                  | RD         |                                                                            | Virtual for LoongArch old-world compatibility
      app-emulation/liblol                              | 0.1.10             | RD         | https://liblol.aosc.io                                                     | LoongArch old-world ABI compatibility layer from AOSC OS
    x11-misc/flatpak-xdg-utils                          | 1.0.6              | RD         | https://github.com/flatpak/flatpak-xdg-utils                               | Utilities for containerized apps to launch programs outside the container
-   x11-misc/snapd-xdg-open                             | 20170401           | RD         | https://github.com/canonical/snapd-xdg-open                                | Software for opening links from snaps in desktop
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  net-im/vesktop-bin                                    | 1.6.5              |            | https://github.com/Vencord/Vesktop                                         | Discord Desktop with Vencord preinstalled
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -983,6 +982,8 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  x11-misc/picom-jonaburg                               | 8                  |            | https://github.com/jonaburg/picom                                          | jonaburg's picom fork with dual_kawase blur and rounded corners
                                                        | 9999               |            |                                                                            |
+-------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
+ x11-misc/snapd-xdg-open                               | 20170401           |            | https://github.com/canonical/snapd-xdg-open                                | Software for opening links from snaps in desktop
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  x11-terms/blackbox-terminal                           | 0.15.2             |            | https://gitlab.gnome.org/raggesilver/blackbox                              | A beautiful GTK 4 terminal
    dev-libs/libpqmarble                                | 2.0.0_p20250109    |  D, RD     | https://gitlab.gnome.org/raggesilver/marble                                | Utility library for GNOME apps
