@@ -16,7 +16,10 @@ format-date() {
 	printf '%04d-%02d-%02d' "$year" "$month" "$day"
 }
 MY_PV="$(format-date "${PV}")"
-SRC_URI="https://github.com/microsoft/${PN}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
+# cmake/FindLibCURL.cmake wants curl's headers only (for dlopen/dlsym at runtime);
+# fetch the pinned archeology tarball here and feed it offline via FETCHCONTENT_SOURCE_DIR.
+SRC_URI="https://github.com/microsoft/${PN}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz
+	https://curl.se/download/archeology/curl-7.29.0.tar.gz"
 
 S="${WORKDIR}/${PN}-${MY_PV}"
 LICENSE="MIT"
@@ -25,8 +28,9 @@ KEYWORDS="~amd64"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DEPEND="dev-libs/libfmt:0/11.2.0"
-RDEPEND="${DEPEND}"
+DEPEND="dev-libs/libfmt:="
+RDEPEND="${DEPEND}
+	net-misc/curl"
 BDEPEND="dev-util/cmakerc"
 
 src_prepare() {
@@ -52,6 +56,7 @@ src_configure() {
 		-DVCPKG_BUILD_TLS12_DOWNLOADER=OFF
 		-DVCPKG_DEPENDENCY_CMAKERC=ON
 		-DVCPKG_DEPENDENCY_EXTERNAL_FMT=ON
+		-DFETCHCONTENT_SOURCE_DIR_LIBCURLHEADERS="${WORKDIR}/curl-7.29.0"
 		-DVCPKG_DEVELOPMENT_WARNINGS=OFF
 		-DVCPKG_EMBED_GIT_SHA=OFF
 		-DVCPKG_OFFICIAL_BUILD=ON
