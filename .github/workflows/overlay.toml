@@ -682,6 +682,13 @@ github_account = "zakkaus"
 # live package only
 #["app-shells/blesh"]
 
+["app-shells/flyline-bin"]
+source = "github"
+github = "HalFrgrd/flyline"
+use_latest_release = true
+prefix = "v"
+github_account = "gouwazi"
+
 ["app-shells/gitstatus"]
 source = "github"
 github = "romkatv/gitstatus"
