@@ -102,8 +102,7 @@ jobs:
       matrix:
         package: ${{ fromJSON(needs.scan.outputs.packages) }}
         profile:
-          - amd64-desktop-openrc
-          - amd64-desktop-systemd
+          - amd64-systemd
 
     runs-on: ubuntu-latest
     container:

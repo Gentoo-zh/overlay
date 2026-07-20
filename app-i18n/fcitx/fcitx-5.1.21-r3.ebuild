@@ -1,20 +1,21 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 2023-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 MY_PN="fcitx5"
 
-inherit cmake flag-o-matic git-r3 toolchain-funcs xdg
+inherit cmake flag-o-matic toolchain-funcs unpacker xdg
 
 DESCRIPTION="Fcitx 5 is a generic input method framework"
 HOMEPAGE="https://fcitx-im.org/ https://github.com/fcitx/fcitx5"
-EGIT_REPO_URI="https://github.com/fcitx/fcitx5.git"
+SRC_URI="https://download.fcitx-im.org/fcitx5/fcitx5/fcitx5-${PV}_dict.tar.zst -> ${P}.tar.zst"
 
+S="${WORKDIR}/${MY_PN}-${PV}"
 LICENSE="LGPL-2+ Unicode-DFS-2016"
 SLOT="5"
-KEYWORDS=""
-IUSE="+autostart doc +emoji +enchant +keyboard presage +server systemd test wayland +X"
+KEYWORDS="~amd64 ~ppc ~ppc64 ~riscv"
+IUSE="+autostart doc +emoji +enchant +keyboard presage +server systemd system-yoga test wayland +X"
 REQUIRED_USE="
 	|| ( wayland X )
 	X? ( keyboard )
@@ -24,7 +25,6 @@ REQUIRED_USE="
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	!app-i18n/fcitx:4
 	dev-libs/libfmt
 	sys-devel/gettext
 	virtual/libintl
@@ -40,7 +40,7 @@ RDEPEND="
 	keyboard? (
 		app-text/iso-codes
 		dev-libs/expat
-		dev-libs/json-c:=
+		dev-cpp/nlohmann_json
 		x11-misc/xkeyboard-config
 		x11-libs/libxkbcommon[X?,wayland?]
 	)
@@ -50,6 +50,9 @@ RDEPEND="
 	!systemd? (
 		dev-libs/libuv
 		sys-apps/dbus
+	)
+	system-yoga? (
+		dev-libs/yoga
 	)
 	wayland? (
 		dev-libs/glib:2
@@ -73,6 +76,10 @@ BDEPEND="
 	kde-frameworks/extra-cmake-modules:0
 "
 
+PATCHES=(
+	"${FILESDIR}"/fcitx-5.1.21-fix-ecm-warnings.patch
+)
+
 src_configure() {
 	if [[ $(tc-get-cxx-stdlib) == "libc++" ]]; then
 		# std::osyncstream used in fcitx-utils/log.cpp is marked as experimental.
@@ -92,6 +99,8 @@ src_configure() {
 		-DENABLE_X11=$(usex X)
 		-DENABLE_DOC=$(usex doc)
 		-DUSE_SYSTEMD=$(usex systemd)
+		-DUSE_SYSTEM_YOGA=$(usex system-yoga)
+		-DUSE_SYSTEM_PLASMA_WAYLAND_PROTOCOLS=ON
 	)
 	cmake_src_configure
 }
