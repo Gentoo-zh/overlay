@@ -83,6 +83,8 @@ This repository is a Gentoo overlay fork. Prefer generic Gentoo ebuild workflow 
 - Before drafting a new package, identify category/package name, upstream URL, release version, source archive, license, build system, runtime files, and expected tested arches.
 - Search for existing package names, forks, renamed projects, and same upstream in this overlay and the main Gentoo tree.
 - Run eclass discovery before writing the ebuild, and keep a short decision record when the choice is non-obvious.
+- Update `.github/workflows/overlay.toml` in the same PR as every new package. Every package directory must be represented there by either an active version-check table or a commented-out `#["category/package"]` marker.
+- Prefer an active version check. If checking is impossible or unnecessary, such as for a live-only package, an upstream without trackable releases, a package kept in sync elsewhere, or a duplicate source/binary package, add a concise comment with the concrete reason and comment out the entire package block. Never omit a package silently.
 - Add files under `files/` only when patches, init scripts, service files, wrappers, or desktop integration cannot be generated cleanly in ebuild phases.
 - Stop and ask before proceeding when license or redistribution rights are unclear, the package requires credentials or click-through downloads, the package name/category is ambiguous, or major patching/vendoring decisions are needed.
 
