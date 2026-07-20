@@ -1,4 +1,4 @@
-# Copyright 2022,2024,2026 Gentoo Authors
+# Copyright 2022,2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -19,6 +19,8 @@ RDEPEND="
 	app-shells/zsh
 "
 BDEPEND="
+	sys-libs/ncurses:=
+	virtual/pkgconfig
 	test? (
 		app-shells/zsh
 		dev-vcs/git
@@ -41,11 +43,13 @@ src_configure() {
 	pushd modules || die "Changing directory failed"
 	append-cflags -Wno-error=implicit-function-declaration -Wno-error=implicit-int
 	default_src_configure
+	popd || die
 }
 
 src_compile() {
 	pushd modules || die "Changing directory failed"
 	default_src_compile
+	popd || die
 }
 
 src_test() {
@@ -62,6 +66,10 @@ src_install() {
 	insinto ${zsh_libdir}/${PN}
 	doins -r lib
 
+	# Install the compiled binary module that accelerates LS_COLORS colorization.
+	# The module is optional at runtime but we require it to be built successfully.
+	[[ -f modules/Src/aloxaf/fzftab.so ]] || \
+		die "fzftab.so was not built; check that sys-libs/ncurses and a C compiler are available"
 	insinto ${zsh_libdir}/${PN}/modules/Src/aloxaf
 	doins modules/Src/aloxaf/fzftab.so
 
