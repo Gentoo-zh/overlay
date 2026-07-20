@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-20 08:11:36 CST)
+(The last generation time: 2026-07-20 08:38:59 CST)
 
 ### Packages
 
@@ -503,7 +503,7 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  games-misc/oh-my-git-bin                              | 0.6.5              |            | https://ohmygit.org/                                                       | An interactive Git learning game!
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- games-roguelike/tsl                                   | 0.40-r2            |            | https://gitlab.com/vitaly-zdanevich/the-slimy-lichmummy                    | The Slimy Lichmummy, an adventure game similar in style to the classic Rogue
+ games-roguelike/tsl                                   | 0.40-r3            |            | https://gitlab.com/vitaly-zdanevich/the-slimy-lichmummy                    | The Slimy Lichmummy, an adventure game similar in style to the classic Rogue
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  games-server/vintagestory-server                      | 1.19.8             |            | https://www.vintagestory.at/                                               | Dedicated game server for Vintage Story
                                                        | 1.20.12            |            |                                                                            |
@@ -584,7 +584,7 @@
                                                        | 6.11.1             |            |                                                                            |
      media-plugins/waywallen-display                   | 0.2.8              |  D, RD     | https://github.com/waywallen/waywallen-display                             | Desktop integration for the waywallen wallpaper daemon
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- media-gfx/scangearmp                                  | 2.4.10             |            | https://www.canon.com                                                      | Driver and utility package for Canon scanners
+ media-gfx/scangearmp                                  | 2.4.10-r1          |            | https://www.canon.com                                                      | Driver and utility package for Canon scanners
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  media-gfx/tgs2png                                     | 9999               |            | https://github.com/zevlg/tgs2png                                           | Convert Telegram's animated stickers in TGS format into series of PNG images
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -795,7 +795,7 @@
  net-p2p/qbittorrent-enhanced                          | 4.6.7.10           |            | https://github.com/c0re100/qBittorrent-Enhanced-Edition                    | qBittorrent Enhanced, based on qBittorrent
                                                        | 5.2.1.10           |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- net-print/epson-inkjet-printer_201207w                | 1.0.0              |            | http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX                 | Epson printer driver (L110, L210, L300, L350, L355, L550, L555)
+ net-print/epson-inkjet-printer_201207w                | 1.0.0-r1           |            | https://openprinting.github.io/foomatic/driver/epson-201207w               | Epson printer driver (L110, L210, L300, L350, L355, L550, L555)
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  net-proxy/bore                                        | 0.6.0              |            | https://github.com/ekzhang/bore                                            | bore is a simple CLI tool for making tunnels to localhost
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
