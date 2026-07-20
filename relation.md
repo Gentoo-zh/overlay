@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-20 09:44:36 CST)
+(The last generation time: 2026-07-20 09:49:43 CST)
 
 ### Packages
 
@@ -592,7 +592,7 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  media-gfx/tifig-bin                                   | 0.2.2              |            | https://github.com/monostream/tifig                                        | Converts iOS 11 HEIC images to practical formats - Static binary
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- media-gfx/unityhub                                    | 3.19.1             |            | https://docs.unity.com/en-us/hub                                           | The official unity tool for manager Unity Engines and projects
+ media-gfx/unityhub                                    | 3.19.5             |            | https://docs.unity.com/en-us/hub                                           | The official unity tool for manager Unity Engines and projects
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  media-gfx/zw3d                                        | 2026.0.1.1         |            | https://www.zwsoft.cn/product/zw3d                                         | CAD/CAM software for 3D design and processing
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
