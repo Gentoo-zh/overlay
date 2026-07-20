@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-21 05:59:25 CST)
+(The last generation time: 2026-07-21 06:11:08 CST)
 
 ### Packages
 
@@ -433,7 +433,7 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  dev-util/obs-build                                    | 20260623-r1        |            | https://github.com/openSUSE/obs-build                                      | OBS build script
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- dev-util/opencode-bin                                 | 1.18.3             |            | https://opencode.ai                                                        | The open source AI coding agent
+ dev-util/opencode-bin                                 | 1.18.4             |            | https://opencode.ai                                                        | The open source AI coding agent
                                                        | 9999               |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  dev-util/osc                                          | 1.27.2             |            | https://github.com/openSUSE/osc                                            | The Command Line Interface to work with an Open Build Service
