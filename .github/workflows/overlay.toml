@@ -69,6 +69,12 @@ github_account = "liangyongxiang"
 # live package only
 #["app-backup/snapper-gui"]
 
+["app-containers/bubblejail"]
+source = "github"
+github = "igo95862/bubblejail"
+use_latest_release = true
+github_account = "gouwazi"
+
 ["app-crypt/archlinux-keyring"]
 source = "gitlab"
 host = "gitlab.archlinux.org"
