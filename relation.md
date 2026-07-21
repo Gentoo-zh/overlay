@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-21 17:46:45 CST)
+(The last generation time: 2026-07-21 17:48:24 CST)
 
 ### Packages
 
@@ -316,6 +316,7 @@
  dev-go/gotests                                        | 1.9.0              |            | https://github.com/cweill/gotests                                          | Automatically generate Go test boilerplate from your source code
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  dev-go/staticcheck                                    | 2025.1.1           |            | https://staticcheck.dev                                                    | Go static analysis, detecting bugs, performance issues, and much more
+                                                       | 2026.1             |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  dev-java/google-java-format                           | 1.35.0             |            | https://github.com/google/google-java-format                               | Reformats Java source code to comply with Google Java Style
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
