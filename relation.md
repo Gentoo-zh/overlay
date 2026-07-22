@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-22 11:38:28 CST)
+(The last generation time: 2026-07-22 15:09:07 CST)
 
 ### Packages
 
@@ -402,7 +402,7 @@
                                                        | 11.5.0             |            |                                                                            |
    dev-python/mwparserfromhell                         | 0.7.2              | RD         | https://github.com/earwig/mwparserfromhell                                 | A Python parser for MediaWiki wikicode
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- dev-python/uv-bin                                     | 0.11.30            |            | https://github.com/astral-sh/uv                                            | An extremely fast Python package and project manager, written in Rust
+ dev-python/uv-bin                                     | 0.11.31            |            | https://github.com/astral-sh/uv                                            | An extremely fast Python package and project manager, written in Rust
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  dev-ruby/filelock                                     | 1.1.1              |            | https://github.com/sheerun/filelock                                        | Heavily tested, but simple filelocking solution using flock command
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
@@ -754,7 +754,7 @@
  net-misc/bruno-bin                                    | 3.5.3              |            | https://www.usebruno.com/                                                  | Opensource IDE For Exploring and Testing Api's
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  net-misc/flyctl-bin                                   | 0.4.54             |            | https://github.com/superfly/flyctl                                         | Command line tools for fly.io services
-                                                       | 0.4.72             |            |                                                                            |
+                                                       | 0.4.73             |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  net-misc/geo                                          | 1.1                |            | https://github.com/MetaCubeX/geo/                                          | An easy way to manage all your Geo resources
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
