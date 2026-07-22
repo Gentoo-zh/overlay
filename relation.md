@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-23 07:36:43 CST)
+(The last generation time: 2026-07-23 07:38:26 CST)
 
 ### Packages
 
@@ -173,7 +173,7 @@
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  app-misc/bcompare                                     | 4.4.6.27483        |            | https://www.scootersoftware.com/                                           | Beyond Compare -- Compare, sync, and merge files and folders
                                                        | 4.4.7.28397        |            |                                                                            |
-                                                       | 5.2.3.32296        |            |                                                                            |
+                                                       | 5.2.4.32425        |            |                                                                            |
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  app-misc/bilihud                                      | 9999               |            | https://github.com/locez/bilihud                                           | Bilibili danmaku overlay for fullscreen games
    dev-python/browser-cookie3                          | 0.20.1             | RD         | https://github.com/borisbabic/browser_cookie3                              | Loads cookies from your browser into a cookiejar object
