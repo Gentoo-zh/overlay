@@ -1,0 +1,45 @@
+name: fleet-keeper
+
+# GitHub disables a repository's scheduled workflows after 60 days without a commit,
+# and does so silently. The gentoo-zh-drafts forks mirror upstream and build vendor
+# bundles on such a schedule, so a slow-moving package's fork stops producing bundles
+# once it crosses that line, with no error anywhere. This runs weekly from the overlay
+# (which commits daily, so it never freezes itself) and re-enables any fork schedule
+# GitHub has disabled for inactivity.
+
+on:
+  schedule:
+    - cron: '30 5 * * 1'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  keep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get a token that can manage fork workflows
+        uses: actions/create-github-app-token@v3
+        id: app-token
+        with:
+          client-id: ${{ secrets.DRAFTS_BOT_CLIENT_ID }}
+          private-key: ${{ secrets.DRAFTS_BOT_PRIVATE_KEY }}
+          owner: gentoo-zh-drafts
+
+      - name: Re-enable inactivity-disabled fork schedules
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          seen=0; enabled=0
+          for repo in $(gh repo list gentoo-zh-drafts --limit 300 --json name -q '.[].name'); do
+            for id in $(gh api "repos/gentoo-zh-drafts/$repo/actions/workflows" \
+                --jq '.workflows[] | select(.state == "disabled_inactivity") | .id' 2>/dev/null); do
+              seen=$((seen + 1))
+              if gh api -X PUT "repos/gentoo-zh-drafts/$repo/actions/workflows/$id/enable" >/dev/null 2>&1; then
+                enabled=$((enabled + 1)); echo "re-enabled $repo"
+              else
+                echo "::warning title=fleet-keeper::could not re-enable $repo (workflow $id)"
+              fi
+            done
+          done
+          echo "frozen found: $seen, re-enabled: $enabled" | tee -a "$GITHUB_STEP_SUMMARY"
