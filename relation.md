@@ -1,6 +1,6 @@
 - Reponame: **`gentoo-zh`**
 
-(The last generation time: 2026-07-24 07:36:36 CST)
+(The last generation time: 2026-07-24 08:03:40 CST)
 
 ### Packages
 
@@ -414,7 +414,7 @@
                                                        | 11.6.0             |            |                                                                            |
    dev-python/mwparserfromhell                         | 0.7.2              | RD         | https://github.com/earwig/mwparserfromhell                                 | A Python parser for MediaWiki wikicode
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
- dev-python/uv-bin                                     | 0.11.31            |            | https://github.com/astral-sh/uv                                            | An extremely fast Python package and project manager, written in Rust
+ dev-python/uv-bin                                     | 0.11.32            |            | https://github.com/astral-sh/uv                                            | An extremely fast Python package and project manager, written in Rust
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
  dev-ruby/filelock                                     | 1.1.1              |            | https://github.com/sheerun/filelock                                        | Heavily tested, but simple filelocking solution using flock command
 -------------------------------------------------------|--------------------|------------|----------------------------------------------------------------------------|--------------------
