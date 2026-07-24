@@ -88,9 +88,9 @@ src_prepare() {
 #!/usr/bin/bash
 
 export OSU_EXTERNAL_UPDATE_PROVIDER=true
-export OSU_SDL3=\${OSU_SDL3:=$(usex sdl2 false true)}
-$(use gamemode && echo "export LD_PRELOAD=/usr/lib64/libgamemodeauto.so")
-$(use system-ffmpeg && echo "export LD_LIBRARY_PATH=/usr/lib/ffmpeg4/lib64")
+export OSU_SDL3="\${OSU_SDL3:=$(usex sdl2 false true)}"
+$(use gamemode && echo "export LD_PRELOAD=\"/usr/lib64/libgamemodeauto.so\${LD_PRELOAD:+:\$LD_PRELOAD}\"")
+$(use system-ffmpeg && echo "export LD_LIBRARY_PATH=\"/usr/lib/ffmpeg4/lib64\${LD_LIBRARY_PATH:+:\$LD_LIBRARY_PATH}\"")
 
 exec /usr/lib/osu-lazer/osu! "\$@"
 EOF
